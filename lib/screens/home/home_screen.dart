@@ -16,6 +16,7 @@ import 'package:fut_chemistry/modals/card_rarity_modal.dart';
 import 'package:fut_chemistry/modals/player_position.dart';
 import 'package:share_admob/share_admob.dart';
 import '../../constants/ad_manager.dart';
+import '../../core/helpers/device_type.dart';
 
 
 class HomeScreen extends StatefulWidget {
@@ -54,6 +55,7 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
 
   @override
   Widget build(BuildContext context) {
+    final deviceType = getDeviceType();
     return Scaffold(
       appBar: AppBar(
         title: const Text('Chemistry Optimizer'),
@@ -80,8 +82,11 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
                       padding: const EdgeInsets.symmetric(vertical: 8.0),
                       child: SizedBox(
                         height: 45,
-                        child: ListView(
+                        child: deviceType == DeviceType.phone ? ListView(
                           scrollDirection: Axis.horizontal,
+                          children: _buildFilterBar(),
+                        ) : Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: _buildFilterBar(),
                         ),
                       ),
