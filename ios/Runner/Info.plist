@@ -5,13 +5,15 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Tiny App Boilerplate</string>
+	<string>Fut Chemistry</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
+	<key>GADApplicationIdentifier</key>
+	<string>ca-app-pub-6038936385902534~4500478678</string>
 	<key>CFBundleName</key>
 	<string>fut_chemistry</string>
 	<key>CFBundlePackageType</key>

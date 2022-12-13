@@ -339,14 +339,14 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
           return Expanded(
             child: GridView.count(
               crossAxisCount: 4,
-              childAspectRatio: 9 / 15,
+              childAspectRatio: 9 / 16,
               children: playerCards.map(
                 (card) {
                   return Column(
                     children: [
                       SizedBox(
                         width: 90,
-                        height: 110,
+                        height: 115,
                         child: SmallCard(
                           player: card,
                         ),
