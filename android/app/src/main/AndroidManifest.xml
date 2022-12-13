@@ -3,7 +3,7 @@
 
     <application
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/launcher_icon"
         android:label="fut_chemistry">
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"

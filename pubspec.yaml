@@ -20,6 +20,7 @@ dependencies:
   equatable: ^2.0.5
   csv: ^5.0.1
   http: ^0.13.5
+  flutter_launcher_icons: "^0.11.0"
   share_admob:
     path: packages/share_admob
 
@@ -46,3 +47,10 @@ flutter:
     - assets/img/filters/position/
     - assets/data/
     - assets/images/
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  remove_alpha_channel: true
+  image_path: "assets/icons/fut_chem_icon.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
