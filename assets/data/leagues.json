@@ -1,0 +1,318 @@
+[
+  {
+    "id": 1,
+    "code": "ENG",
+    "flagId": 13,
+    "name": "Premier League",
+    "png": true
+  },
+  {
+    "id": 2,
+    "code": "SPA",
+    "flagId": 53,
+    "name": "La Liga",
+    "png": true
+  },
+  {
+    "id": 3,
+    "code": "ITA",
+    "flagId": 31,
+    "name": "Serie A",
+    "png": true
+  },
+  {
+    "id": 4,
+    "code": "GER",
+    "flagId": 19,
+    "name": "Bundesliga",
+    "png": true
+  },
+  {
+    "id": 5,
+    "code": "FRA",
+    "flagId": 16,
+    "name": "Ligue 1",
+    "png": true
+  },
+  {
+    "id": 6,
+    "code": "RUS",
+    "flagId": 3006,
+    "name": "League of Russia",
+    "png": true
+  },
+  {
+    "id": 7,
+    "code": "POR",
+    "flagId": 308,
+    "name": "Liga NOS",
+    "png": true
+  },
+  {
+    "id": 8,
+    "code": "TUR",
+    "flagId": 68,
+    "name": "Süper Lig",
+    "png": true
+  },
+  {
+    "id": 9,
+    "code": "ARG",
+    "flagId": 353,
+    "name": "Primera División",
+    "png": true
+  },
+  {
+    "id": 10,
+    "code": "NET",
+    "flagId": 10,
+    "name": "Eredivisie",
+    "png": true
+  },
+  {
+    "id": 11,
+    "code": "USA",
+    "flagId": 39,
+    "name": "Major League Soccer",
+    "png": true
+  },
+  {
+    "id": 12,
+    "code": "BEL",
+    "flagId": 4,
+    "name": "Jupiler Pro League",
+    "png": true
+  },
+  {
+    "id": 13,
+    "code": "MEX",
+    "flagId": 341,
+    "name": "Liga BBVA MX",
+    "png": true
+  },
+  {
+    "id": 15,
+    "code": "SWI",
+    "flagId": 189,
+    "name": "Super League",
+    "png": true
+  },
+  {
+    "id": 16,
+    "code": "POL",
+    "flagId": 66,
+    "name": "Ekstraklasa",
+    "png": true
+  },
+  {
+    "id": 19,
+    "code": "FIN",
+    "flagId": 322,
+    "name": "Finnliiga",
+    "png": true
+  },
+  {
+    "id": 20,
+    "code": "AUS",
+    "flagId": 80,
+    "name": "Austria Bundesliga",
+    "png": true
+  },
+  {
+    "id": 21,
+    "code": "NOR",
+    "flagId": 41,
+    "name": "Eliteserien",
+    "png": true
+  },
+  {
+    "id": 22,
+    "code": "SWE",
+    "flagId": 56,
+    "name": "Allsvenskan",
+    "png": true
+  },
+  {
+    "id": 23,
+    "code": "DEN",
+    "flagId": 1,
+    "name": "Superliga",
+    "png": true
+  },
+  {
+    "id": 24,
+    "code": "UKR",
+    "flagId": 332,
+    "name": "Premier Liga",
+    "png": true
+  },
+  {
+    "id": 25,
+    "code": "JAP",
+    "flagId": 349,
+    "name": "J1 League",
+    "png": true
+  },
+  {
+    "id": 26,
+    "code": "IRE",
+    "flagId": 65,
+    "name": "Ireland League",
+    "png": true
+  },
+  {
+    "id": 27,
+    "code": "SCO",
+    "flagId": 50,
+    "name": "Premiership",
+    "png": true
+  },
+  {
+    "id": 28,
+    "code": "AU",
+    "flagId": 351,
+    "name": "A-League",
+    "png": true
+  },
+  {
+    "id": 29,
+    "code": "SAU",
+    "flagId": 350,
+    "name": "Saudi Pro",
+    "png": true
+  },
+  {
+    "id": 30,
+    "code": "KOR",
+    "flagId": 83,
+    "name": "K-League Classic",
+    "png": true
+  },
+  {
+    "id": 31,
+    "code": "ENG 2",
+    "flagId": 14,
+    "name": "Championship",
+    "png": true
+  },
+  {
+    "id": 32,
+    "code": "ENG 3",
+    "flagId": 60,
+    "name": "League One",
+    "png": true
+  },
+  {
+    "id": 33,
+    "code": "ENG 4",
+    "flagId": 61,
+    "name": "League Two",
+    "png": true
+  },
+  {
+    "id": 34,
+    "code": "SPA 2",
+    "flagId": 54,
+    "name": "Segunda A",
+    "png": true
+  },
+  {
+    "id": 35,
+    "code": "GER 2",
+    "flagId": 20,
+    "name": "2. Bundesliga",
+    "png": true
+  },
+  {
+    "id": 36,
+    "code": "ITA 2",
+    "flagId": 2179,
+    "name": "Calcio B",
+    "png": true
+  },
+  {
+    "id": 37,
+    "code": "FRA 2",
+    "flagId": 17,
+    "name": "Ligue 2",
+    "png": true
+  },
+  {
+    "id": 38,
+    "code": "SA",
+    "flagId": 347,
+    "name": "South African FL",
+    "png": true
+  },
+  {
+    "id": 39,
+    "code": "ICO",
+    "flagId": 2118,
+    "name": "Icons",
+    "png": true
+  },
+  {
+    "id": 40,
+    "code": "TSC",
+    "flagId": 319,
+    "name": "Česká Liga",
+    "png": true
+  },
+  {
+    "id": 41,
+    "code": "GER 3",
+    "flagId": 2076,
+    "name": "Germany 3. Liga",
+    "png": true
+  },
+  {
+    "id": 20001,
+    "code": "CHN",
+    "flagId": 2012,
+    "name": "Super League",
+    "png": true
+  },
+  {
+    "id": 317,
+    "code": "CRO",
+    "flagId": 317,
+    "name": "Croatia Liga",
+    "png": true
+  },
+  {
+    "id": 318,
+    "code": "ROM",
+    "flagId": 330,
+    "name": "Romania Liga I",
+    "png": true
+  },
+  {
+    "id": 14,
+    "code": "GRE",
+    "flagId": 63,
+    "name": "Hellas League",
+    "png": true
+  },
+  {
+    "id": 1003,
+    "code": "LIB",
+    "flagId": 1003,
+    "name": "Libertadores",
+    "png": true
+  },
+  {
+    "id": 1014,
+    "code": "SUD",
+    "flagId": 1014,
+    "name": "Sudamericana",
+    "png": true
+  },
+  {
+    "id": 0,
+    "code": "RES",
+    "flagId": 0,
+    "name": "Rest of World",
+    "png": true
+  }
+]
+

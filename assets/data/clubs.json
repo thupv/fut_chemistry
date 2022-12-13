@@ -1,0 +1,5616 @@
+[
+  {
+    "id": 99,
+    "shortName": "Rest of World",
+    "leagueId": 0,
+    "rarity": 5,
+    "png": true,
+    "code": "RES"
+  },
+  {
+    "id": 1,
+    "shortName": "Arsenal",
+    "leagueId": 1,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "ARS"
+  },
+  {
+    "id": 10,
+    "shortName": "Manchester City",
+    "leagueId": 1,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "CIT"
+  },
+  {
+    "id": 100081,
+    "shortName": "Kortrijk",
+    "leagueId": 12,
+    "rarity": 2,
+    "png": true,
+    "code": "KRT"
+  },
+  {
+    "id": 10029,
+    "shortName": "TSG 1899 Hoffenheim",
+    "leagueId": 4,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "HOF"
+  },
+  {
+    "id": 10030,
+    "shortName": "SC Paderborn 07",
+    "leagueId": 35,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 10031,
+    "shortName": "Portimonense",
+    "leagueId": 7,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "PRT"
+  },
+  {
+    "id": 10032,
+    "shortName": "FC Lugano",
+    "leagueId": 15,
+    "rarity": 2,
+    "png": true,
+    "code": "LUG"
+  },
+  {
+    "id": 100409,
+    "shortName": "FC Augsburg",
+    "leagueId": 4,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "AUG"
+  },
+  {
+    "id": 100628,
+    "shortName": "FC Emmen",
+    "leagueId": 10,
+    "rarity": 4,
+    "png": true,
+    "code": "EMM"
+  },
+  {
+    "id": 100634,
+    "shortName": "Heracles Almelo",
+    "leagueId": 10,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "HRL"
+  },
+  {
+    "id": 100646,
+    "shortName": "Sparta Rotterdam",
+    "leagueId": 10,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "ROT"
+  },
+  {
+    "id": 100651,
+    "shortName": "VVV-Venlo",
+    "leagueId": 10,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "VVV"
+  },
+  {
+    "id": 100757,
+    "shortName": "Dinamo Bucureşti",
+    "leagueId": 318,
+    "rarity": 2,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 100761,
+    "shortName": "FCSB (Steaua)",
+    "leagueId": 318,
+    "rarity": 2,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 100804,
+    "shortName": "St. Johnstone",
+    "leagueId": 27,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 100805,
+    "shortName": "St. Mirren",
+    "leagueId": 27,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 100831,
+    "shortName": "AD Alcorcón",
+    "leagueId": 34,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 100888,
+    "shortName": "CD Leganés",
+    "leagueId": 34,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "LEG"
+  },
+  {
+    "id": 101007,
+    "shortName": "MKE Ankaragücü",
+    "leagueId": 8,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 101014,
+    "shortName": "İstanbul BB",
+    "leagueId": 8,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "MED"
+  },
+  {
+    "id": 101020,
+    "shortName": "Kayserispor",
+    "leagueId": 8,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "KAY"
+  },
+  {
+    "id": 101025,
+    "shortName": "Gençlerbirligi SK",
+    "leagueId": 8,
+    "rarity": 2,
+    "png": true,
+    "code": "GEN"
+  },
+  {
+    "id": 101026,
+    "shortName": "Göztepe",
+    "leagueId": 8,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "GOZ"
+  },
+  {
+    "id": 101033,
+    "shortName": "Atiker Konyaspor",
+    "leagueId": 8,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "KON"
+  },
+  {
+    "id": 101037,
+    "shortName": "Çaykur Rizespor",
+    "leagueId": 8,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "RIZ"
+  },
+  {
+    "id": 101041,
+    "shortName": "Sivasspor",
+    "leagueId": 8,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "SIV"
+  },
+  {
+    "id": 101083,
+    "shortName": "Estudiantes de La Plata",
+    "leagueId": 9,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 101084,
+    "shortName": "Gimnasia y Esgrima La Plata",
+    "leagueId": 9,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 101085,
+    "shortName": "Racing Club de Avellaneda",
+    "leagueId": 1003,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "RAC"
+  },
+  {
+    "id": 101088,
+    "shortName": "Vélez Sarsfield",
+    "leagueId": 1014,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 101097,
+    "shortName": "Audax Italiano",
+    "leagueId": 1014,
+    "rarity": 2,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 101099,
+    "shortName": "América de Cali",
+    "leagueId": 1003,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 101100,
+    "shortName": "Atlético Nacional",
+    "leagueId": 1014,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 101101,
+    "shortName": "Junior de Barranquilla",
+    "leagueId": 1003,
+    "rarity": 3,
+    "png": true,
+    "code": "JUN"
+  },
+  {
+    "id": 101102,
+    "shortName": "Deportivo Cali",
+    "leagueId": 1014,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 101103,
+    "shortName": "Independiente Medellín",
+    "leagueId": 1003,
+    "rarity": 3,
+    "png": true,
+    "code": "IND"
+  },
+  {
+    "id": 101105,
+    "shortName": "Millonarios",
+    "leagueId": 1014,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 101112,
+    "shortName": "Vancouver Whitecaps",
+    "leagueId": 11,
+    "rarity": 2,
+    "png": true,
+    "code": "VAN"
+  },
+  {
+    "id": 101114,
+    "shortName": "Atlas",
+    "leagueId": 13,
+    "rarity": 2,
+    "png": true,
+    "code": "ATL"
+  },
+  {
+    "id": 101121,
+    "shortName": "Necaxa",
+    "leagueId": 13,
+    "rarity": 2,
+    "png": true,
+    "code": "NEC"
+  },
+  {
+    "id": 101144,
+    "shortName": "Júbilo Iwata",
+    "leagueId": 25,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 101146,
+    "shortName": "Vissel Kobe",
+    "leagueId": 25,
+    "rarity": 3,
+    "png": true,
+    "code": "VIS"
+  },
+  {
+    "id": 101147,
+    "shortName": "Kashima Antlers",
+    "leagueId": 25,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 101148,
+    "shortName": "Cerezo Osaka",
+    "leagueId": 25,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 101149,
+    "shortName": "Shimizu S-Pulse",
+    "leagueId": 25,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 101150,
+    "shortName": "F.C. Tokyo",
+    "leagueId": 25,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 101151,
+    "shortName": "Yokohama F·Marinos",
+    "leagueId": 25,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1013,
+    "shortName": "San Lorenzo de Almagro",
+    "leagueId": 9,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "LOR"
+  },
+  {
+    "id": 1032,
+    "shortName": "Monterrey",
+    "leagueId": 13,
+    "rarity": 2,
+    "png": true,
+    "code": "MOR"
+  },
+  {
+    "id": 106,
+    "shortName": "Sunderland",
+    "leagueId": 32,
+    "rarity": 4,
+    "png": true,
+    "code": "SUN"
+  },
+  {
+    "id": 109,
+    "shortName": "West Bromwich Albion",
+    "leagueId": 1,
+    "rarity": 3,
+    "png": true,
+    "code": "WBA"
+  },
+  {
+    "id": 11,
+    "shortName": "Manchester United",
+    "leagueId": 1,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "MUN"
+  },
+  {
+    "id": 110,
+    "shortName": "Wolverhampton Wanderers",
+    "leagueId": 1,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "WLV"
+  },
+  {
+    "id": 110062,
+    "shortName": "Girona FC",
+    "leagueId": 34,
+    "rarity": 3,
+    "png": true,
+    "code": "GIR"
+  },
+  {
+    "id": 110065,
+    "shortName": "CF Fuenlabrada",
+    "leagueId": 34,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110069,
+    "shortName": "CD Mirandés",
+    "leagueId": 34,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110093,
+    "shortName": "Independiente",
+    "leagueId": 1014,
+    "rarity": 2,
+    "png": true,
+    "code": "IND"
+  },
+  {
+    "id": 110144,
+    "shortName": "Santos Laguna",
+    "leagueId": 13,
+    "rarity": 2,
+    "png": true,
+    "code": "SAN"
+  },
+  {
+    "id": 110147,
+    "shortName": "Pachuca",
+    "leagueId": 13,
+    "rarity": 2,
+    "png": true,
+    "code": "PAC"
+  },
+  {
+    "id": 110150,
+    "shortName": "Gallos Blancos de Querétaro",
+    "leagueId": 13,
+    "rarity": 2,
+    "png": true,
+    "code": "QUE"
+  },
+  {
+    "id": 110152,
+    "shortName": "Puebla",
+    "leagueId": 13,
+    "rarity": 2,
+    "png": true,
+    "code": "PUE"
+  },
+  {
+    "id": 110178,
+    "shortName": "SV Sandhausen",
+    "leagueId": 35,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110197,
+    "shortName": "Würzburger Kickers",
+    "leagueId": 35,
+    "rarity": 4,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110313,
+    "shortName": "Accrington Stanley",
+    "leagueId": 32,
+    "rarity": 4,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110329,
+    "shortName": "FC St. Pauli",
+    "leagueId": 35,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110374,
+    "shortName": "Fiorentina",
+    "leagueId": 3,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "FIO"
+  },
+  {
+    "id": 110394,
+    "shortName": "Arsenal de Sarandí",
+    "leagueId": 9,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110395,
+    "shortName": "Lanús",
+    "leagueId": 1014,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "ATL"
+  },
+  {
+    "id": 110396,
+    "shortName": "Newell's Old Boys",
+    "leagueId": 9,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "OLB"
+  },
+  {
+    "id": 110404,
+    "shortName": "Banfield",
+    "leagueId": 9,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110406,
+    "shortName": "Colón",
+    "leagueId": 9,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110456,
+    "shortName": "Valenciennes FC",
+    "leagueId": 37,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110482,
+    "shortName": "Hallescher FC",
+    "leagueId": 41,
+    "rarity": 4,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110500,
+    "shortName": "Eintracht Braunschweig",
+    "leagueId": 35,
+    "rarity": 4,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110502,
+    "shortName": "SV Darmstadt 98",
+    "leagueId": 35,
+    "rarity": 3,
+    "png": true,
+    "code": "DAR"
+  },
+  {
+    "id": 110532,
+    "shortName": "SV Waldhof Mannheim",
+    "leagueId": 41,
+    "rarity": 4,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110556,
+    "shortName": "Genoa",
+    "leagueId": 3,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "GEN"
+  },
+  {
+    "id": 110569,
+    "shortName": "Dijon FCO",
+    "leagueId": 5,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "DIJ"
+  },
+  {
+    "id": 110580,
+    "shortName": "Rosario Central",
+    "leagueId": 9,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110581,
+    "shortName": "Patronato",
+    "leagueId": 9,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110588,
+    "shortName": "1. FC Magdeburg",
+    "leagueId": 41,
+    "rarity": 4,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110592,
+    "shortName": "FSV Zwickau",
+    "leagueId": 41,
+    "rarity": 4,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110597,
+    "shortName": "SV Meppen",
+    "leagueId": 41,
+    "rarity": 4,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110636,
+    "shortName": "Fortuna Düsseldorf",
+    "leagueId": 35,
+    "rarity": 3,
+    "png": true,
+    "code": "FRT"
+  },
+  {
+    "id": 110645,
+    "shortName": "Viktoria Köln",
+    "leagueId": 41,
+    "rarity": 4,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110679,
+    "shortName": "Bayern München II",
+    "leagueId": 41,
+    "rarity": 4,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110724,
+    "shortName": "KV Mechelen",
+    "leagueId": 12,
+    "rarity": 2,
+    "png": true,
+    "code": "MEC"
+  },
+  {
+    "id": 110734,
+    "shortName": "Crotone",
+    "leagueId": 3,
+    "rarity": 4,
+    "png": true,
+    "code": "CRO"
+  },
+  {
+    "id": 110745,
+    "shortName": "Jagiellonia Białystok",
+    "leagueId": 16,
+    "rarity": 3,
+    "png": true,
+    "code": "JAG"
+  },
+  {
+    "id": 110746,
+    "shortName": "Pogoń Szczecin",
+    "leagueId": 16,
+    "rarity": 5,
+    "png": true,
+    "code": "POG"
+  },
+  {
+    "id": 110747,
+    "shortName": "Cracovia Kraków",
+    "leagueId": 16,
+    "rarity": 3,
+    "png": true,
+    "code": "CRA"
+  },
+  {
+    "id": 110749,
+    "shortName": "Zagłębie Lubin",
+    "leagueId": 16,
+    "rarity": 3,
+    "png": true,
+    "code": "LUB"
+  },
+  {
+    "id": 110752,
+    "shortName": "FC Botoşani",
+    "leagueId": 318,
+    "rarity": 2,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110765,
+    "shortName": "Incheon United",
+    "leagueId": 30,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110770,
+    "shortName": "FC Sion",
+    "leagueId": 15,
+    "rarity": 2,
+    "png": true,
+    "code": "SIO"
+  },
+  {
+    "id": 110776,
+    "shortName": "Gazişehir Gaziantep F.K.",
+    "leagueId": 8,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110781,
+    "shortName": "León",
+    "leagueId": 13,
+    "rarity": 2,
+    "png": true,
+    "code": "LEO"
+  },
+  {
+    "id": 110815,
+    "shortName": "Politehnica Iaşi",
+    "leagueId": 318,
+    "rarity": 2,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110827,
+    "shortName": "Real Oviedo",
+    "leagueId": 34,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110831,
+    "shortName": "CD Lugo",
+    "leagueId": 34,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110832,
+    "shortName": "Granada CF",
+    "leagueId": 2,
+    "rarity": 2,
+    "png": true,
+    "code": "GRA"
+  },
+  {
+    "id": 110839,
+    "shortName": "SD Huesca",
+    "leagueId": 2,
+    "rarity": 3,
+    "png": true,
+    "code": "HUA"
+  },
+  {
+    "id": 110890,
+    "shortName": "Crawley Town",
+    "leagueId": 33,
+    "rarity": 5,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110913,
+    "shortName": "Waasland-Beveren",
+    "leagueId": 12,
+    "rarity": 2,
+    "png": true,
+    "code": "WAA"
+  },
+  {
+    "id": 110955,
+    "shortName": "Shanghai Greenland Shenhua",
+    "leagueId": 20001,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110975,
+    "shortName": "Universidad Católica",
+    "leagueId": 1003,
+    "rarity": 2,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111019,
+    "shortName": "Argentinos Juniors",
+    "leagueId": 1014,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111065,
+    "shortName": "Real Salt Lake",
+    "leagueId": 11,
+    "rarity": 2,
+    "png": true,
+    "code": "REA"
+  },
+  {
+    "id": 111086,
+    "shortName": "Piast Gliwice",
+    "leagueId": 16,
+    "rarity": 3,
+    "png": true,
+    "code": "PIA"
+  },
+  {
+    "id": 111091,
+    "shortName": "Lechia Gdańsk",
+    "leagueId": 16,
+    "rarity": 3,
+    "png": true,
+    "code": "GDA"
+  },
+  {
+    "id": 111092,
+    "shortName": "Śląsk Wrocław",
+    "leagueId": 16,
+    "rarity": 5,
+    "png": true,
+    "code": "WRO"
+  },
+  {
+    "id": 111131,
+    "shortName": "Finn Harps",
+    "leagueId": 26,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111138,
+    "shortName": "Minnesota United FC",
+    "leagueId": 11,
+    "rarity": 2,
+    "png": true,
+    "code": "MIN"
+  },
+  {
+    "id": 111139,
+    "shortName": "Montreal Impact",
+    "leagueId": 11,
+    "rarity": 2,
+    "png": true,
+    "code": "MOT"
+  },
+  {
+    "id": 111140,
+    "shortName": "Portland Timbers",
+    "leagueId": 11,
+    "rarity": 2,
+    "png": true,
+    "code": "PRT"
+  },
+  {
+    "id": 111144,
+    "shortName": "Seattle Sounders",
+    "leagueId": 11,
+    "rarity": 4,
+    "png": true,
+    "code": "SEA"
+  },
+  {
+    "id": 111235,
+    "shortName": "1. FC Heidenheim",
+    "leagueId": 35,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111239,
+    "shortName": "FC Ingolstadt 04",
+    "leagueId": 41,
+    "rarity": 4,
+    "png": true,
+    "code": "ING"
+  },
+  {
+    "id": 111327,
+    "shortName": "Huachipato",
+    "leagueId": 1014,
+    "rarity": 2,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111339,
+    "shortName": "Kasimpaşa",
+    "leagueId": 8,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "KAS"
+  },
+  {
+    "id": 111393,
+    "shortName": "Adelaide United",
+    "leagueId": 28,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111395,
+    "shortName": "Brisbane Roar",
+    "leagueId": 28,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111396,
+    "shortName": "Central Coast Mariners",
+    "leagueId": 28,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111397,
+    "shortName": "Melbourne Victory",
+    "leagueId": 28,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111398,
+    "shortName": "Newcastle Jets",
+    "leagueId": 28,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111399,
+    "shortName": "Perth Glory",
+    "leagueId": 28,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111400,
+    "shortName": "Sydney FC",
+    "leagueId": 28,
+    "rarity": 3,
+    "png": true,
+    "code": "HYU"
+  },
+  {
+    "id": 111560,
+    "shortName": "Mouscron",
+    "leagueId": 12,
+    "rarity": 2,
+    "png": true,
+    "code": "MOU"
+  },
+  {
+    "id": 111575,
+    "shortName": "Urawa Red Diamonds",
+    "leagueId": 25,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111651,
+    "shortName": "Toronto FC",
+    "leagueId": 11,
+    "rarity": 2,
+    "png": true,
+    "code": "TOR"
+  },
+  {
+    "id": 111659,
+    "shortName": "Rodez Aveyron Football",
+    "leagueId": 37,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111674,
+    "shortName": "Al Shabab",
+    "leagueId": 29,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111678,
+    "shortName": "Club Tijuana",
+    "leagueId": 13,
+    "rarity": 2,
+    "png": true,
+    "code": "TIJ"
+  },
+  {
+    "id": 111706,
+    "shortName": "Godoy Cruz",
+    "leagueId": 9,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111707,
+    "shortName": "Aldosivi",
+    "leagueId": 9,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111708,
+    "shortName": "Atlético Tucumán",
+    "leagueId": 9,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111710,
+    "shortName": "Defensa y Justicia",
+    "leagueId": 1003,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111711,
+    "shortName": "Huracán",
+    "leagueId": 1014,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111716,
+    "shortName": "Unión Santa Fe",
+    "leagueId": 1014,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111723,
+    "shortName": "Deportivo Pasto",
+    "leagueId": 1014,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111724,
+    "shortName": "Shandong Luneng Taishan",
+    "leagueId": 20001,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111730,
+    "shortName": "Kawasaki Frontale",
+    "leagueId": 25,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111766,
+    "shortName": "Wellington Phoenix",
+    "leagueId": 28,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111768,
+    "shortName": "Beijing Sinobo Guoan",
+    "leagueId": 20001,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111773,
+    "shortName": "Shenzhen FC",
+    "leagueId": 20001,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111774,
+    "shortName": "Tianjin Teda",
+    "leagueId": 20001,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111779,
+    "shortName": "Henan Jianye",
+    "leagueId": 20001,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111817,
+    "shortName": "Paris FC",
+    "leagueId": 37,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111821,
+    "shortName": "Admira Wacker",
+    "leagueId": 20,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111822,
+    "shortName": "Wolfsberger AC",
+    "leagueId": 20,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111839,
+    "shortName": "Guangzhou Evergrande Taobao",
+    "leagueId": 20001,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111928,
+    "shortName": "San Jose Earthquakes",
+    "leagueId": 11,
+    "rarity": 2,
+    "png": true,
+    "code": "EAR"
+  },
+  {
+    "id": 111974,
+    "shortName": "Sassuolo",
+    "leagueId": 3,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "SAS"
+  },
+  {
+    "id": 112026,
+    "shortName": "Benevento",
+    "leagueId": 3,
+    "rarity": 3,
+    "png": true,
+    "code": "BNV"
+  },
+  {
+    "id": 112075,
+    "shortName": "SKN St. Pölten",
+    "leagueId": 20,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112092,
+    "shortName": "Nagoya Grampus",
+    "leagueId": 25,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112093,
+    "shortName": "Gamba Osaka",
+    "leagueId": 25,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112096,
+    "shortName": "Al Ettifaq",
+    "leagueId": 29,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112115,
+    "shortName": "Gangwon FC",
+    "leagueId": 30,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112134,
+    "shortName": "Philadelphia Union",
+    "leagueId": 11,
+    "rarity": 2,
+    "png": true,
+    "code": "PHI"
+  },
+  {
+    "id": 112139,
+    "shortName": "Al Nassr",
+    "leagueId": 29,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112162,
+    "shortName": "Jiangsu Suning",
+    "leagueId": 20001,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112165,
+    "shortName": "Chongqing Lifan",
+    "leagueId": 20001,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112169,
+    "shortName": "Falkenbergs FF",
+    "leagueId": 22,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112172,
+    "shortName": "RB Leipzig",
+    "leagueId": 4,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "LPZ"
+  },
+  {
+    "id": 112199,
+    "shortName": "Sarpsborg 08 FF",
+    "leagueId": 21,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112224,
+    "shortName": "Melbourne City",
+    "leagueId": 28,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112254,
+    "shortName": "Newport County",
+    "leagueId": 33,
+    "rarity": 5,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112259,
+    "shortName": "AFC Wimbledon",
+    "leagueId": 32,
+    "rarity": 4,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112260,
+    "shortName": "Fleetwood Town",
+    "leagueId": 32,
+    "rarity": 5,
+    "png": true,
+    "code": "FLE"
+  },
+  {
+    "id": 112378,
+    "shortName": "Dalian Yifang",
+    "leagueId": 20001,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112387,
+    "shortName": "Al Ahli",
+    "leagueId": 29,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112389,
+    "shortName": "Al Faisaly",
+    "leagueId": 29,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112390,
+    "shortName": "Al Fateh",
+    "leagueId": 29,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112392,
+    "shortName": "Al Raed",
+    "leagueId": 29,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112393,
+    "shortName": "Al Taawoun",
+    "leagueId": 29,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112408,
+    "shortName": "Al Wehda",
+    "leagueId": 29,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112420,
+    "shortName": "Mjondalen IF",
+    "leagueId": 21,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112427,
+    "shortName": "Western Sydney Wanderers",
+    "leagueId": 28,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112429,
+    "shortName": "Guangzhou R&F",
+    "leagueId": 20001,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112444,
+    "shortName": "Hokkaido Consadole Sapporo",
+    "leagueId": 25,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112516,
+    "shortName": "Tondela",
+    "leagueId": 7,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "TON"
+  },
+  {
+    "id": 112535,
+    "shortName": "Union La Calera",
+    "leagueId": 1014,
+    "rarity": 2,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112540,
+    "shortName": "Shanghai SIPG",
+    "leagueId": 20001,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112541,
+    "shortName": "Wuhan Zall",
+    "leagueId": 20001,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112606,
+    "shortName": "Orlando City SC",
+    "leagueId": 11,
+    "rarity": 2,
+    "png": true,
+    "code": "ORL"
+  },
+  {
+    "id": 112627,
+    "shortName": "FC Chambly Oise",
+    "leagueId": 37,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112637,
+    "shortName": "Gaz Metan Mediaş",
+    "leagueId": 318,
+    "rarity": 2,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112658,
+    "shortName": "Icons",
+    "leagueId": 39,
+    "rarity": 0,
+    "png": true,
+    "code": "ICO"
+  },
+  {
+    "id": 112670,
+    "shortName": "Talleres de Córdoba",
+    "leagueId": 9,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112678,
+    "shortName": "Atlético de San Luis",
+    "leagueId": 13,
+    "rarity": 2,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112705,
+    "shortName": "Coquimbo Unido",
+    "leagueId": 1014,
+    "rarity": 2,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112791,
+    "shortName": "SPAL",
+    "leagueId": 36,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "FER"
+  },
+  {
+    "id": 112809,
+    "shortName": "Famalicao",
+    "leagueId": 7,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112828,
+    "shortName": "New York City FC",
+    "leagueId": 11,
+    "rarity": 2,
+    "png": true,
+    "code": "NCT"
+  },
+  {
+    "id": 112836,
+    "shortName": "Vegalta Sendai",
+    "leagueId": 25,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112847,
+    "shortName": "Astra Giurgiu",
+    "leagueId": 318,
+    "rarity": 2,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112885,
+    "shortName": "Atlanta United FC",
+    "leagueId": 11,
+    "rarity": 2,
+    "png": true,
+    "code": "ATL"
+  },
+  {
+    "id": 112965,
+    "shortName": "Central Córdoba",
+    "leagueId": 9,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112978,
+    "shortName": "Hebei China Fortune",
+    "leagueId": 20001,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112996,
+    "shortName": "Los Angeles FC",
+    "leagueId": 11,
+    "rarity": 2,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 113057,
+    "shortName": "Al Fayha",
+    "leagueId": 29,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 113058,
+    "shortName": "Abha Club",
+    "leagueId": 29,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 113134,
+    "shortName": "FC Juárez",
+    "leagueId": 13,
+    "rarity": 2,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 113142,
+    "shortName": "Alanyaspor",
+    "leagueId": 8,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "ALA"
+  },
+  {
+    "id": 113149,
+    "shortName": "FC Cincinnati",
+    "leagueId": 11,
+    "rarity": 2,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 113157,
+    "shortName": "Sanfrecce Hiroshima",
+    "leagueId": 25,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 113160,
+    "shortName": "Sagan Tosu",
+    "leagueId": 25,
+    "rarity": 3,
+    "png": true,
+    "code": "SAG"
+  },
+  {
+    "id": 113161,
+    "shortName": "Shonan Bellmare",
+    "leagueId": 25,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 113173,
+    "shortName": "Östersunds FK",
+    "leagueId": 22,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 113180,
+    "shortName": "FC Viitorul",
+    "leagueId": 318,
+    "rarity": 2,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 113182,
+    "shortName": "FC Voluntari",
+    "leagueId": 318,
+    "rarity": 2,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 113183,
+    "shortName": "Oita Trinita",
+    "leagueId": 25,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 113217,
+    "shortName": "Damac FC",
+    "leagueId": 29,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 113222,
+    "shortName": "Al Hazem",
+    "leagueId": 29,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 113259,
+    "shortName": "Yeni Malatyaspor",
+    "leagueId": 8,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "EVK"
+  },
+  {
+    "id": 113345,
+    "shortName": "Al Adalah",
+    "leagueId": 29,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 113378,
+    "shortName": "Sepsi OSK",
+    "leagueId": 318,
+    "rarity": 2,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 113387,
+    "shortName": "Chindia Târgovişte",
+    "leagueId": 318,
+    "rarity": 2,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 113391,
+    "shortName": "Academica Clinceni",
+    "leagueId": 318,
+    "rarity": 2,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 113458,
+    "shortName": "IK Sirius",
+    "leagueId": 22,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 113459,
+    "shortName": "Kristiansund BK",
+    "leagueId": 21,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 113926,
+    "shortName": "Salford City",
+    "leagueId": 33,
+    "rarity": 5,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 114023,
+    "shortName": "Western United FC",
+    "leagueId": 28,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 114144,
+    "shortName": "Núnez",
+    "leagueId": 9,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 114147,
+    "shortName": "FC Hermannstadt",
+    "leagueId": 318,
+    "rarity": 2,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 114153,
+    "shortName": "Piemonte Calcio",
+    "leagueId": 3,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "PIE"
+  },
+  {
+    "id": 114326,
+    "shortName": "Raków Częstochowa",
+    "leagueId": 16,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 114385,
+    "shortName": "CFR Cluj",
+    "leagueId": 318,
+    "rarity": 2,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 12,
+    "shortName": "Middlesbrough",
+    "leagueId": 31,
+    "rarity": 3,
+    "png": true,
+    "code": "MID"
+  },
+  {
+    "id": 121,
+    "shortName": "Crewe Alexandra",
+    "leagueId": 32,
+    "rarity": 5,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 127,
+    "shortName": "Shrewsbury Town",
+    "leagueId": 32,
+    "rarity": 4,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 13,
+    "shortName": "Newcastle United",
+    "leagueId": 1,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "NEW"
+  },
+  {
+    "id": 14,
+    "shortName": "Nottingham Forest",
+    "leagueId": 31,
+    "rarity": 3,
+    "png": true,
+    "code": "NOT"
+  },
+  {
+    "id": 142,
+    "shortName": "Doncaster Rovers",
+    "leagueId": 32,
+    "rarity": 5,
+    "png": true,
+    "code": "DON"
+  },
+  {
+    "id": 143,
+    "shortName": "Exeter City",
+    "leagueId": 33,
+    "rarity": 5,
+    "png": true,
+    "code": "EXE"
+  },
+  {
+    "id": 1438,
+    "shortName": "Santa Clara",
+    "leagueId": 7,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1439,
+    "shortName": "Kalmar FF",
+    "leagueId": 22,
+    "rarity": 4,
+    "png": true,
+    "code": "KAL"
+  },
+  {
+    "id": 144,
+    "shortName": "Fulham",
+    "leagueId": 1,
+    "rarity": 3,
+    "png": true,
+    "code": "FUL"
+  },
+  {
+    "id": 1446,
+    "shortName": "AC Horsens",
+    "leagueId": 23,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1447,
+    "shortName": "SonderjyskE",
+    "leagueId": 23,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1456,
+    "shortName": "Odds Ballklubb",
+    "leagueId": 21,
+    "rarity": 4,
+    "png": true,
+    "code": "ODD"
+  },
+  {
+    "id": 1457,
+    "shortName": "Denizlispor",
+    "leagueId": 8,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1463,
+    "shortName": "FK Haugesund",
+    "leagueId": 21,
+    "rarity": 5,
+    "png": true,
+    "code": "HAU"
+  },
+  {
+    "id": 1473,
+    "shortName": "Ulsan Hyundai",
+    "leagueId": 30,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1474,
+    "shortName": "Pohang Steelers",
+    "leagueId": 30,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1477,
+    "shortName": "Jeonbuk Hyundai Motors",
+    "leagueId": 30,
+    "rarity": 3,
+    "png": true,
+    "code": "JEO"
+  },
+  {
+    "id": 1480,
+    "shortName": "Carlisle United",
+    "leagueId": 33,
+    "rarity": 5,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 149,
+    "shortName": "Lincoln City",
+    "leagueId": 32,
+    "rarity": 5,
+    "png": true,
+    "code": "LIN"
+  },
+  {
+    "id": 15,
+    "shortName": "Queens Park Rangers",
+    "leagueId": 31,
+    "rarity": 3,
+    "png": true,
+    "code": "QPR"
+  },
+  {
+    "id": 15001,
+    "shortName": "Lyngby BK",
+    "leagueId": 23,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 15005,
+    "shortName": "Zulte Waregem",
+    "leagueId": 12,
+    "rarity": 2,
+    "png": true,
+    "code": "ZUL"
+  },
+  {
+    "id": 15009,
+    "shortName": "SCR Altach",
+    "leagueId": 20,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 15015,
+    "shortName": "Burton Albion",
+    "leagueId": 32,
+    "rarity": 4,
+    "png": true,
+    "code": "BAL"
+  },
+  {
+    "id": 15040,
+    "shortName": "WSG Tirol",
+    "leagueId": 20,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 15048,
+    "shortName": "Tranmere Rovers",
+    "leagueId": 33,
+    "rarity": 4,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1516,
+    "shortName": "FC Midtjylland",
+    "leagueId": 23,
+    "rarity": 3,
+    "png": true,
+    "code": "MID"
+  },
+  {
+    "id": 1530,
+    "shortName": "Angers SCO",
+    "leagueId": 5,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "ANG"
+  },
+  {
+    "id": 1569,
+    "shortName": "Wisła Płock",
+    "leagueId": 16,
+    "rarity": 5,
+    "png": true,
+    "code": "PŁO"
+  },
+  {
+    "id": 159,
+    "shortName": "Arminia Bielefeld",
+    "leagueId": 4,
+    "rarity": 3,
+    "png": true,
+    "code": "ARM"
+  },
+  {
+    "id": 160,
+    "shortName": "VfL Bochum",
+    "leagueId": 35,
+    "rarity": 3,
+    "png": true,
+    "code": "BOH"
+  },
+  {
+    "id": 165,
+    "shortName": "SpVgg Greuther Fürth",
+    "leagueId": 35,
+    "rarity": 3,
+    "png": true,
+    "code": "GRE"
+  },
+  {
+    "id": 166,
+    "shortName": "Hertha BSC",
+    "leagueId": 4,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "HER"
+  },
+  {
+    "id": 167,
+    "shortName": "KFC Uerdingen 05",
+    "leagueId": 41,
+    "rarity": 4,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 169,
+    "shortName": "1. FSV Mainz 05",
+    "leagueId": 4,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "MAI"
+  },
+  {
+    "id": 17,
+    "shortName": "Southampton",
+    "leagueId": 1,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "SOU"
+  },
+  {
+    "id": 171,
+    "shortName": "1. FC Nürnberg",
+    "leagueId": 35,
+    "rarity": 3,
+    "png": true,
+    "code": "NUR"
+  },
+  {
+    "id": 172,
+    "shortName": "SpVgg Unterhaching",
+    "leagueId": 41,
+    "rarity": 4,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1738,
+    "shortName": "Havre AC",
+    "leagueId": 37,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1746,
+    "shortName": "Empoli",
+    "leagueId": 36,
+    "rarity": 3,
+    "png": true,
+    "code": "EMP"
+  },
+  {
+    "id": 175,
+    "shortName": "VfL Wolfsburg",
+    "leagueId": 4,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "WOL"
+  },
+  {
+    "id": 1750,
+    "shortName": "Cercle Brugge",
+    "leagueId": 12,
+    "rarity": 2,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1786,
+    "shortName": "Randers FC",
+    "leagueId": 23,
+    "rarity": 3,
+    "png": true,
+    "code": "ALK"
+  },
+  {
+    "id": 1788,
+    "shortName": "FC Nordsjalland",
+    "leagueId": 23,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1790,
+    "shortName": "Portsmouth",
+    "leagueId": 32,
+    "rarity": 5,
+    "png": true,
+    "code": "POR"
+  },
+  {
+    "id": 1792,
+    "shortName": "Norwich City",
+    "leagueId": 31,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "NOR"
+  },
+  {
+    "id": 1793,
+    "shortName": "Reading",
+    "leagueId": 31,
+    "rarity": 3,
+    "png": true,
+    "code": "RDG"
+  },
+  {
+    "id": 1794,
+    "shortName": "Sheffield United",
+    "leagueId": 1,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "SHU"
+  },
+  {
+    "id": 1795,
+    "shortName": "Watford",
+    "leagueId": 31,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "WAT"
+  },
+  {
+    "id": 1796,
+    "shortName": "Burnley",
+    "leagueId": 1,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "BUR"
+  },
+  {
+    "id": 1797,
+    "shortName": "Rotherham United",
+    "leagueId": 31,
+    "rarity": 4,
+    "png": true,
+    "code": "RTH"
+  },
+  {
+    "id": 1798,
+    "shortName": "Milton Keynes Dons",
+    "leagueId": 32,
+    "rarity": 4,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1799,
+    "shortName": "Crystal Palace",
+    "leagueId": 1,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "CRP"
+  },
+  {
+    "id": 18,
+    "shortName": "Tottenham Hotspur",
+    "leagueId": 1,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "TOT"
+  },
+  {
+    "id": 1800,
+    "shortName": "Coventry City",
+    "leagueId": 31,
+    "rarity": 5,
+    "png": true,
+    "code": "COV"
+  },
+  {
+    "id": 1801,
+    "shortName": "Preston North End",
+    "leagueId": 31,
+    "rarity": 3,
+    "png": true,
+    "code": "PRE"
+  },
+  {
+    "id": 1802,
+    "shortName": "Gillingham",
+    "leagueId": 32,
+    "rarity": 4,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1803,
+    "shortName": "Walsall",
+    "leagueId": 33,
+    "rarity": 5,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1804,
+    "shortName": "Bradford City",
+    "leagueId": 33,
+    "rarity": 5,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1805,
+    "shortName": "Grenoble Foot 38",
+    "leagueId": 37,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1806,
+    "shortName": "Stoke City",
+    "leagueId": 31,
+    "rarity": 3,
+    "png": true,
+    "code": "STO"
+  },
+  {
+    "id": 1807,
+    "shortName": "Sheffield Wednesday",
+    "leagueId": 31,
+    "rarity": 3,
+    "png": true,
+    "code": "SHE"
+  },
+  {
+    "id": 1808,
+    "shortName": "Brighton & Hove Albion",
+    "leagueId": 1,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "BRG"
+  },
+  {
+    "id": 1809,
+    "shortName": "Toulouse FC",
+    "leagueId": 37,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "TOU"
+  },
+  {
+    "id": 1813,
+    "shortName": "Chamois Niortais FC",
+    "leagueId": 37,
+    "rarity": 4,
+    "png": true,
+    "code": "CHM"
+  },
+  {
+    "id": 1815,
+    "shortName": "Clermont Foot",
+    "leagueId": 37,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1816,
+    "shortName": "Amiens SC",
+    "leagueId": 37,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "AMI"
+  },
+  {
+    "id": 1819,
+    "shortName": "AS Saint-Étienne",
+    "leagueId": 5,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "SAE"
+  },
+  {
+    "id": 1823,
+    "shortName": "AS Nancy",
+    "leagueId": 37,
+    "rarity": 3,
+    "png": true,
+    "code": "NAN"
+  },
+  {
+    "id": 1824,
+    "shortName": "Eintracht Frankfurt",
+    "leagueId": 4,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "FRA"
+  },
+  {
+    "id": 1825,
+    "shortName": "MSV Duisburg",
+    "leagueId": 41,
+    "rarity": 4,
+    "png": true,
+    "code": "DUI"
+  },
+  {
+    "id": 1831,
+    "shortName": "1. FC Union Berlin",
+    "leagueId": 4,
+    "rarity": 2,
+    "png": true,
+    "code": "UNI"
+  },
+  {
+    "id": 1832,
+    "shortName": "Karlsruher SC",
+    "leagueId": 35,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1837,
+    "shortName": "Sampdoria",
+    "leagueId": 3,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "SAM"
+  },
+  {
+    "id": 184,
+    "shortName": "Hamilton Academical",
+    "leagueId": 27,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1842,
+    "shortName": "Cagliari",
+    "leagueId": 3,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "CAG"
+  },
+  {
+    "id": 1853,
+    "shortName": "Levante UD",
+    "leagueId": 2,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "LVN"
+  },
+  {
+    "id": 1854,
+    "shortName": "Albacete Balompié",
+    "leagueId": 34,
+    "rarity": 3,
+    "png": true,
+    "code": "ALB"
+  },
+  {
+    "id": 1860,
+    "shortName": "Getafe CF",
+    "leagueId": 2,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "GET"
+  },
+  {
+    "id": 1861,
+    "shortName": "UD Almería",
+    "leagueId": 34,
+    "rarity": 3,
+    "png": true,
+    "code": "ALM"
+  },
+  {
+    "id": 1871,
+    "shortName": "Legia Warszawa",
+    "leagueId": 16,
+    "rarity": 3,
+    "png": true,
+    "code": "LEG"
+  },
+  {
+    "id": 1873,
+    "shortName": "Wisła Kraków",
+    "leagueId": 16,
+    "rarity": 3,
+    "png": true,
+    "code": "KRA"
+  },
+  {
+    "id": 1878,
+    "shortName": "Cruz Azul",
+    "leagueId": 13,
+    "rarity": 2,
+    "png": true,
+    "code": "CRU"
+  },
+  {
+    "id": 1879,
+    "shortName": "América",
+    "leagueId": 13,
+    "rarity": 2,
+    "png": true,
+    "code": "AME"
+  },
+  {
+    "id": 1880,
+    "shortName": "Guadalajara",
+    "leagueId": 13,
+    "rarity": 2,
+    "png": true,
+    "code": "GUA"
+  },
+  {
+    "id": 1881,
+    "shortName": "U.N.A.M.",
+    "leagueId": 13,
+    "rarity": 2,
+    "png": true,
+    "code": "UNA"
+  },
+  {
+    "id": 1882,
+    "shortName": "Toluca",
+    "leagueId": 13,
+    "rarity": 2,
+    "png": true,
+    "code": "DEP"
+  },
+  {
+    "id": 1887,
+    "shortName": "Vitória Guimaraes",
+    "leagueId": 7,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "GUI"
+  },
+  {
+    "id": 1888,
+    "shortName": "Gil Vicente FC",
+    "leagueId": 7,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1889,
+    "shortName": "Belenenses",
+    "leagueId": 7,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "BEL"
+  },
+  {
+    "id": 189,
+    "shortName": "Bologna",
+    "leagueId": 3,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "BOL"
+  },
+  {
+    "id": 1892,
+    "shortName": "FC Paços de Ferreira",
+    "leagueId": 7,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "PAC"
+  },
+  {
+    "id": 1893,
+    "shortName": "Marítimo",
+    "leagueId": 7,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "MAR"
+  },
+  {
+    "id": 1896,
+    "shortName": "Braga",
+    "leagueId": 7,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "BRA"
+  },
+  {
+    "id": 1898,
+    "shortName": "Boavista",
+    "leagueId": 7,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "BOA"
+  },
+  {
+    "id": 19,
+    "shortName": "West Ham United",
+    "leagueId": 1,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "WES"
+  },
+  {
+    "id": 190,
+    "shortName": "Brescia",
+    "leagueId": 36,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1900,
+    "shortName": "Moreirense",
+    "leagueId": 7,
+    "rarity": 2,
+    "png": true,
+    "code": "MOR"
+  },
+  {
+    "id": 1903,
+    "shortName": "FC Utrecht",
+    "leagueId": 10,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "UTR"
+  },
+  {
+    "id": 1905,
+    "shortName": "RKC Waalwijk",
+    "leagueId": 10,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1906,
+    "shortName": "AZ",
+    "leagueId": 10,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "AZ"
+  },
+  {
+    "id": 1907,
+    "shortName": "Willem II",
+    "leagueId": 10,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "WIL"
+  },
+  {
+    "id": 1908,
+    "shortName": "FC Twente",
+    "leagueId": 10,
+    "rarity": 3,
+    "png": true,
+    "code": "TWE"
+  },
+  {
+    "id": 1909,
+    "shortName": "Vitesse",
+    "leagueId": 10,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "VIT"
+  },
+  {
+    "id": 191,
+    "shortName": "Red Bull Salzburg",
+    "leagueId": 20,
+    "rarity": 3,
+    "png": true,
+    "code": "SAL"
+  },
+  {
+    "id": 1913,
+    "shortName": "sc Heerenveen",
+    "leagueId": 10,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "HEE"
+  },
+  {
+    "id": 1914,
+    "shortName": "PEC Zwolle",
+    "leagueId": 10,
+    "rarity": 3,
+    "png": true,
+    "code": "ZWO"
+  },
+  {
+    "id": 1915,
+    "shortName": "FC Groningen",
+    "leagueId": 10,
+    "rarity": 2,
+    "png": true,
+    "code": "GRO"
+  },
+  {
+    "id": 1917,
+    "shortName": "Wigan Athletic",
+    "leagueId": 32,
+    "rarity": 3,
+    "png": true,
+    "code": "WIG"
+  },
+  {
+    "id": 1919,
+    "shortName": "Bristol City",
+    "leagueId": 31,
+    "rarity": 3,
+    "png": true,
+    "code": "BRS"
+  },
+  {
+    "id": 192,
+    "shortName": "Chievo Verona",
+    "leagueId": 36,
+    "rarity": 3,
+    "png": true,
+    "code": "VER"
+  },
+  {
+    "id": 1920,
+    "shortName": "Oldham Athletic",
+    "leagueId": 33,
+    "rarity": 5,
+    "png": true,
+    "code": "OLD"
+  },
+  {
+    "id": 1923,
+    "shortName": "Luton Town",
+    "leagueId": 31,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1925,
+    "shortName": "Brentford",
+    "leagueId": 31,
+    "rarity": 3,
+    "png": true,
+    "code": "BRE"
+  },
+  {
+    "id": 1926,
+    "shortName": "Blackpool",
+    "leagueId": 32,
+    "rarity": 4,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1928,
+    "shortName": "Port Vale",
+    "leagueId": 33,
+    "rarity": 5,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1929,
+    "shortName": "Plymouth Argyle",
+    "leagueId": 32,
+    "rarity": 5,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1930,
+    "shortName": "Northampton Town",
+    "leagueId": 32,
+    "rarity": 5,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1932,
+    "shortName": "Barnsley",
+    "leagueId": 31,
+    "rarity": 3,
+    "png": true,
+    "code": "BRN"
+  },
+  {
+    "id": 1933,
+    "shortName": "Wycombe Wanderers",
+    "leagueId": 31,
+    "rarity": 4,
+    "png": true,
+    "code": "WYC"
+  },
+  {
+    "id": 1934,
+    "shortName": "Swindon Town",
+    "leagueId": 32,
+    "rarity": 5,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1935,
+    "shortName": "Colchester United",
+    "leagueId": 33,
+    "rarity": 5,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1936,
+    "shortName": "Cheltenham Town",
+    "leagueId": 33,
+    "rarity": 5,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1938,
+    "shortName": "Peterborough United",
+    "leagueId": 32,
+    "rarity": 4,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1939,
+    "shortName": "Huddersfield Town",
+    "leagueId": 31,
+    "rarity": 3,
+    "png": true,
+    "code": "HUD"
+  },
+  {
+    "id": 1940,
+    "shortName": "Mansfield Town",
+    "leagueId": 33,
+    "rarity": 5,
+    "png": true,
+    "code": "MAN"
+  },
+  {
+    "id": 1943,
+    "shortName": "Bournemouth",
+    "leagueId": 31,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "BOU"
+  },
+  {
+    "id": 1944,
+    "shortName": "Cambridge United",
+    "leagueId": 33,
+    "rarity": 5,
+    "png": true,
+    "code": "CAM"
+  },
+  {
+    "id": 1949,
+    "shortName": "Scunthorpe United",
+    "leagueId": 33,
+    "rarity": 5,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1951,
+    "shortName": "Oxford United",
+    "leagueId": 32,
+    "rarity": 4,
+    "png": true,
+    "code": "OXF"
+  },
+  {
+    "id": 1952,
+    "shortName": "Hull City",
+    "leagueId": 32,
+    "rarity": 3,
+    "png": true,
+    "code": "HUL"
+  },
+  {
+    "id": 1954,
+    "shortName": "Southend United",
+    "leagueId": 33,
+    "rarity": 4,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1955,
+    "shortName": "Rochdale",
+    "leagueId": 32,
+    "rarity": 4,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1958,
+    "shortName": "Leyton Orient",
+    "leagueId": 33,
+    "rarity": 5,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1960,
+    "shortName": "Swansea City",
+    "leagueId": 31,
+    "rarity": 3,
+    "png": true,
+    "code": "SWE"
+  },
+  {
+    "id": 1961,
+    "shortName": "Cardiff City",
+    "leagueId": 31,
+    "rarity": 3,
+    "png": true,
+    "code": "CAR"
+  },
+  {
+    "id": 1962,
+    "shortName": "Bristol Rovers",
+    "leagueId": 32,
+    "rarity": 4,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1968,
+    "shortName": "Cádiz CF",
+    "leagueId": 2,
+    "rarity": 3,
+    "png": true,
+    "code": "CAD"
+  },
+  {
+    "id": 1970,
+    "shortName": "Tigres U.A.N.L.",
+    "leagueId": 13,
+    "rarity": 2,
+    "png": true,
+    "code": "TIG"
+  },
+  {
+    "id": 2,
+    "shortName": "Aston Villa",
+    "leagueId": 1,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "VIL"
+  },
+  {
+    "id": 2013,
+    "shortName": "Eupen",
+    "leagueId": 12,
+    "rarity": 3,
+    "png": true,
+    "code": "EUP"
+  },
+  {
+    "id": 2017,
+    "shortName": "TSV Hartberg",
+    "leagueId": 20,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 2023,
+    "shortName": "SD Ponferradina",
+    "leagueId": 34,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 2055,
+    "shortName": "Sangju Sangmu",
+    "leagueId": 30,
+    "rarity": 3,
+    "png": true,
+    "code": "SAN"
+  },
+  {
+    "id": 2056,
+    "shortName": "Daegu FC",
+    "leagueId": 30,
+    "rarity": 5,
+    "png": true,
+    "code": "DAE"
+  },
+  {
+    "id": 206,
+    "shortName": "Hellas Verona",
+    "leagueId": 3,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "HEL"
+  },
+  {
+    "id": 209,
+    "shortName": "Sturm Graz",
+    "leagueId": 20,
+    "rarity": 4,
+    "png": true,
+    "code": "STU"
+  },
+  {
+    "id": 21,
+    "shortName": "Bayern München",
+    "leagueId": 4,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "BAY"
+  },
+  {
+    "id": 210,
+    "shortName": "SM Caen",
+    "leagueId": 37,
+    "rarity": 3,
+    "png": true,
+    "code": "CEA"
+  },
+  {
+    "id": 212,
+    "shortName": "La Berrichonne",
+    "leagueId": 37,
+    "rarity": 5,
+    "png": true,
+    "code": "CHT"
+  },
+  {
+    "id": 217,
+    "shortName": "FC Lorient",
+    "leagueId": 5,
+    "rarity": 3,
+    "png": true,
+    "code": "LOR"
+  },
+  {
+    "id": 219,
+    "shortName": "Olympique de Marseille",
+    "leagueId": 5,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "MAR"
+  },
+  {
+    "id": 22,
+    "shortName": "Borussia Dortmund",
+    "leagueId": 4,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "DOR"
+  },
+  {
+    "id": 224,
+    "shortName": "Nîmes Olympique",
+    "leagueId": 5,
+    "rarity": 5,
+    "png": true,
+    "code": "NIM"
+  },
+  {
+    "id": 226,
+    "shortName": "FC Sochaux",
+    "leagueId": 37,
+    "rarity": 3,
+    "png": true,
+    "code": "SHX"
+  },
+  {
+    "id": 229,
+    "shortName": "Anderlecht",
+    "leagueId": 12,
+    "rarity": 2,
+    "png": true,
+    "code": "AND"
+  },
+  {
+    "id": 23,
+    "shortName": "Borussia M'gladbach",
+    "leagueId": 4,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "BMN"
+  },
+  {
+    "id": 230,
+    "shortName": "Antwerp",
+    "leagueId": 12,
+    "rarity": 3,
+    "png": true,
+    "code": "ROY"
+  },
+  {
+    "id": 231,
+    "shortName": "Club Brugge",
+    "leagueId": 12,
+    "rarity": 2,
+    "png": true,
+    "code": "BRU"
+  },
+  {
+    "id": 232,
+    "shortName": "Standard Liege",
+    "leagueId": 12,
+    "rarity": 2,
+    "png": true,
+    "code": "LIE"
+  },
+  {
+    "id": 234,
+    "shortName": "SL Benfica",
+    "leagueId": 7,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "BEN"
+  },
+  {
+    "id": 236,
+    "shortName": "FC Porto",
+    "leagueId": 7,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "POR"
+  },
+  {
+    "id": 237,
+    "shortName": "Sporting CP",
+    "leagueId": 7,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "SPO"
+  },
+  {
+    "id": 240,
+    "shortName": "Atlético de Madrid",
+    "leagueId": 2,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "ATL"
+  },
+  {
+    "id": 241,
+    "shortName": "FC Barcelona",
+    "leagueId": 2,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "BAR"
+  },
+  {
+    "id": 243,
+    "shortName": "Real Madrid",
+    "leagueId": 2,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "REA"
+  },
+  {
+    "id": 244,
+    "shortName": "Real Zaragoza",
+    "leagueId": 34,
+    "rarity": 3,
+    "png": true,
+    "code": "ZAR"
+  },
+  {
+    "id": 245,
+    "shortName": "Ajax",
+    "leagueId": 10,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "AJA"
+  },
+  {
+    "id": 246,
+    "shortName": "Feyenoord",
+    "leagueId": 10,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "FEY"
+  },
+  {
+    "id": 247,
+    "shortName": "PSV",
+    "leagueId": 10,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "PSV"
+  },
+  {
+    "id": 25,
+    "shortName": "SC Freiburg",
+    "leagueId": 4,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "FRE"
+  },
+  {
+    "id": 252,
+    "shortName": "LASK",
+    "leagueId": 20,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 254,
+    "shortName": "Rapid Wien",
+    "leagueId": 20,
+    "rarity": 3,
+    "png": true,
+    "code": "RAP"
+  },
+  {
+    "id": 256,
+    "shortName": "Austria Wien",
+    "leagueId": 20,
+    "rarity": 3,
+    "png": true,
+    "code": "AUS"
+  },
+  {
+    "id": 260,
+    "shortName": "CD Tenerife",
+    "leagueId": 34,
+    "rarity": 3,
+    "png": true,
+    "code": "TEN"
+  },
+  {
+    "id": 269,
+    "shortName": "Brondby IF",
+    "leagueId": 23,
+    "rarity": 3,
+    "png": true,
+    "code": "BRO"
+  },
+  {
+    "id": 27,
+    "shortName": "Hansa Rostock",
+    "leagueId": 41,
+    "rarity": 5,
+    "png": true,
+    "code": "HNS"
+  },
+  {
+    "id": 271,
+    "shortName": "Aarhus GF",
+    "leagueId": 23,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 272,
+    "shortName": "Odense Boldklub",
+    "leagueId": 23,
+    "rarity": 5,
+    "png": true,
+    "code": "ODE"
+  },
+  {
+    "id": 28,
+    "shortName": "Hamburger SV",
+    "leagueId": 35,
+    "rarity": 3,
+    "png": true,
+    "code": "HAM"
+  },
+  {
+    "id": 29,
+    "shortName": "1. FC Kaiserslautern",
+    "leagueId": 41,
+    "rarity": 4,
+    "png": true,
+    "code": "KAI"
+  },
+  {
+    "id": 294,
+    "shortName": "ESTAC Troyes",
+    "leagueId": 37,
+    "rarity": 3,
+    "png": true,
+    "code": "EST"
+  },
+  {
+    "id": 298,
+    "shortName": "Rosenborg BK",
+    "leagueId": 21,
+    "rarity": 3,
+    "png": true,
+    "code": "ROS"
+  },
+  {
+    "id": 3,
+    "shortName": "Blackburn Rovers",
+    "leagueId": 31,
+    "rarity": 3,
+    "png": true,
+    "code": "BLA"
+  },
+  {
+    "id": 300,
+    "shortName": "Viking FK",
+    "leagueId": 21,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 305,
+    "shortName": "Bohemians",
+    "leagueId": 26,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 306,
+    "shortName": "Shamrock Rovers",
+    "leagueId": 26,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 308,
+    "shortName": "Universitatea Craiova",
+    "leagueId": 318,
+    "rarity": 2,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 31,
+    "shortName": "1. FC Köln",
+    "leagueId": 4,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "KOL"
+  },
+  {
+    "id": 319,
+    "shortName": "IFK Göteborg",
+    "leagueId": 22,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 32,
+    "shortName": "Bayer 04 Leverkusen",
+    "leagueId": 4,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "LEV"
+  },
+  {
+    "id": 320,
+    "shortName": "Malmö FF",
+    "leagueId": 22,
+    "rarity": 3,
+    "png": true,
+    "code": "MAL"
+  },
+  {
+    "id": 324,
+    "shortName": "Servette FC",
+    "leagueId": 15,
+    "rarity": 2,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 325,
+    "shortName": "Galatasaray",
+    "leagueId": 8,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "GAL"
+  },
+  {
+    "id": 326,
+    "shortName": "Fenerbahçe",
+    "leagueId": 8,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "FEN"
+  },
+  {
+    "id": 327,
+    "shortName": "Beşiktaş",
+    "leagueId": 8,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "BES"
+  },
+  {
+    "id": 33,
+    "shortName": "TSV 1860 München",
+    "leagueId": 41,
+    "rarity": 4,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 34,
+    "shortName": "FC Schalke 04",
+    "leagueId": 4,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "SCH"
+  },
+  {
+    "id": 347,
+    "shortName": "Lecce",
+    "leagueId": 36,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 357,
+    "shortName": "Morecambe",
+    "leagueId": 33,
+    "rarity": 5,
+    "png": true,
+    "code": "MOR"
+  },
+  {
+    "id": 36,
+    "shortName": "VfB Stuttgart",
+    "leagueId": 4,
+    "rarity": 3,
+    "png": true,
+    "code": "VFB"
+  },
+  {
+    "id": 361,
+    "shortName": "Stevenage",
+    "leagueId": 33,
+    "rarity": 5,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 378,
+    "shortName": "Stade Brestois 29",
+    "leagueId": 5,
+    "rarity": 3,
+    "png": true,
+    "code": "BRE"
+  },
+  {
+    "id": 379,
+    "shortName": "Stade de Reims",
+    "leagueId": 5,
+    "rarity": 2,
+    "png": true,
+    "code": "REI"
+  },
+  {
+    "id": 38,
+    "shortName": "Werder Bremen",
+    "leagueId": 4,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "WER"
+  },
+  {
+    "id": 39,
+    "shortName": "Atalanta",
+    "leagueId": 3,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "ATA"
+  },
+  {
+    "id": 4,
+    "shortName": "Bolton Wanderers",
+    "leagueId": 33,
+    "rarity": 4,
+    "png": true,
+    "code": "BOL"
+  },
+  {
+    "id": 417,
+    "shortName": "Molde FK",
+    "leagueId": 21,
+    "rarity": 3,
+    "png": true,
+    "code": "MOL"
+  },
+  {
+    "id": 420,
+    "shortName": "Górnik Zabrze",
+    "leagueId": 16,
+    "rarity": 3,
+    "png": true,
+    "code": "GOR"
+  },
+  {
+    "id": 422,
+    "shortName": "Cork City",
+    "leagueId": 26,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 423,
+    "shortName": "St. Patrick's Athletic",
+    "leagueId": 26,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 432,
+    "shortName": "Helsingborgs IF",
+    "leagueId": 22,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 433,
+    "shortName": "AIK",
+    "leagueId": 22,
+    "rarity": 3,
+    "png": true,
+    "code": "AIK"
+  },
+  {
+    "id": 436,
+    "shortName": "Trabzonspor",
+    "leagueId": 8,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "TRA"
+  },
+  {
+    "id": 44,
+    "shortName": "Inter",
+    "leagueId": 3,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "INT"
+  },
+  {
+    "id": 445,
+    "shortName": "Derry City",
+    "leagueId": 26,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 448,
+    "shortName": "Athletic Club de Bilbao",
+    "leagueId": 2,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "BIL"
+  },
+  {
+    "id": 449,
+    "shortName": "Real Betis",
+    "leagueId": 2,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "BET"
+  },
+  {
+    "id": 450,
+    "shortName": "RC Celta de Vigo",
+    "leagueId": 2,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "VIG"
+  },
+  {
+    "id": 452,
+    "shortName": "RCD Espanyol",
+    "leagueId": 34,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "ESP"
+  },
+  {
+    "id": 453,
+    "shortName": "RCD Mallorca",
+    "leagueId": 34,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 457,
+    "shortName": "Real Sociedad",
+    "leagueId": 2,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "SOC"
+  },
+  {
+    "id": 459,
+    "shortName": "Real Sporting de Gijón",
+    "leagueId": 34,
+    "rarity": 3,
+    "png": true,
+    "code": "GIJ"
+  },
+  {
+    "id": 46,
+    "shortName": "Lazio",
+    "leagueId": 3,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "LAZ"
+  },
+  {
+    "id": 461,
+    "shortName": "Valencia CF",
+    "leagueId": 2,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "VAL"
+  },
+  {
+    "id": 462,
+    "shortName": "Real Valladolid",
+    "leagueId": 2,
+    "rarity": 2,
+    "png": true,
+    "code": "VAL"
+  },
+  {
+    "id": 463,
+    "shortName": "Deportivo Alavés",
+    "leagueId": 2,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "ALA"
+  },
+  {
+    "id": 467,
+    "shortName": "SD Eibar",
+    "leagueId": 2,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "EIB"
+  },
+  {
+    "id": 468,
+    "shortName": "Elche CF",
+    "leagueId": 2,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 47,
+    "shortName": "Milan",
+    "leagueId": 3,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "MIL"
+  },
+  {
+    "id": 472,
+    "shortName": "UD Las Palmas",
+    "leagueId": 34,
+    "rarity": 3,
+    "png": true,
+    "code": "LPA"
+  },
+  {
+    "id": 479,
+    "shortName": "CA Osasuna",
+    "leagueId": 2,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "OSA"
+  },
+  {
+    "id": 48,
+    "shortName": "Napoli",
+    "leagueId": 3,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "NAP"
+  },
+  {
+    "id": 480,
+    "shortName": "Rayo Vallecano",
+    "leagueId": 34,
+    "rarity": 3,
+    "png": true,
+    "code": "RAY"
+  },
+  {
+    "id": 481,
+    "shortName": "Sevilla FC",
+    "leagueId": 2,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "SEV"
+  },
+  {
+    "id": 483,
+    "shortName": "Villarreal CF",
+    "leagueId": 2,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "VIL"
+  },
+  {
+    "id": 485,
+    "shortName": "Hannover 96",
+    "leagueId": 35,
+    "rarity": 3,
+    "png": true,
+    "code": "HAN"
+  },
+  {
+    "id": 487,
+    "shortName": "VfL Osnabrück",
+    "leagueId": 35,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 492,
+    "shortName": "SV Wehen Wiesbaden",
+    "leagueId": 41,
+    "rarity": 5,
+    "png": true,
+    "code": "WIE"
+  },
+  {
+    "id": 5,
+    "shortName": "Chelsea",
+    "leagueId": 1,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "CHE"
+  },
+  {
+    "id": 50,
+    "shortName": "Parma",
+    "leagueId": 3,
+    "rarity": 3,
+    "png": true,
+    "code": "PAR"
+  },
+  {
+    "id": 503,
+    "shortName": "Dynamo Dresden",
+    "leagueId": 41,
+    "rarity": 3,
+    "png": true,
+    "code": "DRE"
+  },
+  {
+    "id": 506,
+    "shortName": "Erzgebirge Aue",
+    "leagueId": 35,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 114912,
+    "shortName": "Roma FC",
+    "leagueId": 3,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "ROM"
+  },
+  {
+    "id": 54,
+    "shortName": "Torino",
+    "leagueId": 3,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "TOR"
+  },
+  {
+    "id": 543,
+    "shortName": "Jahn Regensburg",
+    "leagueId": 35,
+    "rarity": 5,
+    "png": true,
+    "code": "REG"
+  },
+  {
+    "id": 55,
+    "shortName": "Udinese",
+    "leagueId": 3,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "UDI"
+  },
+  {
+    "id": 561,
+    "shortName": "Forest Green Rovers",
+    "leagueId": 33,
+    "rarity": 5,
+    "png": true,
+    "code": "FOR"
+  },
+  {
+    "id": 563,
+    "shortName": "Sligo Rovers",
+    "leagueId": 26,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 57,
+    "shortName": "AJ Auxerre",
+    "leagueId": 37,
+    "rarity": 3,
+    "png": true,
+    "code": "AUX"
+  },
+  {
+    "id": 573,
+    "shortName": "Málaga CF",
+    "leagueId": 34,
+    "rarity": 3,
+    "png": true,
+    "code": "MAL"
+  },
+  {
+    "id": 576,
+    "shortName": "Holstein Kiel",
+    "leagueId": 35,
+    "rarity": 4,
+    "png": true,
+    "code": "HOL"
+  },
+  {
+    "id": 59,
+    "shortName": "Girondins de Bordeaux",
+    "leagueId": 5,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "BOR"
+  },
+  {
+    "id": 605,
+    "shortName": "Al Hilal",
+    "leagueId": 29,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 607,
+    "shortName": "Al Ittihad",
+    "leagueId": 29,
+    "rarity": 3,
+    "png": true,
+    "code": "ALI"
+  },
+  {
+    "id": 614,
+    "shortName": "AC Ajaccio",
+    "leagueId": 37,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 62,
+    "shortName": "En Avant Guingamp",
+    "leagueId": 37,
+    "rarity": 3,
+    "png": true,
+    "code": "GUI"
+  },
+  {
+    "id": 621,
+    "shortName": "Livingston",
+    "leagueId": 27,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 631,
+    "shortName": "Ross County FC",
+    "leagueId": 27,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 634,
+    "shortName": "Fortuna Sittard",
+    "leagueId": 10,
+    "rarity": 4,
+    "png": true,
+    "code": "FSI"
+  },
+  {
+    "id": 64,
+    "shortName": "Racing Club de Lens",
+    "leagueId": 5,
+    "rarity": 3,
+    "png": true,
+    "code": "LEN"
+  },
+  {
+    "id": 65,
+    "shortName": "LOSC Lille",
+    "leagueId": 5,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "LIL"
+  },
+  {
+    "id": 650,
+    "shortName": "ADO Den Haag",
+    "leagueId": 10,
+    "rarity": 4,
+    "png": true,
+    "code": "HAA"
+  },
+  {
+    "id": 66,
+    "shortName": "Olympique Lyonnais",
+    "leagueId": 5,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "LYO"
+  },
+  {
+    "id": 670,
+    "shortName": "Charleroi",
+    "leagueId": 12,
+    "rarity": 3,
+    "png": true,
+    "code": "CHR"
+  },
+  {
+    "id": 673,
+    "shortName": "RC Genk",
+    "leagueId": 12,
+    "rarity": 2,
+    "png": true,
+    "code": "GEK"
+  },
+  {
+    "id": 674,
+    "shortName": "AA Gent",
+    "leagueId": 12,
+    "rarity": 2,
+    "png": true,
+    "code": "GNT"
+  },
+  {
+    "id": 68,
+    "shortName": "FC Metz",
+    "leagueId": 5,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "MET"
+  },
+  {
+    "id": 680,
+    "shortName": "Sint-Truiden",
+    "leagueId": 12,
+    "rarity": 3,
+    "png": true,
+    "code": "SIN"
+  },
+  {
+    "id": 682,
+    "shortName": "Oostende",
+    "leagueId": 12,
+    "rarity": 2,
+    "png": true,
+    "code": "OOS"
+  },
+  {
+    "id": 687,
+    "shortName": "Columbus Crew SC",
+    "leagueId": 11,
+    "rarity": 2,
+    "png": true,
+    "code": "COM"
+  },
+  {
+    "id": 688,
+    "shortName": "D.C. United",
+    "leagueId": 11,
+    "rarity": 3,
+    "png": true,
+    "code": "DCU"
+  },
+  {
+    "id": 689,
+    "shortName": "New York Red Bulls",
+    "leagueId": 11,
+    "rarity": 2,
+    "png": true,
+    "code": "RED"
+  },
+  {
+    "id": 69,
+    "shortName": "AS Monaco",
+    "leagueId": 5,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "MON"
+  },
+  {
+    "id": 691,
+    "shortName": "New England Revolution",
+    "leagueId": 11,
+    "rarity": 3,
+    "png": true,
+    "code": "REV"
+  },
+  {
+    "id": 693,
+    "shortName": "Chicago Fire",
+    "leagueId": 11,
+    "rarity": 2,
+    "png": true,
+    "code": "CHI"
+  },
+  {
+    "id": 694,
+    "shortName": "Colorado Rapids",
+    "leagueId": 11,
+    "rarity": 3,
+    "png": true,
+    "code": "COL"
+  },
+  {
+    "id": 695,
+    "shortName": "FC Dallas",
+    "leagueId": 11,
+    "rarity": 2,
+    "png": true,
+    "code": "DAL"
+  },
+  {
+    "id": 696,
+    "shortName": "Sporting KC",
+    "leagueId": 11,
+    "rarity": 2,
+    "png": true,
+    "code": "KAN"
+  },
+  {
+    "id": 697,
+    "shortName": "Los Angeles Galaxy",
+    "leagueId": 11,
+    "rarity": 2,
+    "png": true,
+    "code": "GAL"
+  },
+  {
+    "id": 698,
+    "shortName": "Houston Dynamo",
+    "leagueId": 11,
+    "rarity": 3,
+    "png": true,
+    "code": "HOU"
+  },
+  {
+    "id": 7,
+    "shortName": "Everton",
+    "leagueId": 1,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "EVE"
+  },
+  {
+    "id": 70,
+    "shortName": "Montpellier HSC",
+    "leagueId": 5,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "MOT"
+  },
+  {
+    "id": 700,
+    "shortName": "IF Elfsborg",
+    "leagueId": 22,
+    "rarity": 4,
+    "png": true,
+    "code": "ELF"
+  },
+  {
+    "id": 702,
+    "shortName": "IFK Norrköping",
+    "leagueId": 22,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 705,
+    "shortName": "Örebro SK",
+    "leagueId": 22,
+    "rarity": 5,
+    "png": true,
+    "code": "ÖRE"
+  },
+  {
+    "id": 708,
+    "shortName": "Hammarby IF",
+    "leagueId": 22,
+    "rarity": 4,
+    "png": true,
+    "code": "HAM"
+  },
+  {
+    "id": 71,
+    "shortName": "FC Nantes",
+    "leagueId": 5,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "NAT"
+  },
+  {
+    "id": 710,
+    "shortName": "Djurgardens IF",
+    "leagueId": 22,
+    "rarity": 3,
+    "png": true,
+    "code": "DJU"
+  },
+  {
+    "id": 711,
+    "shortName": "BK Häcken",
+    "leagueId": 22,
+    "rarity": 3,
+    "png": true,
+    "code": "HAC"
+  },
+  {
+    "id": 72,
+    "shortName": "OGC Nice",
+    "leagueId": 5,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "NIC"
+  },
+  {
+    "id": 73,
+    "shortName": "Paris Saint-Germain",
+    "leagueId": 5,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "PSG"
+  },
+  {
+    "id": 74,
+    "shortName": "Stade Rennais",
+    "leagueId": 5,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "REN"
+  },
+  {
+    "id": 741,
+    "shortName": "Antalyaspor",
+    "leagueId": 8,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "ANT"
+  },
+  {
+    "id": 744,
+    "shortName": "Rio Ave",
+    "leagueId": 7,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "RIO"
+  },
+  {
+    "id": 753,
+    "shortName": "Waterford FC",
+    "leagueId": 26,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 76,
+    "shortName": "RC Strasbourg",
+    "leagueId": 5,
+    "rarity": 2,
+    "png": true,
+    "code": "STR"
+  },
+  {
+    "id": 77,
+    "shortName": "Aberdeen",
+    "leagueId": 27,
+    "rarity": 3,
+    "png": true,
+    "code": "ABE"
+  },
+  {
+    "id": 78,
+    "shortName": "Celtic",
+    "leagueId": 27,
+    "rarity": 3,
+    "png": true,
+    "code": "CEL"
+  },
+  {
+    "id": 8,
+    "shortName": "Leeds United",
+    "leagueId": 1,
+    "rarity": 3,
+    "png": true,
+    "code": "LED"
+  },
+  {
+    "id": 81,
+    "shortName": "Hibernian",
+    "leagueId": 27,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 819,
+    "shortName": "FC Kobenhavn",
+    "leagueId": 23,
+    "rarity": 3,
+    "png": true,
+    "code": "KOB"
+  },
+  {
+    "id": 82,
+    "shortName": "Kilmarnock",
+    "leagueId": 27,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 820,
+    "shortName": "Aalborg BK",
+    "leagueId": 23,
+    "rarity": 3,
+    "png": true,
+    "code": "AAL"
+  },
+  {
+    "id": 83,
+    "shortName": "Motherwell",
+    "leagueId": 27,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 837,
+    "shortName": "Dundalk FC",
+    "leagueId": 26,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 86,
+    "shortName": "Rangers",
+    "leagueId": 27,
+    "rarity": 3,
+    "png": true,
+    "code": "RAN"
+  },
+  {
+    "id": 873,
+    "shortName": "Lech Poznań",
+    "leagueId": 16,
+    "rarity": 3,
+    "png": true,
+    "code": "POZ"
+  },
+  {
+    "id": 88,
+    "shortName": "Birmingham City",
+    "leagueId": 31,
+    "rarity": 3,
+    "png": true,
+    "code": "BIR"
+  },
+  {
+    "id": 89,
+    "shortName": "Charlton Athletic",
+    "leagueId": 32,
+    "rarity": 3,
+    "png": true,
+    "code": "CHA"
+  },
+  {
+    "id": 894,
+    "shortName": "FC Zürich",
+    "leagueId": 15,
+    "rarity": 2,
+    "png": true,
+    "code": "ZUR"
+  },
+  {
+    "id": 896,
+    "shortName": "FC Basel",
+    "leagueId": 15,
+    "rarity": 2,
+    "png": true,
+    "code": "BAS"
+  },
+  {
+    "id": 897,
+    "shortName": "FC Luzern",
+    "leagueId": 15,
+    "rarity": 2,
+    "png": true,
+    "code": "LUZ"
+  },
+  {
+    "id": 898,
+    "shortName": "FC St. Gallen",
+    "leagueId": 15,
+    "rarity": 2,
+    "png": true,
+    "code": "SGA"
+  },
+  {
+    "id": 9,
+    "shortName": "Liverpool",
+    "leagueId": 1,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "LIV"
+  },
+  {
+    "id": 900,
+    "shortName": "BSC Young Boys",
+    "leagueId": 15,
+    "rarity": 3,
+    "png": true,
+    "code": "BOY"
+  },
+  {
+    "id": 91,
+    "shortName": "Derby County",
+    "leagueId": 31,
+    "rarity": 3,
+    "png": true,
+    "code": "DER"
+  },
+  {
+    "id": 917,
+    "shortName": "Stabak Fotball",
+    "leagueId": 21,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 918,
+    "shortName": "FK Bodo/Glimt",
+    "leagueId": 21,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 919,
+    "shortName": "SK Brann",
+    "leagueId": 21,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 92,
+    "shortName": "Grimsby Town",
+    "leagueId": 33,
+    "rarity": 5,
+    "png": true,
+    "code": "GRI"
+  },
+  {
+    "id": 920,
+    "shortName": "Valerenga",
+    "leagueId": 21,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 922,
+    "shortName": "Stromsgodset Toppfotball",
+    "leagueId": 21,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 94,
+    "shortName": "Ipswich Town",
+    "leagueId": 32,
+    "rarity": 4,
+    "png": true,
+    "code": "IPS"
+  },
+  {
+    "id": 95,
+    "shortName": "Leicester City",
+    "leagueId": 1,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "LEI"
+  },
+  {
+    "id": 97,
+    "shortName": "Millwall",
+    "leagueId": 31,
+    "rarity": 3,
+    "png": true,
+    "code": "MIL"
+  },
+  {
+    "id": 981,
+    "shortName": "Seongnam FC",
+    "leagueId": 30,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 982,
+    "shortName": "FC Seoul",
+    "leagueId": 30,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 983,
+    "shortName": "Suwon Bluewings",
+    "leagueId": 30,
+    "rarity": 3,
+    "png": true,
+    "code": "SUW"
+  },
+  {
+    "id": 211,
+    "shortName": "Dinamo Zagreb",
+    "leagueId": 317,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "DIN"
+  },
+  {
+    "id": 100767,
+    "shortName": "Spartak Moscow",
+    "leagueId": 6,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 315,
+    "shortName": "CSKA Moskva",
+    "leagueId": 6,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 100765,
+    "shortName": "Lokomotiv Moskva",
+    "leagueId": 6,
+    "rarity": 0,
+    "kit": false,
+    "png": true,
+    "code": "LOK"
+  },
+  {
+    "id": 280,
+    "shortName": "Olympiacos CFP",
+    "leagueId": 14,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "OLY"
+  },
+  {
+    "id": 278,
+    "shortName": "AEK Athens",
+    "leagueId": 14,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 101059,
+    "shortName": "Shakhtar Donetsk",
+    "leagueId": 24,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "SHA"
+  },
+  {
+    "id": 101047,
+    "shortName": "Dynamo Kyiv",
+    "leagueId": 24,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 266,
+    "shortName": "Slavia Praha",
+    "leagueId": 40,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": "SLA"
+  },
+  {
+    "id": 267,
+    "shortName": "Sparta Praha",
+    "leagueId": 40,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1884,
+    "shortName": "Panathinaikos FC",
+    "leagueId": 14,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 393,
+    "shortName": "PAOK FC",
+    "leagueId": 14,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110930,
+    "shortName": "Orlando Pirates",
+    "leagueId": 38,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110929,
+    "shortName": "Kaizer Chiefs",
+    "leagueId": 38,
+    "rarity": 3,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 100325,
+    "shortName": "HJK Helsinki",
+    "leagueId": 19,
+    "rarity": 2,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110468,
+    "shortName": "Viktoria Plzeň",
+    "leagueId": 40,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112893,
+    "shortName": "Inter Miami CF",
+    "leagueId": 11,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 114162,
+    "shortName": "Nashville SC",
+    "leagueId": 11,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+
+  {
+    "id": 111010 ,
+    "shortName": "Alianza Lima",
+    "leagueId": 1003,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 114577 ,
+    "shortName": "Always Ready",
+    "leagueId": 1014,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 114598 ,
+    "shortName": "Atlético Grau",
+    "leagueId": 1014,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110987 ,
+    "shortName": "Aucas",
+    "leagueId": 1014,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 114582 ,
+    "shortName": "Binacional",
+    "leagueId": 1003,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110968 ,
+    "shortName": "Bolívar",
+    "leagueId": 1003,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110989 ,
+    "shortName": "Caracas F.C.",
+    "leagueId": 1003,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112671 ,
+    "shortName": "Club Nacional",
+    "leagueId": 1014,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110984 ,
+    "shortName": "CS Emelec",
+    "leagueId": 1014,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112659 ,
+    "shortName": "Cusco FC",
+    "leagueId": 1014,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 114580 ,
+    "shortName": "Delfín S.C.",
+    "leagueId": 1003,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111331 ,
+    "shortName": "El Nacional",
+    "leagueId": 1014,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111332 ,
+    "shortName": "EST. de Mérida",
+    "leagueId": 1003,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111334 ,
+    "shortName": "FBC Melgar",
+    "leagueId": 1014,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111002 ,
+    "shortName": "Fénix",
+    "leagueId": 1014,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112908 ,
+    "shortName": "Independiente",
+    "leagueId": 1003,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110986 ,
+    "shortName": "LDU Quito",
+    "leagueId": 1003,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111008 ,
+    "shortName": "Libertad",
+    "leagueId": 1003,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111326 ,
+    "shortName": "Liverpool Uruguay",
+    "leagueId": 1014,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 114623 ,
+    "shortName": "Llaneros",
+    "leagueId": 1014,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111006 ,
+    "shortName": "Luqueno",
+    "leagueId": 1014,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110992 ,
+    "shortName": "Mineros",
+    "leagueId": 1014,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111325 ,
+    "shortName": "Nacional",
+    "leagueId": 1003,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112667 ,
+    "shortName": "Nacional Potosí",
+    "leagueId": 1014,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110970 ,
+    "shortName": "O. Petrolero",
+    "leagueId": 1014,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 101108 ,
+    "shortName": "Olimpia",
+    "leagueId": 1003,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 101110 ,
+    "shortName": "Penarol",
+    "leagueId": 1003,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112184 ,
+    "shortName": "River Plate",
+    "leagueId": 1014,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112080 ,
+    "shortName": "Sol de América",
+    "leagueId": 1014,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 114511 ,
+    "shortName": "Sport Huancayo",
+    "leagueId": 1014,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111715 ,
+    "shortName": "Tigre",
+    "leagueId": 1003,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 114581 ,
+    "shortName": "U. Católica",
+    "leagueId": 1014,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110974 ,
+    "shortName": "Wilstermann",
+    "leagueId": 1003,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112912 ,
+    "shortName": "Zamora FC",
+    "leagueId": 1014,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+
+  {
+    "id": 1877 ,
+    "shortName": "Boca Juniors",
+    "leagueId": 1003,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1876 ,
+    "shortName": "River Plate",
+    "leagueId": 1003,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112985 ,
+    "shortName": "Shijiazhuang Ever Bright F.C",
+    "leagueId": 20001,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112961 ,
+    "shortName": "Qingdao Huanghai F.C.",
+    "leagueId": 20001,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111701 ,
+    "shortName": "Al Ain FC",
+    "leagueId": 0,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110980 ,
+    "shortName": "Colo-Colo",
+    "leagueId": 1003,
+    "rarity": 1,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111329 ,
+    "shortName": "Club Guaraní",
+    "leagueId": 1003,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 101028,
+    "shortName": "Hatayspor",
+    "leagueId": 8,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 114899,
+    "shortName": "Mazatlán FC",
+    "leagueId": 13,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111811,
+    "shortName": "AC Monza",
+    "leagueId": 36,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111117,
+    "shortName": "Fatih Karagümrük",
+    "leagueId": 8,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 101145,
+    "shortName": "Kashiwa",
+    "leagueId": 25,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 113974,
+    "shortName": "Spezia Calcio",
+    "leagueId": 3,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 489,
+    "shortName": "SC Farense",
+    "leagueId": 7,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 100851,
+    "shortName": "FC Cartagena",
+    "leagueId": 34,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1891,
+    "shortName": "CD Nacional",
+    "leagueId": 7,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 749,
+    "shortName": "Büyüksehir Belediye Erzurumspor",
+    "leagueId": 8,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 675,
+    "shortName": "K. Beerschot V.A.",
+    "leagueId": 12,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 114604,
+    "shortName": "Macarthur FC",
+    "leagueId": 28,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 100087,
+    "shortName": "Oud-Heverlee Leuven",
+    "leagueId": 12,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110981,
+    "shortName": "Barcelona SC Guayaquil",
+    "leagueId": 1003,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 114575,
+    "shortName": "River Plate",
+    "leagueId": 1014,
+    "rarity": 2,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 114024,
+    "shortName": "Plaza Colonia",
+    "leagueId": 1014,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 476,
+    "shortName": "UD Logroñés",
+    "leagueId": 34,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 780,
+    "shortName": "SV Ried",
+    "leagueId": 20,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 822,
+    "shortName": "Vejle Boldklub",
+    "leagueId": 23,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 114004,
+    "shortName": "Stal Mielec",
+    "leagueId": 16,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 15021,
+    "shortName": "CE Sabadell",
+    "leagueId": 34,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110321,
+    "shortName": "Pau FC",
+    "leagueId": 37,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 100852,
+    "shortName": "CD Castellón",
+    "leagueId": 34,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+
+  {
+    "id": 1476,
+    "shortName": "Busan IPark",
+    "leagueId": 30,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110750,
+    "shortName": "UTA Arad",
+    "leagueId": 318,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1862,
+    "shortName": "FC Lausanne-Sport",
+    "leagueId": 15,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112258,
+    "shortName": "Gwangju FC",
+    "leagueId": 30,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1829,
+    "shortName": "VfB Lübeck",
+    "leagueId": 41,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 114398,
+    "shortName": "Türkgücü München",
+    "leagueId": 41,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1524,
+    "shortName": "IK Start",
+    "leagueId": 21,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 523,
+    "shortName": "1.FC Saarbrücken",
+    "leagueId": 41,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112072,
+    "shortName": "Mjällby AIF",
+    "leagueId": 22,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110967,
+    "shortName": "Blooming",
+    "leagueId": 1014,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 181,
+    "shortName": "Dundee United FC",
+    "leagueId": 27,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111276,
+    "shortName": "USL Dunkerque",
+    "leagueId": 37,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 113197,
+    "shortName": "Yokohama FC",
+    "leagueId": 25,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 381,
+    "shortName": "Barrow AFC",
+    "leagueId": 33,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112916,
+    "shortName": "Aragua FC",
+    "leagueId": 1014,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1755,
+    "shortName": "Aalesunds FK",
+    "leagueId": 21,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 100759,
+    "shortName": "ACS FC Arges",
+    "leagueId": 318,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 286,
+    "shortName": "FC Vaduz",
+    "leagueId": 15,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 110501,
+    "shortName": "SC Verl",
+    "leagueId": 41,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 113743,
+    "shortName": "Varbergs BoIS",
+    "leagueId": 22,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112511,
+    "shortName": "Warta Poznań",
+    "leagueId": 16,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 834,
+    "shortName": "Shelbourne FC",
+    "leagueId": 26,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 1757,
+    "shortName": "Sandefjord Fotball",
+    "leagueId": 21,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 112222,
+    "shortName": "Harrogate Town",
+    "leagueId": 33,
+    "rarity": 5,
+    "kit": false,
+    "png": true,
+    "code": ""
+  },
+  {
+    "id": 111087,
+    "shortName": "Podbeskidzie",
+    "leagueId": 16,
+    "rarity": 5,
+    "png": true,
+    "code": "POD"
+  }
+
+
+
+]

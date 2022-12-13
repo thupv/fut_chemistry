@@ -1,0 +1,8 @@
+{
+  "playerUrl":  "https://static.wefut.com/assets/images/fut23/playeravatars/{playerId}.png",
+  "nationUrl":  "https://static.wefut.com/assets/images/nation_flag/{nationId}.jpg",
+  "cardUrl":  "https://static.wefut.com/assets/images/fut23/{cardId}.png",
+  "clubUrl": "https://static.wefut.com/assets/images/fut23/clubbadges/{clubId}.png",
+  "leagueUrl": "https://static.wefut.com/assets/images/fut23/leaguebadges/{leagueId}.png",
+  "smallCardUrl": "http://192.168.1.15:8080/cards/{cardId}.png"
+}

@@ -1,0 +1,48 @@
+name: fut_chemistry
+description: Tiny Flutter App Boilerplate
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.5 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  get_it: ^7.2.0
+  shared_preferences: ^2.0.15
+  cupertino_icons: ^1.0.2
+  modal_bottom_sheet: ^2.1.2
+  fluttertoast: ^8.1.1
+  interpolation: ^2.1.2
+  equatable: ^2.0.5
+  csv: ^5.0.1
+  http: ^0.13.5
+  share_admob:
+    path: packages/share_admob
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/img/
+    - assets/img/field_squad.png
+    - assets/img/nations/
+    - assets/img/leagues/
+    - assets/img/clubs/small/
+    - assets/img/filters/
+    - assets/img/filters/rarity/
+    - assets/img/filters/rarity/small_rarity/
+    - assets/img/filters/clubs/large/
+    - assets/img/filters/clubs/small/
+    - assets/img/filters/position/
+    - assets/data/
+    - assets/images/
