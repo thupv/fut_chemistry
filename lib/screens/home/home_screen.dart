@@ -55,7 +55,7 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
 
   @override
   Widget build(BuildContext context) {
-    final deviceType = getDeviceType();
+    final deviceType = DeviceDetector.getDeviceType(context);
     return Scaffold(
       appBar: AppBar(
         title: const Text('Chemistry Optimizer'),
@@ -663,6 +663,10 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
         return const NameSearchModal();
       },
     ).then((player) {
+      if(player == null) {
+        appState.selectedPlayerNotifier.value.clear();
+        return;
+      }
       appState.selectedPlayerNotifier.value = player;
     });
   }

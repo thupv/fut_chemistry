@@ -2,7 +2,11 @@ import 'package:flutter/cupertino.dart';
 
 enum DeviceType { phone, tablet }
 
-DeviceType getDeviceType() {
-  final data = MediaQueryData.fromWindow(WidgetsBinding.instance.window);
-  return data.size.shortestSide < 550 ? DeviceType.phone : DeviceType.tablet;
+class DeviceDetector {
+  static DeviceType getDeviceType(BuildContext context) {
+    if (MediaQuery.of(context).size.width > 600) {
+      return DeviceType.tablet;
+    }
+    return DeviceType.phone;
+  }
 }
