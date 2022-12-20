@@ -40,6 +40,25 @@
   <script src="flutter.js" defer></script>
 </head>
 <body>
+  <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script>
+  <script>
+    // TODO: Replace the following with your app's Firebase project configuration.
+    // See: https://support.google.com/firebase/answer/7015592
+    var firebaseConfig = {
+      apiKey: 'AIzaSyCAOWeZi1WraKfNVxMzcQqeDIbDm4zV5Qg',
+      appId: '1:576664634524:web:3ba4d4b403756192419959',
+      messagingSenderId: '576664634524',
+      projectId: 'futchemistryapp',
+      authDomain: 'futchemistryapp.firebaseapp.com',
+      storageBucket: 'futchemistryapp.appspot.com',
+      measurementId: 'G-5F5TL8C4TN',
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    // Initialize Analytics
+    firebase.analytics();
+  </script>
   <script>
     window.addEventListener('load', function(ev) {
       // Download main.dart.js
@@ -54,5 +73,6 @@
       });
     });
   </script>
+
 </body>
 </html>

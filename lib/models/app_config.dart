@@ -5,6 +5,7 @@ class AppConfig {
   final String clubUrl;
   final String leagueUrl;
   final String smallCardUrl;
+  final String dbUrl;
 
 
   const AppConfig({
@@ -13,7 +14,8 @@ class AppConfig {
     required this.cardUrl,
     required this.clubUrl,
     required this.leagueUrl,
-    required this.smallCardUrl
+    required this.smallCardUrl,
+    required this.dbUrl
   });
 
   factory AppConfig.fromJson(Map<String, dynamic> json) {
@@ -23,7 +25,8 @@ class AppConfig {
         cardUrl: json['cardUrl'],
         clubUrl: json['clubUrl'],
         leagueUrl: json['leagueUrl'],
-        smallCardUrl: json['smallCardUrl']
+        smallCardUrl: json['smallCardUrl'],
+        dbUrl: json['dbUrl']
     );
   }
 }

@@ -3,6 +3,8 @@ import 'package:fut_chemistry/models/league.dart';
 import 'package:fut_chemistry/core/di.dart';
 import 'package:fut_chemistry/state/app_state.dart';
 
+import '../core/helpers/device_type.dart';
+
 class LeagueModal extends StatefulWidget {
   const LeagueModal({Key? key}) : super(key: key);
 
@@ -22,6 +24,8 @@ class _LeagueModalState extends State<LeagueModal> {
   }
   @override
   Widget build(BuildContext context) {
+    final deviceType = DeviceDetector.getDeviceType(context);
+
     return SafeArea(
       child: Padding(
         padding: const EdgeInsets.all(20),
@@ -47,8 +51,8 @@ class _LeagueModalState extends State<LeagueModal> {
                   shrinkWrap: true,
                   padding: const EdgeInsets.all(20.0),
                   itemCount: leagues.length,
-                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 3,
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: deviceType == DeviceType.phone ? 4 : 8,
                     mainAxisSpacing: 15,
                     crossAxisSpacing: 15,
                   ),

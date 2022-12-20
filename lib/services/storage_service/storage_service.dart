@@ -8,11 +8,27 @@ import 'package:fut_chemistry/models/player.dart';
 import 'package:fut_chemistry/models/league.dart';
 import 'package:fut_chemistry/models/nation.dart';
 import 'package:fut_chemistry/models/metadata.dart';
+import 'package:hive/hive.dart';
 import 'package:http/http.dart' as http;
 
+import '../../models/hive/team.dart';
+
 class StorageService {
+  BoxCollection? hiveCollection;
+  final Map<String, Player> _cachedPlayer = {};
+
+  init() async {
+    hiveCollection = await BoxCollection.open(
+        'FutChemistryDB', {'savedTeams', 'autoSavedTeams'},
+        path: './');
+  }
+
   Future<List<Player>> getPlayers() async {
     return [];
+  }
+
+  Player? getPlayerById(String playerId) {
+    return _cachedPlayer[playerId];
   }
 
   Future<Metadata> getMetadata() async {
@@ -21,12 +37,16 @@ class StorageService {
     List<Club> clubs = await loadClubFromJson();
     List<Nation> nations = await loadNationFromJson();
     List<Player> players = await loadPlayerFromCSV(appConfig);
-    return Metadata(leagues: leagues, clubs: clubs, nations: nations, players: players);
+    for (var player in players) {
+      _cachedPlayer[player.indexKey] = player;
+    }
+    return Metadata(
+        leagues: leagues, clubs: clubs, nations: nations, players: players);
   }
 
   Future<AppConfig> loadAppConfigFromAPI() async {
-    final response = await http
-        .get(Uri.parse('http://cdn.jsdelivr.net/gh/futfc/fut_card@latest/config.json'));
+    final response =
+        await http.get(Uri.parse('https://futfc.github.io/fut_card/config.json'));
 
     if (response.statusCode == 200) {
       return AppConfig.fromJson(jsonDecode(response.body));
@@ -63,14 +83,71 @@ class StorageService {
   }
 
   Future<List<Player>> loadPlayerFromCSV(AppConfig appConfig) async {
-    String path = "assets/data/db.csv";
-    String content = await rootBundle.loadString("assets/data/db.csv");
-    List<List<dynamic>> data =
-    const CsvToListConverter(eol: '\n').convert(content);
+    // String path = "assets/data/db_12_20.csv";
+    // String content = await rootBundle.loadString(path);
+    Uri url = Uri.parse(appConfig.dbUrl);
+    var response = await http.get(url);
+    if (response.statusCode == 200) {
+      // If the request was successful, parse the CSV data
+      List<List<dynamic>> data =
+          const CsvToListConverter(eol: '\n').convert(response.body);
 
-    List<Player> players = data.map((playerData) {
-      return Player.fromCSV(playerData, appConfig);
-    }).toList();
-    return players;
+      List<Player> players = data.map((playerData) {
+        return Player.fromCSV(playerData, appConfig);
+      }).toList();
+      return players;
+    } else {
+      // If the request was not successful, throw an error
+      throw Exception('Failed to load CSV data from URL');
+    }
+  }
+
+  Future<bool> saveTeam(Team team) async {
+    try {
+      CollectionBox<Team> box =
+          await hiveCollection!.openBox<Team>('savedTeams');
+      await box.put(team.name, team);
+      return true;
+    } catch (e) {
+      print("Failed to save team: $e");
+      return false;
+    }
+  }
+
+  Future<List<Team?>> getAllSquad() async {
+    try {
+      CollectionBox<Team> box =
+          await hiveCollection!.openBox<Team>('savedTeams');
+      final allTeamKeys = await box.getAllKeys();
+      final teams = await box.getAll(allTeamKeys);
+      return teams;
+    } catch (e) {
+      return [];
+    }
+  }
+
+  Future<bool> autoSaveTeam(List<Player> players) async {
+    try {
+      CollectionBox<List> box =
+          await hiveCollection!.openBox<List>('autoSavedTeams');
+      final playerIds = players.map((e) => e.indexKey).toList();
+      await box.put("autoSaved", playerIds);
+      return true;
+    } catch (e) {
+      print("Failed to auto save team: $e");
+      return false;
+    }
+  }
+
+  Future<List?> getAutoSavedTeam() async {
+    try {
+      CollectionBox<List> box =
+          await hiveCollection!.openBox<List>('autoSavedTeams');
+      final team = await box.get("autoSaved");
+      return team;
+    } catch (e) {
+      print("Failed to get auto saved team: $e");
+      return null;
+    }
   }
 }

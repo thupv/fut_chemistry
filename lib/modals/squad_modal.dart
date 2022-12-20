@@ -165,12 +165,12 @@ class _SquadModalState extends State<SquadModal> {
         height: double.infinity,
         child: LayoutBuilder(builder: (_, BoxConstraints constraints) {
           final cardWrapperBox = Box(
-            width: constraints.maxWidth * 7 * 0.035,
-            height: constraints.maxWidth * 11 * 0.035,
+            width: constraints.maxWidth * 7 * 0.035 * 0.4,
+            height: constraints.maxWidth * 11 * 0.035 * 0.4,
           );
           final cardBox = Box(
-            width: constraints.maxWidth * 7 * 0.03,
-            height: constraints.maxWidth * 11 * 0.03,
+            width: constraints.maxWidth * 7 * 0.03 * 0.4,
+            height: constraints.maxWidth * 11 * 0.03 * 0.4,
           );
           final formation = _buildFormations(
             cardBox: cardBox,

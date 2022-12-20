@@ -3,6 +3,8 @@ import 'package:fut_chemistry/models/club.dart';
 import 'package:fut_chemistry/core/di.dart';
 import 'package:fut_chemistry/state/app_state.dart';
 
+import '../core/helpers/device_type.dart';
+
 class ClubModal extends StatefulWidget {
 
   const ClubModal({Key? key}) : super(key: key);
@@ -30,6 +32,7 @@ class _ClubModalState extends State<ClubModal> {
 
   @override
   Widget build(BuildContext context) {
+    final deviceType = DeviceDetector.getDeviceType(context);
 
     return SafeArea(
       child: Padding(
@@ -58,8 +61,8 @@ class _ClubModalState extends State<ClubModal> {
                 child: GridView.builder(
                   padding: const EdgeInsets.all(12.0),
                   itemCount: filteredClubs.length,
-                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 4,
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: deviceType == DeviceType.phone ? 4 : 8,
                     mainAxisSpacing: 10,
                     crossAxisSpacing: 10,
                   ),

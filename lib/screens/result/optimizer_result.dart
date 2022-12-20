@@ -4,7 +4,6 @@ import 'package:fut_chemistry/models/optimizer_result.dart';
 import 'package:fut_chemistry/core/extensions/map_indexed.dart';
 import 'package:fut_chemistry/core/mixins/dialog_mixins.dart';
 import 'package:fut_chemistry/modals/player_position.dart';
-import 'package:share_admob/share_admob.dart';
 
 import '../../constants/ad_manager.dart';
 import '../../core/di.dart';
@@ -112,9 +111,9 @@ class _OptimizerResultScreenState extends State<OptimizerResultScreen> with Comm
                         backgroundColor: Colors.indigo,
                         builder: (context) => SquadModal(optimizerResult: item),
                       ).then((position) {
-                        AppAdmob.showRewardedInterstitialAd(
-                          adUnitId: AdManager.interstitialAds_1,
-                        );
+                        // AppAdmob.showRewardedInterstitialAd(
+                        //   adUnitId: AdManager.interstitialAds_1,
+                        // );
                       });
                   },
                 ),

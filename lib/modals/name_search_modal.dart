@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fut_chemistry/core/extensions/latin_extended.dart';
 
 import '../core/di.dart';
 import '../models/player.dart';
@@ -51,6 +52,7 @@ class _NameSearchModalState extends State<NameSearchModal> {
                     _playersNotifier.value = appState.metadataNotifier.value!.players
                         .where((element) => element.playerName
                         .toLowerCase()
+                        .removeLatinExtended()
                         .trim()
                         .contains(content.toLowerCase().trim()))
                         .toList();

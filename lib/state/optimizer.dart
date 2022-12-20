@@ -169,7 +169,7 @@ OptimizerResult calculateMaxTeamChemistry(
 
       int playerChem = 0;
 
-      if (clubId == 112658 || clubId == 999016) {
+      if (clubId > 100000) {
         playerChem += 3;
       }
       if (nationChemMap[nationId] != null) {

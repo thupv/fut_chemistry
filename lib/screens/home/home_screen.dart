@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'dart:isolate';
 
 import 'package:fut_chemistry/core/di.dart';
+import 'package:fut_chemistry/modals/help_modal.dart';
+import 'package:fut_chemistry/modals/webapp_import_modal.dart';
 import 'package:fut_chemistry/screens/result/optimizer_result.dart';
 import 'package:fut_chemistry/state/app_state.dart';
 import 'package:fut_chemistry/core/mixins/dialog_mixins.dart';
@@ -14,10 +15,7 @@ import 'package:fut_chemistry/modals/league_modal.dart';
 import 'package:fut_chemistry/modals/club_modal.dart';
 import 'package:fut_chemistry/modals/card_rarity_modal.dart';
 import 'package:fut_chemistry/modals/player_position.dart';
-import 'package:share_admob/share_admob.dart';
-import '../../constants/ad_manager.dart';
 import '../../core/helpers/device_type.dart';
-
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -33,8 +31,8 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
   @override
   void initState() {
     super.initState();
-    AppAdmob.createRewardedInterstitialAd(
-        adUnitId: AdManager.interstitialAds_1);
+    // AppAdmob.createRewardedInterstitialAd(
+    //     adUnitId: AdManager.interstitialAds_1);
     appState.init();
   }
 
@@ -59,6 +57,58 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Chemistry Optimizer'),
+        actions: <Widget>[
+          // IconButton(
+          //   icon: const Icon(
+          //     Icons.help_outline,
+          //     color: Colors.white,
+          //   ),
+          //   onPressed: () {
+          //     showFloatingModalBottomSheet(
+          //       context: context,
+          //       backgroundColor: Colors.indigo,
+          //       builder: (context) => const HelpModal(),
+          //     ).then((position) {});
+          //   },
+          // )
+          PopupMenuButton(
+              // add icon, by default "3 dot" icon
+              // icon: Icon(Icons.book)
+              itemBuilder: (context) {
+            return const [
+              PopupMenuItem<int>(
+                value: 0,
+                child: Text("Import squad from WebApp"),
+              ),
+
+              PopupMenuItem<int>(
+                value: 1,
+                child: Text("Help"),
+              ),
+
+              // PopupMenuItem<int>(
+              //   value: 2,
+              //   child: Text("Logout"),
+              // ),
+            ];
+          }, onSelected: (value) {
+            if (value == 0) {
+              showFloatingModalBottomSheet(
+                context: context,
+                backgroundColor: Colors.indigo,
+                builder: (context) => const WebAppImportModal(),
+              );
+            } else if (value == 1) {
+              showFloatingModalBottomSheet(
+                context: context,
+                backgroundColor: Colors.indigo,
+                builder: (context) => const HelpModal(),
+              ).then((position) {});
+            } else if (value == 2) {
+              print("Logout menu is selected.");
+            }
+          }),
+        ],
         flexibleSpace: const Image(
           image: AssetImage('assets/img/tile_bg.png'),
           fit: BoxFit.cover,
@@ -82,13 +132,18 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
                       padding: const EdgeInsets.symmetric(vertical: 8.0),
                       child: SizedBox(
                         height: 45,
-                        child: deviceType == DeviceType.phone ? ListView(
-                          scrollDirection: Axis.horizontal,
-                          children: _buildFilterBar(),
-                        ) : Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: _buildFilterBar(),
-                        ),
+                        child: deviceType == DeviceType.phone
+                            ? Padding(
+                                padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
+                                child: ListView(
+                                  scrollDirection: Axis.horizontal,
+                                  children: _buildFilterBar(),
+                                ),
+                              )
+                            : Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: _buildFilterBar(),
+                              ),
                       ),
                     ),
                     _buildPlayers(),
@@ -114,7 +169,7 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
                 ),
                 child: Padding(
                     padding: const EdgeInsets.symmetric(vertical: 4.0),
-                    child: _buildListSelectedCard()),
+                    child: _buildListSelectedCard(context)),
               )
             ],
           ),
@@ -123,7 +178,9 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
     );
   }
 
-  Widget _buildListSelectedCard() {
+  Widget _buildListSelectedCard(BuildContext context) {
+    final deviceType = DeviceDetector.getDeviceType(context);
+
     return SizedBox(
         width: double.infinity,
         child: ValueListenableBuilder(
@@ -131,28 +188,39 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
           builder:
               (BuildContext context, List<Player> listCards, Widget? child) {
             if (listCards.isEmpty) {
-              return const Center(
-                  child: Text("Please add 11 cards"));
+              return const Center(child: Text("Please add 11 cards"));
             }
             return Column(
               children: [
                 SizedBox(
                   height: 77,
-                  child: ListView(
-                      scrollDirection: Axis.horizontal,
-                      children: listCards.map((card) {
-                        return GestureDetector(
-                          onTap: () {
-                            appState.selectedCardsNotifier.value =
-                                List.from(appState.selectedCardsNotifier.value)
-                                  ..removeWhere((item) => item == card);
-                          },
-                          child: SizedBox(
-                              width: 90 * 0.7,
-                              height: 110 * 0.7,
-                              child: SmallCard(player: card)),
-                        );
-                      }).toList()),
+                  child: deviceType == DeviceType.phone
+                      ? ListView(
+                          scrollDirection: Axis.horizontal,
+                          children: listCards.map((card) {
+                            return GestureDetector(
+                              onTap: () {
+                                appState.selectedCardsNotifier.removeCard(card);
+                              },
+                              child: SizedBox(
+                                  width: 90 * 0.7,
+                                  height: 110 * 0.7,
+                                  child: SmallCard(player: card)),
+                            );
+                          }).toList())
+                      : Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: listCards.map((card) {
+                            return GestureDetector(
+                              onTap: () {
+                                appState.selectedCardsNotifier.removeCard(card);
+                              },
+                              child: SizedBox(
+                                  width: 90 * 0.7,
+                                  height: 110 * 0.7,
+                                  child: SmallCard(player: card)),
+                            );
+                          }).toList()),
                 ),
                 Center(child: Text("${listCards.length}/11 cards were added")),
                 const Spacer(),
@@ -172,50 +240,56 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
                           ),
                         ),
                       ),
-
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                          ElevatedButton(
-                            style: OutlinedButton.styleFrom(
-                              textStyle: const TextStyle(fontSize: 16),
-                              foregroundColor: Colors.white,
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            ElevatedButton(
+                              style: OutlinedButton.styleFrom(
+                                textStyle: const TextStyle(fontSize: 16),
+                                foregroundColor: Colors.white,
+                              ),
+                              onPressed: () {
+                                appState.selectedCardsNotifier.clear();
+                              },
+                              child: Row(
+                                children: const [
+                                  Text('Clear all'),
+                                  Icon(
+                                    Icons.delete,
+                                    color: Colors.white,
+                                    size: 20.0,
+                                  ),
+                                ],
+                              ),
                             ),
-                            onPressed: () {
-                              appState.selectedCardsNotifier.value = [];
-                            },
-                            child: Row(
-                              children: const [
-                                Text('Clear all'),
-                                Icon(
-                                  Icons.delete,
-                                  color: Colors.white,
-                                  size: 20.0,
-                                ),
-                              ],
+                            const SizedBox(width: 10),
+                            ElevatedButton(
+                              style: OutlinedButton.styleFrom(
+                                textStyle: const TextStyle(fontSize: 16),
+                                foregroundColor: Colors.white,
+                              ),
+                              onPressed: listCards.length == 11
+                                  ? () async {
+                                      await optimize();
+                                    }
+                                  : null,
+                              child: Row(
+                                children: [
+                                  const Text('Optimize squad'),
+                                  Icon(
+                                    Icons.rocket_launch,
+                                    color: listCards.length == 11
+                                        ? Colors.white
+                                        : const Color(0xFF0b3768),
+                                    size: 20.0,
+                                  ),
+                                ],
+                              ),
                             ),
-                          ),
-                          ElevatedButton(
-                            style: OutlinedButton.styleFrom(
-                              textStyle: const TextStyle(fontSize: 16),
-                              foregroundColor: Colors.white,
-
-                            ),
-                            onPressed: listCards.length == 11 ? () async {
-                              await optimize();
-                            } : null,
-                            child: Row(
-                              children: const [
-                                Text('Optimize squad'),
-                                Icon(
-                                  Icons.rocket_launch,
-                                  color: Colors.white,
-                                  size: 20.0,
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     ],
                   ),
@@ -306,8 +380,7 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
         return;
       }
     }
-    appState.selectedCardsNotifier.value =
-        List.from(appState.selectedCardsNotifier.value)..add(card);
+    appState.selectedCardsNotifier.addCard(card);
   }
 
   List<Widget> _buildFilterBar() {
@@ -339,11 +412,13 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
           appState.isLoadingNotifier
         ],
         builder: (context, values, child) {
+          final deviceType = DeviceDetector.getDeviceType(context);
+
           var selectedCards = values.elementAt(6);
           List<Player> playerCards = appState.getFilteredPlayers();
           return Expanded(
             child: GridView.count(
-              crossAxisCount: 4,
+              crossAxisCount: deviceType == DeviceType.phone ? 4 : 8,
               childAspectRatio: 9 / 16,
               children: playerCards.map(
                 (card) {
@@ -367,9 +442,7 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
                                 color: Colors.white,
                               ),
                               onPressed: () {
-                                appState.selectedCardsNotifier.value = List
-                                    .from(appState.selectedCardsNotifier.value)
-                                  ..removeWhere((item) => item == card);
+                                appState.selectedCardsNotifier.removeCard(card);
                               },
                             )
                           : TextButton(
@@ -663,7 +736,7 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
         return const NameSearchModal();
       },
     ).then((player) {
-      if(player == null) {
+      if (player == null) {
         appState.selectedPlayerNotifier.value.clear();
         return;
       }

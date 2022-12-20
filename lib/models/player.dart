@@ -138,7 +138,13 @@ class Player {
         "textColor": textColor,
       };
 
+
   String toString() {
     return "$bgColor|$borderColor|$textColor|$cardImg|$playerName|$rarity|$playerImg|$nation|$league|$club|$position|$rating|${stats[0]}|${stats[1]}|${stats[2]}|${stats[3]}|${stats[4]}|${stats[5]}";
   }
+
+  get indexKey {
+    return "${playerId}_$rating";
+  }
+
 }

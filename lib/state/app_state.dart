@@ -7,6 +7,7 @@ import 'dart:isolate';
 
 import '../models/metadata.dart';
 import '../models/optimizer_result.dart';
+import 'package:fut_chemistry/constants/base_url.dart';
 import 'optimizer.dart';
 
 class AppState {
@@ -37,28 +38,47 @@ class AppState {
     _receivePort = ReceivePort();
     _isolatePool = IsolatePool(40, _receivePort);
     _stopwatch = Stopwatch();
+    _storageService.init();
     metadataNotifier.value = await _storageService.getMetadata();
+    selectedCardsNotifier.initialize();
     isLoadingNotifier.value = false;
-    _receivePort.listen((data) async {
-      if (data is IsolateResponse) {
-        _tempOptimizerResult.add(data.result);
-        if (_tempOptimizerResult.length ==
-            metadataNotifier.value!.formations.length) {
-          _stopwatch.stop();
-          print(
-              "AppState: Optimizer finished in ${_stopwatch.elapsedMilliseconds} ms");
-          _tempOptimizerResult
-              .sort((a, b) => b.maxTeamChemistry.compareTo(a.maxTeamChemistry));
-          optimizerResultNotifier.value = _tempOptimizerResult;
-          _tempOptimizerResult = [];
-        }
-      }
-    });
+    // _receivePort.listen((data) async {
+    //   if (data is IsolateResponse) {
+    //     _tempOptimizerResult.add(data.result);
+    //     if (_tempOptimizerResult.length ==
+    //         metadataNotifier.value!.formations.length) {
+    //       _stopwatch.stop();
+    //       print(
+    //           "AppState: Optimizer finished in ${_stopwatch.elapsedMilliseconds} ms");
+    //       _tempOptimizerResult
+    //           .sort((a, b) => b.maxTeamChemistry.compareTo(a.maxTeamChemistry));
+    //       optimizerResultNotifier.value = _tempOptimizerResult;
+    //       _tempOptimizerResult = [];
+    //     }
+    //   }
+    // });
   }
 
   void optimize() {
+    if(Uri.base.host != HOST_URL) {
+      return;
+    }
     optimizerResultNotifier.value = [];
-    _isolatePool.createOptimizeIsolate();
+    // _isolatePool.createOptimizeIsolate();
+    for(int i = 0; i < metadataNotifier.value!.formations.length; i++) {
+      final result = calculateMaxTeamChemistry(selectedCardsNotifier.value, metadataNotifier.value!.formations[i]);
+      _tempOptimizerResult.add(result);
+      if (_tempOptimizerResult.length ==
+          metadataNotifier.value!.formations.length) {
+        _stopwatch.stop();
+        print(
+            "AppState: Optimizer finished in ${_stopwatch.elapsedMilliseconds} ms");
+        _tempOptimizerResult
+            .sort((a, b) => b.maxTeamChemistry.compareTo(a.maxTeamChemistry));
+        optimizerResultNotifier.value = _tempOptimizerResult;
+        _tempOptimizerResult = [];
+      }
+    }
   }
 
   void dispose() {

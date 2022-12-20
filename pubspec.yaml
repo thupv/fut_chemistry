@@ -21,8 +21,10 @@ dependencies:
   csv: ^5.0.1
   http: ^0.13.5
   flutter_launcher_icons: "^0.11.0"
-  share_admob:
-    path: packages/share_admob
+  responsive_framework: ^0.2.0
+  firebase_analytics: ^10.0.7
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
 
 dev_dependencies:
   flutter_test:
@@ -54,3 +56,8 @@ flutter_icons:
   remove_alpha_channel: true
   image_path: "assets/icons/fut_chem_icon.png"
   min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "assets/icons/fut_chem_icon.png"
+    background_color: "#2196f3"
+    theme_color: "#2196f3"
