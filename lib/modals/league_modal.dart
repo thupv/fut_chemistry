@@ -58,11 +58,12 @@ class _LeagueModalState extends State<LeagueModal> {
                   ),
                   itemBuilder: (context, index) {
                     int leagueId = leagues[index].flagId;
+                    int leagueClubId = leagues[index].id;
                     String leagueImgUrl =
                         "assets/img/leagues/$leagueId.png";
                     return GestureDetector(
                       onTap: () {
-                        appState.selectedClubLeagueNotifier.value = leagueId;
+                        appState.selectedClubLeagueNotifier.value = leagueClubId;
                         Navigator.of(context).pop(leagueId);
                       },
                       child: Container(

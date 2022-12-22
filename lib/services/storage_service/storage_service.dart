@@ -48,7 +48,7 @@ class StorageService {
 
   Future<AppConfig> loadAppConfigFromAPI() async {
     final response =
-        await http.get(Uri.parse('http://192.168.1.15:8080/config.json'));
+        await http.get(Uri.parse('https://futfc.github.io/fut_card/config.json'));
 
     if (response.statusCode == 200) {
       return AppConfig.fromJson(jsonDecode(response.body));
@@ -94,7 +94,7 @@ class StorageService {
   }
 
   Future<List<Player>> loadPlayerFromCSV(AppConfig appConfig) async {
-    // String path = "assets/data/db_12_20.csv";
+    // String path = "assets/data/db_12_22.csv";
     // String content = await rootBundle.loadString(path);
     Uri url = Uri.parse(appConfig.dbUrl);
     var response = await http.get(url);
