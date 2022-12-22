@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:fut_chemistry/core/di.dart';
 import 'package:fut_chemistry/modals/help_modal.dart';
+import 'package:fut_chemistry/modals/manager_nation_modal.dart';
 import 'package:fut_chemistry/modals/webapp_import_modal.dart';
 import 'package:fut_chemistry/screens/result/optimizer_result.dart';
 import 'package:fut_chemistry/state/app_state.dart';
@@ -76,13 +77,13 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
               // icon: Icon(Icons.book)
               itemBuilder: (context) {
             return const [
-              PopupMenuItem<int>(
-                value: 0,
-                child: Text("Import squad from WebApp"),
-              ),
+              // PopupMenuItem<int>(
+              //   value: 0,
+              //   child: Text("Import squad from WebApp"),
+              // ),
 
               PopupMenuItem<int>(
-                value: 1,
+                value: 0,
                 child: Text("Help"),
               ),
 
@@ -96,16 +97,8 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
               showFloatingModalBottomSheet(
                 context: context,
                 backgroundColor: Colors.indigo,
-                builder: (context) => const WebAppImportModal(),
-              );
-            } else if (value == 1) {
-              showFloatingModalBottomSheet(
-                context: context,
-                backgroundColor: Colors.indigo,
                 builder: (context) => const HelpModal(),
               ).then((position) {});
-            } else if (value == 2) {
-              print("Logout menu is selected.");
             }
           }),
         ],
@@ -188,7 +181,23 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
           builder:
               (BuildContext context, List<Player> listCards, Widget? child) {
             if (listCards.isEmpty) {
-              return const Center(child: Text("Please add 11 cards"));
+              return Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Text("Please add 11 cards"),
+                  const Text("or"),
+                  ElevatedButton(
+                    onPressed: () {
+                      showFloatingModalBottomSheet(
+                        context: context,
+                        backgroundColor: Colors.indigo,
+                        builder: (context) => const WebAppImportModal(),
+                      );
+                    },
+                    child: const Text('Import from WebApp'),
+                  ),
+                ],
+              );
             }
             return Column(
               children: [
@@ -396,6 +405,8 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
       // _buildCardRarity(),
       const SizedBox(width: 10),
       _buildPlayerPosition(),
+      const SizedBox(width: 10),
+      _buildManagerBonus(),
     ];
   }
 
@@ -643,7 +654,7 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
                     padding: const EdgeInsets.all(5.0),
                     child: IntrinsicWidth(
                       child: Image.asset(
-                        "assets/img/leagues/$league",
+                        "assets/img/leagues/$league.png",
                         fit: BoxFit.contain,
                       ),
                     ),
@@ -691,7 +702,7 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
                 : Padding(
                     padding: const EdgeInsets.all(4.0),
                     child: Image.asset(
-                      'assets/img/nations/f_${nationCode.toString()}.png',
+                      'assets/img/nations/f_${nationCode}.png',
                       fit: BoxFit.contain,
                     ),
                   ),
@@ -723,6 +734,65 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
             child: player['playerImg'] == null
                 ? const Icon(Icons.search, size: 30, color: Color(0xFF63d4f9))
                 : Image.network(player['playerImg']!),
+          );
+        },
+      ),
+    );
+  }
+
+  Widget _buildManagerBonus() {
+    return GestureDetector(
+      onTap: () {
+        if (appState.selectedManagerNationNotifier.value == null) {
+          showFloatingModalBottomSheet(
+            context: context,
+            backgroundColor: Colors.indigo,
+            builder: (context) => const ManagerNationModal(),
+          );
+        } else {
+          appState.selectedManagerNationNotifier.value = null;
+          appState.selectedManagerLeagueNotifier.value = null;
+        }
+      },
+      child: MultiValueListenableBuilder(
+        valueListenables: [
+          appState.selectedManagerLeagueNotifier,
+          appState.selectedManagerNationNotifier,
+        ],
+        builder: (context, values, _) {
+          return Container(
+            width: 70,
+            height: 70,
+            decoration: BoxDecoration(
+              color: Colors.blueGrey.shade800,
+              borderRadius: BorderRadius.circular(5.0),
+              border: values.elementAt(0) == null ? null : Border.all(color: Colors.red),
+            ),
+            child: values.elementAt(0) == null
+                ? Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Image.asset(
+                      "assets/img/filters/manager.png",
+                      fit: BoxFit.contain,
+                    ),
+                  )
+                : Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset(
+                        'assets/img/nations/f_${values.elementAt(1)}.png',
+                        width: 20,
+                        height: 20,
+                        fit: BoxFit.contain,
+                      ),
+                      Image.asset(
+                        width: 20,
+                        height: 20,
+                        'assets/img/leagues/${values.elementAt(0)}.png',
+                        fit: BoxFit.contain,
+                      ),
+                    ],
+                  ),
           );
         },
       ),

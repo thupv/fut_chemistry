@@ -46,7 +46,6 @@ class SelectedCardsNotifier extends ValueNotifier<List<Player>> {
       final uri = Uri.parse(url);
       final showoffId = uri.queryParameters['showoffId'];
       final squadId = showoffId?.split(':')[0];
-      print(squadId);
       if (squadId == null) {
         onSuccess(false);
         return;
@@ -63,7 +62,7 @@ class SelectedCardsNotifier extends ValueNotifier<List<Player>> {
         for (int i = 0; i < 11; i++) {
           final player = jsonPlayers[i];
           final id =
-              "${player['itemData']['assetId']}_${player['itemData']['rating']}";
+              "${player['itemData']['assetId']}_${player['itemData']['rareflag']}";
           final playerObj = _storageService.getPlayerById(id);
           if (playerObj != null) {
             players.add(playerObj);

@@ -8,12 +8,17 @@ class Player {
   String rarity;
   String smallRarity;
   String playerImg;
-  String nation;
   String league;
   String leagueId;
+  String leagueName;
+
   String club;
   String clubId;
+  String clubName;
+
+  String nation;
   String nationId;
+  String nationName;
   String position;
   String rating;
   String rarityId;
@@ -24,6 +29,7 @@ class Player {
   String cardImg;
   String firstPosition;
   String probality;
+  bool isSpecial = true;
 
   Player(
       {this.playerId = "1",
@@ -36,8 +42,11 @@ class Player {
       this.league = "https://futhead.cursecdn.com/static/img/19/clubs/45.png",
       this.club = "https://futhead.cursecdn.com/static/img/19/clubs/45.png",
       this.nationId = "France",
+      this.nationName = "France",
       this.leagueId = "League 1",
+      this.leagueName = "League 1",
       this.clubId = "PSG",
+      this.clubName = "PSG",
       this.position = "CAM|CF",
       this.firstPosition = "CAM",
       this.rating = "98",
@@ -47,7 +56,8 @@ class Player {
       this.borderColor = "#000",
       this.textColor = "#fff",
       this.cardImg = "gold12",
-      this.probality = "0"});
+      this.probality = "0",
+      this.isSpecial = true});
 
   factory Player.fromJson(Map<String, dynamic> json) {
     return Player(
@@ -71,14 +81,27 @@ class Player {
     // } else if(csvData[15].toString()[0] == "p") {
     //   playerImgUrl = "https://futhead.cursecdn.com/static/img/21/players_alt/${csvData[15]}.png";
     // }
+    bool isSpecial = ![0, 1, 2, 12, 47, 48, 53, 54, 128].contains(csvData[15]);
+
     String playerImgUrl = interpolation.eval(appConfig.playerUrl,
-        {'playerId': csvData[0] != "" ? csvData[0] : csvData[4]});
+        {'playerId': isSpecial ? ('p${csvData[26]}') : csvData[0]});
+
+    String cardId = '1_${csvData[15]}_0';
+    if (csvData[25] == 1) {
+      if (csvData[2] > 74) {
+        cardId = '1_${csvData[15]}_3';
+      } else if (csvData[2] > 64) {
+        cardId = '1_${csvData[15]}_2';
+      } else {
+        cardId = '1_${csvData[15]}_1';
+      }
+    }
 
     String rarityUrl =
-        interpolation.eval(appConfig.cardUrl, {'cardId': csvData[19]});
+        interpolation.eval(appConfig.cardUrl, {'cardId': cardId});
 
     String smallRarityUrl =
-        interpolation.eval(appConfig.smallCardUrl, {'cardId': csvData[19]});
+        interpolation.eval(appConfig.smallCardUrl, {'cardId': cardId});
 
     String nationUrl =
         interpolation.eval(appConfig.nationUrl, {'nationId': csvData[22]});
@@ -89,14 +112,16 @@ class Player {
     String leagueUrl =
         interpolation.eval(appConfig.leagueUrl, {'leagueId': csvData[21]});
 
-    String firstPosition = csvData[3].split(',')[0];
+    String firstPosition = csvData[3].split('|')[0];
+
+    String playerName = csvData[1] != '' ? csvData[1] : "---";
 
     return Player(
         playerId: csvData[0].toString(),
-        playerName: csvData[1],
+        playerName: playerName,
         smallRarity: smallRarityUrl,
         rarity: rarityUrl,
-        rarityId: csvData[15],
+        rarityId: csvData[15].toString(),
         playerImg: playerImgUrl,
         nationId: csvData[22].toString(),
         leagueId: csvData[21].toString(),
@@ -104,6 +129,9 @@ class Player {
         nation: nationUrl,
         league: leagueUrl,
         club: clubUrl,
+        nationName: csvData[6],
+        leagueName: csvData[5],
+        clubName: csvData[4],
         position: csvData[3],
         firstPosition: firstPosition,
         rating: csvData[2].toString(),
@@ -121,7 +149,8 @@ class Player {
         bgColor: csvData[17],
         textColor: csvData[18],
         probality: csvData[23].toString(),
-        cardImg: rarityUrl);
+        cardImg: rarityUrl,
+        isSpecial: isSpecial);
   }
 
   Map<String, dynamic> toJson() => {
@@ -138,13 +167,11 @@ class Player {
         "textColor": textColor,
       };
 
-
   String toString() {
     return "$bgColor|$borderColor|$textColor|$cardImg|$playerName|$rarity|$playerImg|$nation|$league|$club|$position|$rating|${stats[0]}|${stats[1]}|${stats[2]}|${stats[3]}|${stats[4]}|${stats[5]}";
   }
 
   get indexKey {
-    return "${playerId}_$rating";
+    return "${playerId}_$rarityId";
   }
-
 }

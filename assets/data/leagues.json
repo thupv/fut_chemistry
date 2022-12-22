@@ -35,13 +35,6 @@
     "png": true
   },
   {
-    "id": 6,
-    "code": "RUS",
-    "flagId": 3006,
-    "name": "League of Russia",
-    "png": true
-  },
-  {
     "id": 7,
     "code": "POR",
     "flagId": 308,
@@ -81,13 +74,6 @@
     "code": "BEL",
     "flagId": 4,
     "name": "Jupiler Pro League",
-    "png": true
-  },
-  {
-    "id": 13,
-    "code": "MEX",
-    "flagId": 341,
-    "name": "Liga BBVA MX",
     "png": true
   },
   {
@@ -144,13 +130,6 @@
     "code": "UKR",
     "flagId": 332,
     "name": "Premier Liga",
-    "png": true
-  },
-  {
-    "id": 25,
-    "code": "JAP",
-    "flagId": 349,
-    "name": "J1 League",
     "png": true
   },
   {
@@ -221,13 +200,6 @@
     "code": "GER 2",
     "flagId": 20,
     "name": "2. Bundesliga",
-    "png": true
-  },
-  {
-    "id": 36,
-    "code": "ITA 2",
-    "flagId": 2179,
-    "name": "Calcio B",
     "png": true
   },
   {
@@ -305,13 +277,6 @@
     "code": "SUD",
     "flagId": 1014,
     "name": "Sudamericana",
-    "png": true
-  },
-  {
-    "id": 0,
-    "code": "RES",
-    "flagId": 0,
-    "name": "Rest of World",
     "png": true
   }
 ]

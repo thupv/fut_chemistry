@@ -64,7 +64,7 @@ class _NameSearchModalState extends State<WebAppImportModal> {
                           shadowColor: Colors.greenAccent,
                           elevation: 3,
                           shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(32.0)),
+                              borderRadius: BorderRadius.circular(2.0)),
                           minimumSize: const Size(200, 60), //////// HERE
                         ),
                         onPressed: isImporting ? null : () async {
@@ -88,7 +88,7 @@ class _NameSearchModalState extends State<WebAppImportModal> {
                                 width: 20.0,
                                 child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(Colors.white)),
                               )
-                            : const Text('Import'),
+                            : const Text('Import', style: TextStyle(fontSize: 20),),
                       ),
                     )
                   ],

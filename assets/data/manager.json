@@ -1,0 +1,1006 @@
+[
+  {
+    "name": "Aitor Karanka",
+    "nation": 45
+  },
+  {
+    "name": "Mikel Arteta",
+    "nation": 45
+  },
+  {
+    "name": "Vieira",
+    "nation": 18
+  },
+  {
+    "name": "Potter",
+    "nation": 14
+  },
+  {
+    "name": "Xavi",
+    "nation": 45
+  },
+  {
+    "name": "Tuchel",
+    "nation": 21
+  },
+  {
+    "name": "Hasenhüttl",
+    "nation": 4
+  },
+  {
+    "name": "Pep Guardiola",
+    "nation": 45
+  },
+  {
+    "name": "Rodgers",
+    "nation": 35
+  },
+  {
+    "name": "Klopp",
+    "nation": 21
+  },
+  {
+    "name": "Conceição",
+    "nation": 38
+  },
+  {
+    "name": "Diego Martínez",
+    "nation": 45
+  },
+  {
+    "name": "González",
+    "nation": 45
+  },
+  {
+    "name": "Conte",
+    "nation": 27
+  },
+  {
+    "name": "Gattuso",
+    "nation": 27
+  },
+  {
+    "name": "Inzaghi",
+    "nation": 27
+  },
+  {
+    "name": "Ancelotti",
+    "nation": 27
+  },
+  {
+    "name": "Jagoba Arrasate",
+    "nation": 45
+  },
+  {
+    "name": "Trpišovský",
+    "nation": 12
+  },
+  {
+    "name": "Gerrard",
+    "nation": 14
+  },
+  {
+    "name": "Quique Flores",
+    "nation": 45
+  },
+  {
+    "name": "Dionisi",
+    "nation": 27
+  },
+  {
+    "name": "Lampard",
+    "nation": 14
+  },
+  {
+    "name": "Hoefkens",
+    "nation": 7
+  },
+  {
+    "name": "Moyes",
+    "nation": 42
+  },
+  {
+    "name": "Pacheta",
+    "nation": 45
+  },
+  {
+    "name": "Italiano",
+    "nation": 27
+  },
+  {
+    "name": "Coudet",
+    "nation": 52
+  },
+  {
+    "name": "Pellegrini",
+    "nation": 55
+  },
+  {
+    "name": "Bruno Lage",
+    "nation": 38
+  },
+  {
+    "name": "Gallardo",
+    "nation": 52
+  },
+  {
+    "name": "Buruk",
+    "nation": 48
+  },
+  {
+    "name": "Unai Emery",
+    "nation": 45
+  },
+  {
+    "name": "Simeone",
+    "nation": 52
+  },
+  {
+    "name": "Allegri",
+    "nation": 27
+  },
+  {
+    "name": "Valverde",
+    "nation": 45
+  },
+  {
+    "name": "Blessin",
+    "nation": 21
+  },
+  {
+    "name": "Vrancken",
+    "nation": 7
+  },
+  {
+    "name": "Falcioni",
+    "nation": 52
+  },
+  {
+    "name": "Zielinski",
+    "nation": 52
+  },
+  {
+    "name": "Čačić",
+    "nation": 10
+  },
+  {
+    "name": "Rui Pedro Silva",
+    "nation": 38
+  },
+  {
+    "name": "Vicente Moreno",
+    "nation": 45
+  },
+  {
+    "name": "Postecoglou",
+    "nation": 195
+  },
+  {
+    "name": "Pimienta",
+    "nation": 45
+  },
+  {
+    "name": "Garcia",
+    "nation": 18
+  },
+  {
+    "name": "Luis García",
+    "nation": 45
+  },
+  {
+    "name": "Pedro Caixinha",
+    "nation": 38
+  },
+  {
+    "name": "Ismaël",
+    "nation": 18
+  },
+  {
+    "name": "Gaizka Garitano",
+    "nation": 45
+  },
+  {
+    "name": "Giampaolo",
+    "nation": 27
+  },
+  {
+    "name": "Wicky",
+    "nation": 47
+  },
+  {
+    "name": "Moreno",
+    "nation": 38
+  },
+  {
+    "name": "Bílek",
+    "nation": 12
+  },
+  {
+    "name": "Van Bommel",
+    "nation": 34
+  },
+  {
+    "name": "Belözoğlu",
+    "nation": 48
+  },
+  {
+    "name": "Van Bronckhorst",
+    "nation": 34
+  },
+  {
+    "name": "Jurić",
+    "nation": 10
+  },
+  {
+    "name": "Şahin",
+    "nation": 48
+  },
+  {
+    "name": "Míchel",
+    "nation": 45
+  },
+  {
+    "name": "Díaz",
+    "nation": 52
+  },
+  {
+    "name": "Kudelka",
+    "nation": 52
+  },
+  {
+    "name": "Rubi",
+    "nation": 45
+  },
+  {
+    "name": "Thorup",
+    "nation": 13
+  },
+  {
+    "name": "Jaissle",
+    "nation": 21
+  },
+  {
+    "name": "Lucescu",
+    "nation": 39
+  },
+  {
+    "name": "Priske",
+    "nation": 13
+  },
+  {
+    "name": "Rondina",
+    "nation": 52
+  },
+  {
+    "name": "Jensen",
+    "nation": 13
+  },
+  {
+    "name": "Tévez",
+    "nation": 52
+  },
+  {
+    "name": "Gotti",
+    "nation": 27
+  },
+  {
+    "name": "Milito",
+    "nation": 52
+  },
+  {
+    "name": "Cherchesov",
+    "nation": 40
+  },
+  {
+    "name": "Nicola",
+    "nation": 27
+  },
+  {
+    "name": "Aguirre",
+    "nation": 83
+  },
+  {
+    "name": "Beccacece",
+    "nation": 52
+  },
+  {
+    "name": "Espírito Santo",
+    "nation": 38
+  },
+  {
+    "name": "Almeyda",
+    "nation": 52
+  },
+  {
+    "name": "Vasco Seabra",
+    "nation": 38
+  },
+  {
+    "name": "Parker",
+    "nation": 14
+  },
+  {
+    "name": "Pecchia",
+    "nation": 27
+  },
+  {
+    "name": "Montella",
+    "nation": 27
+  },
+  {
+    "name": "Medina",
+    "nation": 60
+  },
+  {
+    "name": "Ivo Vieira",
+    "nation": 38
+  },
+  {
+    "name": "Zanetti",
+    "nation": 27
+  },
+  {
+    "name": "Nafti",
+    "nation": 145
+  },
+  {
+    "name": "Lucescu",
+    "nation": 39
+  },
+  {
+    "name": "Pusineri",
+    "nation": 52
+  },
+  {
+    "name": "Mazzu",
+    "nation": 7
+  },
+  {
+    "name": "Stroppa",
+    "nation": 27
+  },
+  {
+    "name": "Bulut",
+    "nation": 48
+  },
+  {
+    "name": "Jovanović",
+    "nation": 51
+  },
+  {
+    "name": "Cooper",
+    "nation": 50
+  },
+  {
+    "name": "Dabove",
+    "nation": 52
+  },
+  {
+    "name": "Liverani",
+    "nation": 27
+  },
+  {
+    "name": "José Gomes",
+    "nation": 38
+  },
+  {
+    "name": "Pirlo",
+    "nation": 27
+  },
+  {
+    "name": "Ramis",
+    "nation": 45
+  },
+  {
+    "name": "Buijs",
+    "nation": 34
+  },
+  {
+    "name": "Georgson",
+    "nation": 46
+  },
+  {
+    "name": "Caserta",
+    "nation": 27
+  },
+  {
+    "name": "Abelardo",
+    "nation": 45
+  },
+  {
+    "name": "César Peixoto",
+    "nation": 38
+  },
+  {
+    "name": "Özbalta",
+    "nation": 48
+  },
+  {
+    "name": "Luís Freire",
+    "nation": 38
+  },
+  {
+    "name": "Neilson",
+    "nation": 42
+  },
+  {
+    "name": "Still",
+    "nation": 7
+  },
+  {
+    "name": "Munúa",
+    "nation": 60
+  },
+  {
+    "name": "Van den Brom",
+    "nation": 34
+  },
+  {
+    "name": "Evangelista",
+    "nation": 38
+  },
+  {
+    "name": "Luis Carrión",
+    "nation": 45
+  },
+  {
+    "name": "Paulo Sérgio",
+    "nation": 38
+  },
+  {
+    "name": "Hong Myung Bo",
+    "nation": 167
+  },
+  {
+    "name": "Farioli",
+    "nation": 27
+  },
+  {
+    "name": "Damonte",
+    "nation": 52
+  },
+  {
+    "name": "Gorosito",
+    "nation": 52
+  },
+  {
+    "name": "Cifuentes",
+    "nation": 45
+  },
+  {
+    "name": "Carteron",
+    "nation": 18
+  },
+  {
+    "name": "Lucarelli",
+    "nation": 27
+  },
+  {
+    "name": "Croci-Torti",
+    "nation": 47
+  },
+  {
+    "name": "Knutsen",
+    "nation": 36
+  },
+  {
+    "name": "Popovic",
+    "nation": 195
+  },
+  {
+    "name": "Julián Calero",
+    "nation": 45
+  },
+  {
+    "name": "Brys",
+    "nation": 7
+  },
+  {
+    "name": "Tesser",
+    "nation": 27
+  },
+  {
+    "name": "Dionigi",
+    "nation": 27
+  },
+  {
+    "name": "Belhocine",
+    "nation": 18
+  },
+  {
+    "name": "An Ik Soo",
+    "nation": 167
+  },
+  {
+    "name": "Vanderhaeghe",
+    "nation": 7
+  },
+  {
+    "name": "Tramezzani",
+    "nation": 27
+  },
+  {
+    "name": "De Roeck",
+    "nation": 7
+  },
+  {
+    "name": "Imanol Idiakez",
+    "nation": 45
+  },
+  {
+    "name": "Thelin",
+    "nation": 46
+  },
+  {
+    "name": "Aloisi",
+    "nation": 195
+  },
+  {
+    "name": "Fornalik",
+    "nation": 37
+  },
+  {
+    "name": "Bergodi",
+    "nation": 27
+  },
+  {
+    "name": "Lee Byung Keun",
+    "nation": 167
+  },
+  {
+    "name": "Grosso",
+    "nation": 27
+  },
+  {
+    "name": "Inzaghi",
+    "nation": 27
+  },
+  {
+    "name": "Șumudică",
+    "nation": 39
+  },
+  {
+    "name": "Dutt",
+    "nation": 21
+  },
+  {
+    "name": "Rösler",
+    "nation": 21
+  },
+  {
+    "name": "Contini",
+    "nation": 47
+  },
+  {
+    "name": "Castori",
+    "nation": 27
+  },
+  {
+    "name": "Péricles",
+    "nation": 54
+  },
+  {
+    "name": "Đurđević",
+    "nation": 51
+  },
+  {
+    "name": "Goodwin",
+    "nation": 25
+  },
+  {
+    "name": "Pedersen",
+    "nation": 13
+  },
+  {
+    "name": "Schmidt",
+    "nation": 4
+  },
+  {
+    "name": "Rost",
+    "nation": 21
+  },
+  {
+    "name": "Aarsheim",
+    "nation": 36
+  },
+  {
+    "name": "Veart",
+    "nation": 195
+  },
+  {
+    "name": "Storck",
+    "nation": 21
+  },
+  {
+    "name": "Corini",
+    "nation": 27
+  },
+  {
+    "name": "Keleş",
+    "nation": 48
+  },
+  {
+    "name": "Stokowiec",
+    "nation": 37
+  },
+  {
+    "name": "Poenaru",
+    "nation": 39
+  },
+  {
+    "name": "Enochs",
+    "nation": 95
+  },
+  {
+    "name": "Etxeberria",
+    "nation": 45
+  },
+  {
+    "name": "Alexandre Gama",
+    "nation": 54
+  },
+  {
+    "name": "Kim Do Kyun",
+    "nation": 167
+  },
+  {
+    "name": "Mackay",
+    "nation": 42
+  },
+  {
+    "name": "Yorke",
+    "nation": 93
+  },
+  {
+    "name": "Stahre",
+    "nation": 46
+  },
+  {
+    "name": "Davidson",
+    "nation": 42
+  },
+  {
+    "name": "Łobodziński",
+    "nation": 37
+  },
+  {
+    "name": "Gaul",
+    "nation": 21
+  },
+  {
+    "name": "Silberberger",
+    "nation": 4
+  },
+  {
+    "name": "Koschinat",
+    "nation": 21
+  },
+  {
+    "name": "Zieliński",
+    "nation": 37
+  },
+  {
+    "name": "Lewandowski",
+    "nation": 37
+  },
+  {
+    "name": "Kim Nam Il",
+    "nation": 167
+  },
+  {
+    "name": "Kauczinski",
+    "nation": 21
+  },
+  {
+    "name": "Nielsen",
+    "nation": 13
+  },
+  {
+    "name": "Koskela",
+    "nation": 17
+  },
+  {
+    "name": "Gorini",
+    "nation": 27
+  },
+  {
+    "name": "Alm",
+    "nation": 46
+  },
+  {
+    "name": "Pacult",
+    "nation": 4
+  },
+  {
+    "name": "Janßen",
+    "nation": 21
+  },
+  {
+    "name": "Ross",
+    "nation": 42
+  },
+  {
+    "name": "Choi Yong Soo",
+    "nation": 167
+  },
+  {
+    "name": "Rubén Albés",
+    "nation": 45
+  },
+  {
+    "name": "Rydström",
+    "nation": 46
+  },
+  {
+    "name": "Corica",
+    "nation": 195
+  },
+  {
+    "name": "Martindale",
+    "nation": 42
+  },
+  {
+    "name": "Ciobotariu",
+    "nation": 39
+  },
+  {
+    "name": "Talay",
+    "nation": 195
+  },
+  {
+    "name": "Riddersholm",
+    "nation": 13
+  },
+  {
+    "name": "Teja",
+    "nation": 39
+  },
+  {
+    "name": "Zeidler",
+    "nation": 21
+  },
+  {
+    "name": "Robinson",
+    "nation": 35
+  },
+  {
+    "name": "Friis",
+    "nation": 13
+  },
+  {
+    "name": "Croitoru",
+    "nation": 39
+  },
+  {
+    "name": "Kisnorbo",
+    "nation": 195
+  },
+  {
+    "name": "Ziegner",
+    "nation": 21
+  },
+  {
+    "name": "Krämer",
+    "nation": 21
+  },
+  {
+    "name": "Bakke",
+    "nation": 36
+  },
+  {
+    "name": "Brdarić",
+    "nation": 21
+  },
+  {
+    "name": "Michelsen",
+    "nation": 36
+  },
+  {
+    "name": "Steffen",
+    "nation": 21
+  },
+  {
+    "name": "Mader",
+    "nation": 4
+  },
+  {
+    "name": "Kleine",
+    "nation": 21
+  },
+  {
+    "name": "Meyer",
+    "nation": 21
+  },
+  {
+    "name": "Solberg",
+    "nation": 46
+  },
+  {
+    "name": "Askou",
+    "nation": 13
+  },
+  {
+    "name": "Preußer",
+    "nation": 21
+  },
+  {
+    "name": "Juan Ferrando",
+    "nation": 45
+  },
+  {
+    "name": "Ojrzyński",
+    "nation": 37
+  },
+  {
+    "name": "Josep Gombau",
+    "nation": 45
+  },
+  {
+    "name": "Vukomanović",
+    "nation": 51
+  },
+  {
+    "name": "Jeunechamps",
+    "nation": 7
+  },
+  {
+    "name": "Constantine",
+    "nation": 14
+  },
+  {
+    "name": "Eder Sarabia",
+    "nation": 45
+  },
+  {
+    "name": "Fossi",
+    "nation": 27
+  },
+  {
+    "name": "Manolo Márquez",
+    "nation": 45
+  },
+  {
+    "name": "Dabrowski",
+    "nation": 21
+  },
+  {
+    "name": "Brännström",
+    "nation": 46
+  },
+  {
+    "name": "Buckingham",
+    "nation": 14
+  },
+  {
+    "name": "O'Donnell",
+    "nation": 25
+  },
+  {
+    "name": "Grindhaug",
+    "nation": 36
+  },
+  {
+    "name": "Boothroyd",
+    "nation": 14
+  },
+  {
+    "name": "McInnes",
+    "nation": 42
+  },
+  {
+    "name": "Helstrup",
+    "nation": 36
+  },
+  {
+    "name": "Pelici",
+    "nation": 39
+  },
+  {
+    "name": "Bradley",
+    "nation": 25
+  },
+  {
+    "name": "Stamm",
+    "nation": 47
+  },
+  {
+    "name": "Long",
+    "nation": 25
+  },
+  {
+    "name": "Papas",
+    "nation": 195
+  },
+  {
+    "name": "Pedro Emanuel",
+    "nation": 38
+  },
+  {
+    "name": "Kniat",
+    "nation": 21
+  },
+  {
+    "name": "Parkinson",
+    "nation": 14
+  },
+  {
+    "name": "Lindström",
+    "nation": 46
+  },
+  {
+    "name": "Zadkovich",
+    "nation": 195
+  },
+  {
+    "name": "Ødegaard",
+    "nation": 36
+  },
+  {
+    "name": "Myler",
+    "nation": 25
+  },
+  {
+    "name": "Russell",
+    "nation": 25
+  },
+  {
+    "name": "Grayson",
+    "nation": 14
+  },
+  {
+    "name": "Hellberg",
+    "nation": 46
+  },
+  {
+    "name": "Michelsen",
+    "nation": 13
+  },
+  {
+    "name": "Clarhaut",
+    "nation": 95
+  },
+  {
+    "name": "Majewski",
+    "nation": 37
+  },
+  {
+    "name": "Doherty",
+    "nation": 25
+  },
+  {
+    "name": "Alexandersson",
+    "nation": 24
+  },
+  {
+    "name": "Berner",
+    "nation": 47
+  },
+  {
+    "name": "Billborn",
+    "nation": 46
+  },
+  {
+    "name": "Persson",
+    "nation": 46
+  },
+  {
+    "name": "Moon",
+    "nation": 195
+  },
+  {
+    "name": "Nilsen",
+    "nation": 36
+  },
+  {
+    "name": "Bäckström",
+    "nation": 46
+  },
+  {
+    "name": "Duff",
+    "nation": 25
+  },
+  {
+    "name": "Higgins",
+    "nation": 35
+  }
+]

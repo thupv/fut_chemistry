@@ -15,8 +15,10 @@ class IsolateArguments {
   final SendPort sendPort;
   final List<Player> players;
   final Formation formation;
+  final int? leagueBonus;
+  final int? nationBonus;
 
-  IsolateArguments(this.taskId, this.sendPort, this.players, this.formation);
+  IsolateArguments(this.taskId, this.sendPort, this.players, this.formation, this.leagueBonus, this.nationBonus);
 }
 
 class IsolateResponse {
@@ -33,7 +35,7 @@ class IsolateResponse {
 
 void entryPoint(IsolateArguments arguments) async {
   final result =
-      calculateMaxTeamChemistry(arguments.players, arguments.formation);
+      calculateMaxTeamChemistry(arguments.players, arguments.formation, arguments.leagueBonus, arguments.nationBonus);
   arguments.sendPort
       .send(IsolateResponse(arguments.taskId, result, arguments.formation));
 }
@@ -60,7 +62,7 @@ Iterable<List<int>> combinations(
 }
 
 OptimizerResult calculateMaxTeamChemistry(
-    List<Player> players, Formation formation) {
+    List<Player> players, Formation formation, int? leagueBonus, int? nationBonus) {
   int maxChemistry = -1;
   List<Player> resultPlayers = [];
   Map<String, int> playerChemMap = {};
@@ -76,7 +78,7 @@ OptimizerResult calculateMaxTeamChemistry(
 
   Map<String, List<int>> positionMap = {};
   for (var i = 0; i < players.length; i++) {
-    var positions = players[i].position.split(',');
+    var positions = players[i].position.split('|');
     for (final pos in positions) {
       if (positionMap.containsKey(pos)) {
         positionMap[pos]!.add(i);
@@ -118,6 +120,12 @@ OptimizerResult calculateMaxTeamChemistry(
 
     int teamChemistry = 0;
     bool isValidComb = true;
+    print(leagueBonus);
+    print(nationBonus);
+    if(leagueBonus != null && nationBonus != null) {
+      nationChemMap[nationBonus] = 1;
+      leagueChemMap[leagueBonus] = 1;
+    }
     for (final idx in comb) {
       if (idx == -1) continue;
       Player player = players[idx];
@@ -129,13 +137,14 @@ OptimizerResult calculateMaxTeamChemistry(
       int nationId = int.parse(player.nationId);
       int leagueId = int.parse(player.leagueId);
       int clubId = int.parse(player.clubId);
-      if (clubId == 112658) {
+      String club =  player.clubName.toLowerCase();
+      if (club.contains('icon')) {
         nationChemMap[nationId] =
             nationChemMap[nationId] != null ? nationChemMap[nationId]! + 2 : 2;
         continue;
       }
 
-      if (clubId == 999016) {
+      if (club.contains("hero")) {
         nationChemMap[nationId] =
             nationChemMap[nationId] != null ? nationChemMap[nationId]! + 1 : 1;
         leagueChemMap[leagueId] =
@@ -149,6 +158,10 @@ OptimizerResult calculateMaxTeamChemistry(
       clubChemMap[clubId] =
           clubChemMap[clubId] != null ? clubChemMap[clubId]! + 1 : 1;
     }
+
+    print(nationChemMap);
+    print(leagueChemMap);
+    print(clubChemMap);
 
     if (isValidComb == false) {
       continue;
@@ -166,10 +179,10 @@ OptimizerResult calculateMaxTeamChemistry(
       int nationId = int.parse(player.nationId);
       int leagueId = int.parse(player.leagueId);
       int clubId = int.parse(player.clubId);
-
+      String club =  player.clubName.toLowerCase();
       int playerChem = 0;
 
-      if (clubId > 100000) {
+      if (club.contains('icon') || club.contains("hero")) {
         playerChem += 3;
       }
       if (nationChemMap[nationId] != null) {
@@ -234,10 +247,10 @@ OptimizerResult calculateMaxTeamChemistry(
   }
   if (maxChemistry == -1) {
     return OptimizerResult(0, formation, players,
-        List<int>.generate(11, (_) => -1, growable: false));
+        List<int>.generate(11, (_) => -1, growable: false), leagueBonus, nationBonus);
   }
   return OptimizerResult(
-      maxChemistry, formation, resultPlayers, resultPlayerChems);
+      maxChemistry, formation, resultPlayers, resultPlayerChems, leagueBonus, nationBonus);
 }
 
 class IsolateTask {
@@ -246,16 +259,18 @@ class IsolateTask {
   late Formation formation;
   final List<Player> players;
   final int id;
+  final int? leagueBonus;
+  final int? nationBonus;
   TaskStatus status = TaskStatus.waiting;
 
-  IsolateTask(this.sendPort, this.id, this.players, this.formation) {
+  IsolateTask(this.sendPort, this.id, this.players, this.formation, this.leagueBonus, this.nationBonus) {
     spawnIsolate();
   }
 
   spawnIsolate() async {
     status = TaskStatus.running;
     await Isolate.spawn<IsolateArguments>(
-        entryPoint, IsolateArguments(id, sendPort, players, formation));
+        entryPoint, IsolateArguments(id, sendPort, players, formation, leagueBonus, nationBonus));
   }
 }
 
@@ -273,9 +288,11 @@ class IsolatePool {
     List<Formation> formations =
         appState.metadataNotifier.value?.formations ?? [];
     List<Player> cards = appState.selectedCardsNotifier.value;
+    int? nationBonus = appState.selectedManagerNationNotifier.value;
+    int? leagueBonus = appState.selectedManagerLeagueNotifier.value;
     // IsolateTask(_receivePort.sendPort, 5, cards, formations[5]);
     for (int i = 0; i < formations.length; i++) {
-      IsolateTask(_receivePort.sendPort, i, cards, formations[i]);
+      IsolateTask(_receivePort.sendPort, i, cards, formations[i], leagueBonus, nationBonus);
     }
   }
 }

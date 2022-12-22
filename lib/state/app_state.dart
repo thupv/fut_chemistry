@@ -20,6 +20,11 @@ class AppState {
   final selectedPositionNotifier = ValueNotifier<String?>(null);
   final selectedClubLeagueNotifier = ValueNotifier<int?>(null);
 
+  final selectedManagerNationNotifier = ValueNotifier<int?>(null);
+  final selectedManagerLeagueNotifier = ValueNotifier<int?>(null);
+
+
+
   final optimizerResultNotifier = ValueNotifier<List<OptimizerResult>>([]);
   List<OptimizerResult> _tempOptimizerResult = [];
 
@@ -66,7 +71,7 @@ class AppState {
     optimizerResultNotifier.value = [];
     // _isolatePool.createOptimizeIsolate();
     for(int i = 0; i < metadataNotifier.value!.formations.length; i++) {
-      final result = calculateMaxTeamChemistry(selectedCardsNotifier.value, metadataNotifier.value!.formations[i]);
+      final result = calculateMaxTeamChemistry(selectedCardsNotifier.value, metadataNotifier.value!.formations[i], selectedManagerLeagueNotifier.value, selectedManagerNationNotifier.value);
       _tempOptimizerResult.add(result);
       if (_tempOptimizerResult.length ==
           metadataNotifier.value!.formations.length) {
@@ -123,7 +128,7 @@ class AppState {
       //   return false;
       // }
       if (selectedPosition != null &&
-          player.firstPosition != selectedPosition) {
+          !player.position.contains(selectedPosition)) {
         return false;
       }
       return true;

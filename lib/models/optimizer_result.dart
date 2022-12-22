@@ -7,10 +7,12 @@ class OptimizerResult {
   final Formation formation;
   final List<Player> resultPlayers;
   final List<int> resultPlayerChems;
+  final int? nationBonus;
+  final int? leagueBonus;
   int positionChanges = 0;
   int offChem = 0;
 
-  OptimizerResult(this.maxTeamChemistry, this.formation, this.resultPlayers, this.resultPlayerChems) {
+  OptimizerResult(this.maxTeamChemistry, this.formation, this.resultPlayers, this.resultPlayerChems, this.leagueBonus, this.nationBonus) {
     formation.positions.asMap().forEach((index, pos) {
       Player player = resultPlayers[index];
       if(resultPlayerChems[index] > -1) {

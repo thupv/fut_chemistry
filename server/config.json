@@ -1,9 +1,9 @@
 {
-  "playerUrl": "https://static.wefut.com/assets/images/fut23/playeravatars/{playerId}.png",
+  "playerUrl": "https://cdn.futbin.com/content/fifa23/img/players/{playerId}.png?v=23",
   "nationUrl": "https://static.wefut.com/assets/images/nation_flag/{nationId}.jpg",
-  "cardUrl": "https://static.wefut.com/assets/images/fut23/{cardId}.png",
+  "cardUrl": "https://www.fifarosters.com/assets/cards/fifa23/cards_bg_e_{cardId}.png",
   "clubUrl": "https://static.wefut.com/assets/images/fut23/clubbadges/{clubId}.png",
   "leagueUrl": "https://static.wefut.com/assets/images/fut23/leaguebadges/{leagueId}.png",
-  "smallCardUrl": "https://raw.githubusercontent.com/futfc/fut_card/main/cards/{cardId}.png",
-  "dbUrl": "https://app.futchemistry.com/assets/assets/data/db_12_20.csv"
+  "smallCardUrl": "https://www.fifarosters.com/assets/cards/fifa23/cards_bg_s_{cardId}.png",
+  "dbUrl": "http://192.168.1.15:8080/my.csv"
 }

@@ -5,14 +5,14 @@ import 'package:fut_chemistry/state/app_state.dart';
 
 import '../core/helpers/device_type.dart';
 
-class LeagueModal extends StatefulWidget {
-  const LeagueModal({Key? key}) : super(key: key);
+class ManagerLeagueModal extends StatefulWidget {
+  const ManagerLeagueModal({Key? key}) : super(key: key);
 
   @override
-  State<LeagueModal> createState() => _LeagueModalState();
+  State<ManagerLeagueModal> createState() => _LeagueModalState();
 }
 
-class _LeagueModalState extends State<LeagueModal> {
+class _LeagueModalState extends State<ManagerLeagueModal> {
   final appState = getIt<AppState>();
 
   List<League> leagues = [];
@@ -57,12 +57,12 @@ class _LeagueModalState extends State<LeagueModal> {
                     crossAxisSpacing: 15,
                   ),
                   itemBuilder: (context, index) {
+                    int fileId = leagues[index].id;
                     int leagueId = leagues[index].flagId;
                     String leagueImgUrl =
                         "assets/img/leagues/$leagueId.png";
                     return GestureDetector(
                       onTap: () {
-                        appState.selectedClubLeagueNotifier.value = leagueId;
                         Navigator.of(context).pop(leagueId);
                       },
                       child: Container(

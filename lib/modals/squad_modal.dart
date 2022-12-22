@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:fut_chemistry/constants/assets_images.dart';
 import 'package:fut_chemistry/models/optimizer_result.dart';
+import '../core/helpers/device_type.dart';
 
 import '../models/box.dart';
 import '../models/position.dart';
@@ -131,7 +132,8 @@ class _SquadModalState extends State<SquadModal> {
                       height: cardBox.height / 5,
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                          image: AssetImage("assets/images/chem-${playerChem.toString()}.png"),
+                          image: AssetImage(
+                              "assets/images/chem-${playerChem.toString()}.png"),
                           fit: BoxFit.fitHeight,
                         ),
                       ),
@@ -140,16 +142,19 @@ class _SquadModalState extends State<SquadModal> {
                   Positioned(
                     bottom: cardBox.height / 4,
                     left: cardBox.width / 2,
-                    child: playerChem > -1 && player.firstPosition != pos ? Container(
-                      width: cardBox.width,
-                      height: cardBox.height / 5,
-                      decoration: const BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage("assets/images/pos_change.png"),
-                          fit: BoxFit.fitHeight,
-                        ),
-                      ),
-                    ) : Container(),
+                    child: playerChem > -1 && player.firstPosition != pos
+                        ? Container(
+                            width: cardBox.width,
+                            height: cardBox.height / 5,
+                            decoration: const BoxDecoration(
+                              image: DecorationImage(
+                                image:
+                                    AssetImage("assets/images/pos_change.png"),
+                                fit: BoxFit.fitHeight,
+                              ),
+                            ),
+                          )
+                        : Container(),
                   ),
                 ],
               )
@@ -158,19 +163,102 @@ class _SquadModalState extends State<SquadModal> {
     );
   }
 
+  Positioned _buildManagerPosition(
+    Box cardWrapperBox,
+    BoxConstraints constraints,
+    Box cardBox,
+  ) {
+    final cardWrapperPosition = generatePositionCardWrapper(
+      [0.1, 0.9],
+      constraints,
+      cardWrapperBox,
+    );
+    return Positioned(
+      top: cardWrapperPosition.top,
+      left: cardWrapperPosition.left,
+      width: cardWrapperBox.width,
+      height: cardWrapperBox.height,
+      child: SizedBox(
+        width: cardBox.width,
+        height: cardBox.height,
+        // color: Colors.red,
+        child: Stack(
+          alignment: Alignment.center,
+          children: [
+            Positioned(
+              bottom: cardBox.height / 6,
+              child: Container(
+                width: cardBox.width,
+                height: cardBox.height / 4,
+                decoration: const BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage("assets/images/pos_base.png"),
+                    fit: BoxFit.fitHeight,
+                  ),
+                ),
+                child: const Center(
+                  child: Text("Manager",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold,
+                        decoration: TextDecoration.none,
+                      )),
+                ),
+              ),
+            ),
+            Positioned(
+              bottom: cardBox.height / 6,
+              child: Container(
+                width: cardBox.width,
+                height: cardBox.height,
+                decoration: const BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage("assets/img/manager_insquad.png"),
+                    fit: BoxFit.contain,
+                  ),
+                ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset(
+                      'assets/img/leagues/${widget.optimizerResult.leagueBonus}.png',
+                      width: cardBox.height / 4,
+                      height: cardBox.height / 4,
+                      fit: BoxFit.contain,
+                    ),
+                    Image.asset(
+                      'assets/img/nations/f_${widget.optimizerResult.nationBonus}.png',
+                      width: cardBox.height / 4,
+                      height: cardBox.height / 4,
+                      fit: BoxFit.contain,
+                    ),
+                  ],
+                )
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
+    final deviceType = DeviceDetector.getDeviceType(context);
+    final scaling = deviceType == DeviceType.phone ? 0.8 : 0.5;
+
     return SafeArea(
       child: SizedBox(
         height: double.infinity,
         child: LayoutBuilder(builder: (_, BoxConstraints constraints) {
           final cardWrapperBox = Box(
-            width: constraints.maxWidth * 7 * 0.035 * 0.4,
-            height: constraints.maxWidth * 11 * 0.035 * 0.4,
+            width: constraints.maxWidth * 7 * 0.035 * scaling,
+            height: constraints.maxWidth * 11 * 0.035 * scaling,
           );
           final cardBox = Box(
-            width: constraints.maxWidth * 7 * 0.03 * 0.4,
-            height: constraints.maxWidth * 11 * 0.03 * 0.4,
+            width: constraints.maxWidth * 7 * 0.03 * scaling,
+            height: constraints.maxWidth * 11 * 0.03 * scaling,
           );
           final formation = _buildFormations(
             cardBox: cardBox,
@@ -178,11 +266,14 @@ class _SquadModalState extends State<SquadModal> {
             cardWrapperBox: cardWrapperBox,
             // cards: widget.optimizerResult.players,
           );
+          final manager = widget.optimizerResult.nationBonus != null ?_buildManagerPosition(
+              cardWrapperBox, constraints, cardWrapperBox) : Container();
           return Stack(
             fit: StackFit.expand,
             children: [
               _buildBackdropImage(),
               ...formation,
+              manager
             ],
           );
         }),

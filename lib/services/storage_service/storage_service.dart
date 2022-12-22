@@ -12,6 +12,7 @@ import 'package:hive/hive.dart';
 import 'package:http/http.dart' as http;
 
 import '../../models/hive/team.dart';
+import '../../models/manager.dart';
 
 class StorageService {
   BoxCollection? hiveCollection;
@@ -34,6 +35,7 @@ class StorageService {
   Future<Metadata> getMetadata() async {
     AppConfig appConfig = await loadAppConfigFromAPI();
     List<League> leagues = await loadLeagueFromJson();
+    List<Manager> managers = await loadManagerFromJson();
     List<Club> clubs = await loadClubFromJson();
     List<Nation> nations = await loadNationFromJson();
     List<Player> players = await loadPlayerFromCSV(appConfig);
@@ -41,12 +43,12 @@ class StorageService {
       _cachedPlayer[player.indexKey] = player;
     }
     return Metadata(
-        leagues: leagues, clubs: clubs, nations: nations, players: players);
+        leagues: leagues, clubs: clubs, nations: nations, players: players, managers: managers);
   }
 
   Future<AppConfig> loadAppConfigFromAPI() async {
     final response =
-        await http.get(Uri.parse('https://futfc.github.io/fut_card/config.json'));
+        await http.get(Uri.parse('http://192.168.1.15:8080/config.json'));
 
     if (response.statusCode == 200) {
       return AppConfig.fromJson(jsonDecode(response.body));
@@ -61,6 +63,15 @@ class StorageService {
     List json = jsonDecode(content);
 
     List<League> list = json.map((e) => League.fromJson(e)).toList();
+    return list;
+  }
+
+  Future<List<Manager>> loadManagerFromJson() async {
+    String path = "assets/data/manager.json";
+    String content = await rootBundle.loadString(path);
+    List json = jsonDecode(content);
+
+    List<Manager> list = json.map((e) => Manager.fromJson(e)).toList();
     return list;
   }
 

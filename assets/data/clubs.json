@@ -1,13 +1,5 @@
 [
   {
-    "id": 99,
-    "shortName": "Rest of World",
-    "leagueId": 0,
-    "rarity": 5,
-    "png": true,
-    "code": "RES"
-  },
-  {
     "id": 1,
     "shortName": "Arsenal",
     "leagueId": 1,
@@ -347,14 +339,6 @@
     "rarity": 2,
     "png": true,
     "code": "NEC"
-  },
-  {
-    "id": 101144,
-    "shortName": "Júbilo Iwata",
-    "leagueId": 25,
-    "rarity": 3,
-    "png": true,
-    "code": ""
   },
   {
     "id": 101146,
@@ -1862,15 +1846,6 @@
     "shortName": "Western United FC",
     "leagueId": 28,
     "rarity": 3,
-    "png": true,
-    "code": ""
-  },
-  {
-    "id": 114144,
-    "shortName": "Núnez",
-    "leagueId": 9,
-    "rarity": 1,
-    "kit": false,
     "png": true,
     "code": ""
   },
