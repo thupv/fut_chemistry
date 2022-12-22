@@ -5,5 +5,5 @@
   "clubUrl": "https://static.wefut.com/assets/images/fut23/clubbadges/{clubId}.png",
   "leagueUrl": "https://static.wefut.com/assets/images/fut23/leaguebadges/{leagueId}.png",
   "smallCardUrl": "https://www.fifarosters.com/assets/cards/fifa23/cards_bg_s_{cardId}.png",
-  "dbUrl": "http://192.168.1.15:8080/my.csv"
+  "dbUrl": "https://app.futchemistry.com/assets/assets/data/db_12_22.csv"
 }
