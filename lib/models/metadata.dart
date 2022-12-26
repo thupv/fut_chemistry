@@ -1,6 +1,7 @@
 import 'package:fut_chemistry/constants/player_render_position.dart';
 import 'package:fut_chemistry/models/player.dart';
 
+import 'app.dart';
 import 'club.dart';
 import 'formation.dart';
 import 'league.dart';
@@ -13,13 +14,15 @@ class Metadata {
       required this.clubs,
       required this.nations,
       required this.players,
-      required this.managers});
+      required this.managers,
+      required this.apps});
 
   List<Nation> nations = [];
   List<League> leagues = [];
   List<Club> clubs = [];
   List<Player> players = [];
   List<Manager> managers = [];
+  List<App> apps = [];
   List<Formation> formations = [
     Formation(id: 1, name: "3-4-3", positions: [
       "LW",

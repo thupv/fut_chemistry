@@ -17,6 +17,7 @@ import 'package:fut_chemistry/modals/club_modal.dart';
 import 'package:fut_chemistry/modals/card_rarity_modal.dart';
 import 'package:fut_chemistry/modals/player_position.dart';
 import '../../core/helpers/device_type.dart';
+import 'app_drawer.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -56,6 +57,7 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
   Widget build(BuildContext context) {
     final deviceType = DeviceDetector.getDeviceType(context);
     return Scaffold(
+      drawer: const AppDrawer(),
       appBar: AppBar(
         title: const Text('Chemistry Optimizer'),
         actions: <Widget>[

@@ -14,6 +14,8 @@ import 'package:hive/hive.dart';
 import 'package:http/http.dart' as http;
 import 'package:path_provider/path_provider.dart';
 
+import '../../constants/base_url.dart';
+import '../../models/app.dart';
 import '../../models/hive/team.dart';
 import '../../models/manager.dart';
 
@@ -23,7 +25,7 @@ class StorageService {
 
   init() async {
     String path = './';
-    if(!kIsWeb) {
+    if (!kIsWeb) {
       Directory directory = await getApplicationDocumentsDirectory();
       path = directory.path;
     }
@@ -43,6 +45,7 @@ class StorageService {
 
   Future<Metadata> getMetadata() async {
     AppConfig appConfig = await loadAppConfigFromAPI();
+    List<App> apps = await loadAppCollectionFromAPI();
     List<League> leagues = await loadLeagueFromJson();
     List<Manager> managers = await loadManagerFromJson();
     List<Club> clubs = await loadClubFromJson();
@@ -52,15 +55,35 @@ class StorageService {
       _cachedPlayer[player.indexKey] = player;
     }
     return Metadata(
-        leagues: leagues, clubs: clubs, nations: nations, players: players, managers: managers);
+        leagues: leagues,
+        clubs: clubs,
+        nations: nations,
+        players: players,
+        managers: managers,
+        apps: apps);
   }
 
   Future<AppConfig> loadAppConfigFromAPI() async {
-    final response =
-        await http.get(Uri.parse('https://futfc.github.io/fut_card/config.json'));
+    final response = await http.get(Uri.parse('$API_URL/config.json'));
 
     if (response.statusCode == 200) {
       return AppConfig.fromJson(jsonDecode(response.body));
+    } else {
+      throw Exception('Failed to load app config');
+    }
+  }
+
+  Future<List<App>> loadAppCollectionFromAPI() async {
+    final response = await http.get(Uri.parse('$API_URL/app_collection.json'));
+
+    if (response.statusCode == 200) {
+      List<App> apps = [];
+      var json = jsonDecode(response.body);
+
+      for (final app in json['fut_collection']) {
+        apps.add(App.fromJson(app));
+      }
+      return apps;
     } else {
       throw Exception('Failed to load app config');
     }
