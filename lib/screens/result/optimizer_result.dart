@@ -104,19 +104,18 @@ class _OptimizerResultScreenState extends State<OptimizerResultScreen> with Comm
               subtitle: Text('Off chem: ${item.offChem.toString()}'),
               trailing: SizedBox(
                 height: 40,
-                width: 130,
+                width: 160,
                 child: ElevatedButton(
-                  child: const Text('View Squad'),
-                  onPressed: () {
+                  child: const Text('View Squad [ADS]'),
+                  onPressed: () async {
+                      logAdImpression();
+                      await AdmobManager.showRewardedAd();
                       logViewSquad(idx);
-                      showFloatingModalBottomSheet(
+                      await showFloatingModalBottomSheet(
                         context: context,
                         backgroundColor: Colors.indigo,
                         builder: (context) => SquadModal(optimizerResult: item),
-                      ).then((position) {
-                        logAdImpression();
-                        AdmobManager.showRewardedAd();
-                      });
+                      );
                   },
                 ),
               ),

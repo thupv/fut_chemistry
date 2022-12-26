@@ -1,22 +1,22 @@
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class AdmobManager {
-  static RewardedAd? _rewardedAd;
+  static RewardedInterstitialAd? _rewardedAd;
   static int _numRewardedLoadAttempts = 0;
   static int maxFailedLoadAttempts = 3;
   static const testInterstitialAdsId = 'ca-app-pub-3940256099942544/5354046379';
-  static const interstitialAdsIOSId = '';
+  static const interstitialAdsIOSId = 'ca-app-pub-9472343620180321/9982789505';
 
   static init() {
     MobileAds.instance.initialize();
   }
 
   static loadRewardAd() {
-    RewardedAd.load(
+    RewardedInterstitialAd.load(
         adUnitId: interstitialAdsIOSId,
         request: const AdRequest(),
-        rewardedAdLoadCallback: RewardedAdLoadCallback(
-          onAdLoaded: (RewardedAd ad) {
+        rewardedInterstitialAdLoadCallback: RewardedInterstitialAdLoadCallback(
+          onAdLoaded: (RewardedInterstitialAd ad) {
             _rewardedAd = ad;
             _numRewardedLoadAttempts = 0;
 
@@ -24,6 +24,7 @@ class AdmobManager {
           onAdFailedToLoad: (LoadAdError error) {
             _rewardedAd = null;
             _numRewardedLoadAttempts += 1;
+            print('Load ads failed: $_numRewardedLoadAttempts $error');
             if (_numRewardedLoadAttempts < maxFailedLoadAttempts) {
               loadRewardAd();
             }
@@ -33,17 +34,18 @@ class AdmobManager {
   }
 
   static Future<void> showRewardedAd() async {
+    print(_rewardedAd);
     if (_rewardedAd == null) {
       return;
     }
     _rewardedAd!.fullScreenContentCallback = FullScreenContentCallback(
-      onAdShowedFullScreenContent: (RewardedAd ad) =>
+      onAdShowedFullScreenContent: (RewardedInterstitialAd ad) =>
           print('ad showRewardedAd.'),
-      onAdDismissedFullScreenContent: (RewardedAd ad) {
+      onAdDismissedFullScreenContent: (RewardedInterstitialAd ad) {
         ad.dispose();
         loadRewardAd();
       },
-      onAdFailedToShowFullScreenContent: (RewardedAd ad, AdError error) {
+      onAdFailedToShowFullScreenContent: (RewardedInterstitialAd ad, AdError error) {
         ad.dispose();
         loadRewardAd();
       },
