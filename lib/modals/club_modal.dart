@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fut_chemistry/models/club.dart';
 import 'package:fut_chemistry/core/di.dart';
 import 'package:fut_chemistry/state/app_state.dart';
+import '../analytics/event.dart';
 
 import '../core/helpers/device_type.dart';
 
@@ -70,6 +71,7 @@ class _ClubModalState extends State<ClubModal> {
                     String clubUrl = "assets/img/clubs/small/club_small_${filteredClubs[index].id}.png";
                     return GestureDetector(
                       onTap: () {
+                        logFilter("club", filteredClubs[index].id.toString());
                         Navigator.of(context).pop(filteredClubs[index].id);
                       },
                       child: SingleChildScrollView(

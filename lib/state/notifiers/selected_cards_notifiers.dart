@@ -1,9 +1,11 @@
 import 'package:flutter/cupertino.dart';
+import 'package:fut_chemistry/analytics/event.dart';
 import 'package:fut_chemistry/models/player.dart';
 import '../../core/di.dart';
 import '../../services/storage_service/storage_service.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
+import '../../analytics/event.dart';
 
 class SelectedCardsNotifier extends ValueNotifier<List<Player>> {
   final _storageService = getIt<StorageService>();
@@ -50,6 +52,7 @@ class SelectedCardsNotifier extends ValueNotifier<List<Player>> {
         onSuccess(false);
         return;
       }
+      logImportSquad(squadId);
       String apiUrl = "https://api.allorigins.win/get?url=https://utas.mob.v1.fut.ea.com/ut/showofflink/$squadId";
 
       final response = await http.get(Uri.parse(apiUrl));

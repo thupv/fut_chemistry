@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fut_chemistry/models/league.dart';
 import 'package:fut_chemistry/core/di.dart';
 import 'package:fut_chemistry/state/app_state.dart';
+import '../analytics/event.dart';
 
 import '../core/helpers/device_type.dart';
 
@@ -64,6 +65,7 @@ class _LeagueModalState extends State<LeagueModal> {
                     return GestureDetector(
                       onTap: () {
                         appState.selectedClubLeagueNotifier.value = leagueClubId;
+                        logFilter("league", leagueClubId.toString());
                         Navigator.of(context).pop(leagueId);
                       },
                       child: Container(

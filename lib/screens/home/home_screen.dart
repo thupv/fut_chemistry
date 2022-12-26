@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:fut_chemistry/ads/admob_manager.dart';
+import 'package:fut_chemistry/analytics/event.dart';
 
 import 'package:fut_chemistry/core/di.dart';
 import 'package:fut_chemistry/modals/help_modal.dart';
@@ -33,8 +35,7 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
   @override
   void initState() {
     super.initState();
-    // AppAdmob.createRewardedInterstitialAd(
-    //     adUnitId: AdManager.interstitialAds_1);
+    AdmobManager.loadRewardAd();
     appState.init();
   }
 

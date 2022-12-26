@@ -5,6 +5,7 @@ import 'package:hive/hive.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
+import 'ads/admob_manager.dart';
 import 'core/di.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 
@@ -17,6 +18,7 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+  AdmobManager.init();
   if(kIsWeb) {
     Hive.initFlutter();
   } else {

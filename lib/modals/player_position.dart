@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../analytics/event.dart';
 
 import 'package:fut_chemistry/constants/assets_images.dart';
 
@@ -145,7 +146,10 @@ class _PlayerPositionModalState extends State<PlayerPositionModal> {
 
   _buildPositionCircle({required String position}) {
     return GestureDetector(
-      onTap: () => Navigator.pop(context, position),
+      onTap: () {
+        logFilter('position', position);
+        Navigator.pop(context, position);
+      },
       child: PhysicalModel(
         elevation: 15.0,
         color: Colors.black26,

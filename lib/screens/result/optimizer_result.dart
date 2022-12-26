@@ -4,6 +4,8 @@ import 'package:fut_chemistry/models/optimizer_result.dart';
 import 'package:fut_chemistry/core/extensions/map_indexed.dart';
 import 'package:fut_chemistry/core/mixins/dialog_mixins.dart';
 import 'package:fut_chemistry/modals/player_position.dart';
+import '../../ads/admob_manager.dart';
+import '../../analytics/event.dart';
 
 import '../../constants/ad_manager.dart';
 import '../../core/di.dart';
@@ -106,14 +108,14 @@ class _OptimizerResultScreenState extends State<OptimizerResultScreen> with Comm
                 child: ElevatedButton(
                   child: const Text('View Squad'),
                   onPressed: () {
+                      logViewSquad(idx);
                       showFloatingModalBottomSheet(
                         context: context,
                         backgroundColor: Colors.indigo,
                         builder: (context) => SquadModal(optimizerResult: item),
                       ).then((position) {
-                        // AppAdmob.showRewardedInterstitialAd(
-                        //   adUnitId: AdManager.interstitialAds_1,
-                        // );
+                        logAdImpression();
+                        AdmobManager.showRewardedAd();
                       });
                   },
                 ),

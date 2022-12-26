@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fut_chemistry/core/extensions/latin_extended.dart';
-
+import '../analytics/event.dart';
 import '../core/di.dart';
 import '../models/player.dart';
 import '../state/app_state.dart';

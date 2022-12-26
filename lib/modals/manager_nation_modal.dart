@@ -6,6 +6,7 @@ import '../core/helpers/device_type.dart';
 import '../core/mixins/dialog_mixins.dart';
 import '../models/manager.dart';
 import 'package:fut_chemistry/modals/manager_league_modal.dart';
+import '../analytics/event.dart';
 
 
 class ManagerNationModal extends StatefulWidget{
@@ -80,6 +81,7 @@ class _NationModalState extends State<ManagerNationModal> with CommonDialogMixin
                         if (league == null) return;
                           appState.selectedManagerLeagueNotifier.value = league;
                           appState.selectedManagerNationNotifier.value = nationCode;
+                          logFilter("manager", '$league-$nationCode');
                           Navigator.of(context).pop();
                         });
 

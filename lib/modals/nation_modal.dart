@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fut_chemistry/models/nation.dart';
 import 'package:fut_chemistry/core/di.dart';
 import 'package:fut_chemistry/state/app_state.dart';
+import '../analytics/event.dart';
 
 import '../core/helpers/device_type.dart';
 
@@ -69,6 +70,7 @@ class _NationModalState extends State<NationModal> {
                         "assets/img/nations/nation_large_$nationCode.png";
                     return GestureDetector(
                       onTap: () {
+                        logFilter("nation", nationCode.toString());
                         Navigator.of(context).pop(nationCode);
                       },
                       child: Image.asset(

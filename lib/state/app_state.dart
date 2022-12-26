@@ -6,6 +6,7 @@ import 'package:fut_chemistry/services/storage_service/storage_service.dart';
 import 'dart:isolate';
 import 'package:flutter/foundation.dart' show kIsWeb;
 
+import '../analytics/event.dart';
 import '../models/metadata.dart';
 import '../models/optimizer_result.dart';
 import 'package:fut_chemistry/constants/base_url.dart';
@@ -71,6 +72,7 @@ class AppState {
     }
     optimizerResultNotifier.value = [];
     // _isolatePool.createOptimizeIsolate();
+    logOptimize(selectedCardsNotifier.value);
     for(int i = 0; i < metadataNotifier.value!.formations.length; i++) {
       final result = calculateMaxTeamChemistry(selectedCardsNotifier.value, metadataNotifier.value!.formations[i], selectedManagerLeagueNotifier.value, selectedManagerNationNotifier.value);
       _tempOptimizerResult.add(result);
