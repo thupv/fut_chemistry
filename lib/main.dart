@@ -1,19 +1,28 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/adapters.dart';
+import 'package:path_provider/path_provider.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
 import 'core/di.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 
 import 'package:fut_chemistry/screens/home/home_screen.dart';
-import '../../firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
+import '../../firebase_options.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  Hive.initFlutter();
+  if(kIsWeb) {
+    Hive.initFlutter();
+  } else {
+    Directory directory = await getApplicationDocumentsDirectory();
+    await Hive.initFlutter(directory.path);
+  }
   initGetIt();
   runApp(const MyApp());
 }

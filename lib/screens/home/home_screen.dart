@@ -144,7 +144,7 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
                 ),
               ),
               Container(
-                height: 160,
+                height: 180,
                 decoration: BoxDecoration(
                   color: Colors.black12,
                   borderRadius: const BorderRadius.only(

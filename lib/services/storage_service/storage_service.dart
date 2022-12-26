@@ -1,5 +1,7 @@
 import 'dart:convert';
+import 'dart:io';
 import 'package:csv/csv.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:fut_chemistry/models/app_config.dart';
 
@@ -10,6 +12,7 @@ import 'package:fut_chemistry/models/nation.dart';
 import 'package:fut_chemistry/models/metadata.dart';
 import 'package:hive/hive.dart';
 import 'package:http/http.dart' as http;
+import 'package:path_provider/path_provider.dart';
 
 import '../../models/hive/team.dart';
 import '../../models/manager.dart';
@@ -19,9 +22,15 @@ class StorageService {
   final Map<String, Player> _cachedPlayer = {};
 
   init() async {
+    String path = './';
+    if(!kIsWeb) {
+      Directory directory = await getApplicationDocumentsDirectory();
+      path = directory.path;
+    }
+
     hiveCollection = await BoxCollection.open(
         'FutChemistryDB', {'savedTeams', 'autoSavedTeams'},
-        path: './');
+        path: path);
   }
 
   Future<List<Player>> getPlayers() async {

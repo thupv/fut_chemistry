@@ -120,8 +120,6 @@ OptimizerResult calculateMaxTeamChemistry(
 
     int teamChemistry = 0;
     bool isValidComb = true;
-    print(leagueBonus);
-    print(nationBonus);
     if(leagueBonus != null && nationBonus != null) {
       nationChemMap[nationBonus] = 1;
       leagueChemMap[leagueBonus] = 1;
@@ -158,10 +156,6 @@ OptimizerResult calculateMaxTeamChemistry(
       clubChemMap[clubId] =
           clubChemMap[clubId] != null ? clubChemMap[clubId]! + 1 : 1;
     }
-
-    print(nationChemMap);
-    print(leagueChemMap);
-    print(clubChemMap);
 
     if (isValidComb == false) {
       continue;

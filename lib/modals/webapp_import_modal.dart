@@ -65,7 +65,7 @@ class _NameSearchModalState extends State<WebAppImportModal> {
                           elevation: 3,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(2.0)),
-                          minimumSize: const Size(200, 60), //////// HERE
+                          minimumSize: const Size(140, 60), //////// HERE
                         ),
                         onPressed: isImporting ? null : () async {
                           setState(() {
@@ -97,7 +97,14 @@ class _NameSearchModalState extends State<WebAppImportModal> {
               Expanded(
                   child: Padding(
                 padding: const EdgeInsets.all(16.0),
-                child: Image.asset('assets/img/web_app_import_guide.jpg'),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Text("HOW TO IMPORT", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+                    const SizedBox(height: 8,),
+                    Image.asset('assets/img/web_app_import_guide.jpg'),
+                  ],
+                ),
               )),
             ],
           ),

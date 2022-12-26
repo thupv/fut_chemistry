@@ -4,6 +4,7 @@ import 'package:fut_chemistry/models/player.dart';
 import 'package:fut_chemistry/core/di.dart';
 import 'package:fut_chemistry/services/storage_service/storage_service.dart';
 import 'dart:isolate';
+import 'package:flutter/foundation.dart' show kIsWeb;
 
 import '../models/metadata.dart';
 import '../models/optimizer_result.dart';
@@ -65,7 +66,7 @@ class AppState {
   }
 
   void optimize() {
-    if(Uri.base.host != HOST_URL) {
+    if(Uri.base.host != HOST_URL && kIsWeb) {
       return;
     }
     optimizerResultNotifier.value = [];
