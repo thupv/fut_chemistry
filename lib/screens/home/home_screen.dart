@@ -634,7 +634,7 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
         }
       },
       child: ValueListenableBuilder(
-        valueListenable: appState.selectedClubLeagueNotifier,
+        valueListenable: appState.selectedLeagueNotifier,
         builder: (BuildContext context, league, Widget? child) {
           return Container(
             width: 70,
