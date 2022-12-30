@@ -31,7 +31,7 @@ class _AppDrawerState extends State<AppDrawer> {
               children: [
                 Column(
                   children: [
-                    const Text('Fut Card Creator',
+                    const Text('Chemistry Optimizer',
                         style: TextStyle(fontSize: 20)),
                     const Divider(),
                     data != null

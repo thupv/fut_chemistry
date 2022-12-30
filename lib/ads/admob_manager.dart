@@ -6,6 +6,7 @@ class AdmobManager {
   static int maxFailedLoadAttempts = 3;
   static const testInterstitialAdsId = 'ca-app-pub-3940256099942544/5354046379';
   static const interstitialAdsIOSId = 'ca-app-pub-9472343620180321/9982789505';
+  static const interstitialAdsAndroidId = 'ca-app-pub-9472343620180321/7745554692';
 
   static init() {
     MobileAds.instance.initialize();

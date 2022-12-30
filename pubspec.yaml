@@ -1,9 +1,9 @@
 name: fut_chemistry
-description: Tiny Flutter App Boilerplate
+description: Optimize your FUT Squad chemistry
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
-version: 1.0.0+3
+version: 1.0.0+5
 
 environment:
   sdk: '>=2.18.5 <3.0.0'
@@ -30,6 +30,8 @@ dependencies:
   google_mobile_ads: ^2.3.0
 
 dev_dependencies:
+  rename: ^2.0.1
+  change_app_package_name: ^1.1.0
   flutter_test:
     sdk: flutter
 

@@ -5,7 +5,7 @@
 // 'flutter create' template.
 
 // The application's name. By default this is also the title of the Flutter window.
-PRODUCT_NAME = fut_chemistry
+PRODUCT_NAME = “FUT Chemistry Booster”;
 
 // The application's bundle identifier
 PRODUCT_BUNDLE_IDENTIFIER = com.thupvvvv.boilerplate.tinyAppBoilerplate

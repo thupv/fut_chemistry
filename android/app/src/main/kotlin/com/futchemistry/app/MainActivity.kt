@@ -1,4 +1,4 @@
-package com.thupvvvv.boilerplate.fut_chemistry
+package com.futchemistry.app
 
 import io.flutter.embedding.android.FlutterActivity
 
