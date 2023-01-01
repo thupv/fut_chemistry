@@ -39,43 +39,8 @@
             }
           ]
         }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:576664634524:android:4764ffc8326e9751419959",
-        "android_client_info": {
-          "package_name": "com.futfc.fut_chemistry"
-        }
       },
-      "oauth_client": [
-        {
-          "client_id": "576664634524-s3vaa5u2c1mdbhv5e03cn2u9r2vs562e.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCPkWa2eNW1m1whT6O7kOy6AOQ9yhw6u6c"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "576664634524-s3vaa5u2c1mdbhv5e03cn2u9r2vs562e.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "576664634524-33707rsob3h85iarv7ito3tandufe75m.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.futfc.futchemistry"
-              }
-            }
-          ]
-        }
-      }
+      "admob_app_id": "ca-app-pub-9472343620180321~4228734090"
     }
   ],
   "configuration_version": "1"
