@@ -9,13 +9,22 @@ import 'manager.dart';
 import 'nation.dart';
 
 class Metadata {
-  Metadata(
-      {required this.leagues,
-      required this.clubs,
-      required this.nations,
-      required this.players,
-      required this.managers,
-      required this.apps});
+  Metadata({
+    required this.leagues,
+    required this.clubs,
+    required this.nations,
+    required this.players,
+    required this.managers,
+    required this.apps
+  }) {
+    for (var app in apps) {
+      if (app.appId == appId) {
+        appName = app.appName;
+        appStoreUrl = app.storeURL;
+        break;
+      }
+    }
+  }
 
   List<Nation> nations = [];
   List<League> leagues = [];
@@ -23,6 +32,9 @@ class Metadata {
   List<Player> players = [];
   List<Manager> managers = [];
   List<App> apps = [];
+  String appId = "fut_chemistry";
+  String appName = "";
+  String appStoreUrl = "";
   List<Formation> formations = [
     Formation(id: 1, name: "3-4-3", positions: [
       "LW",

@@ -4,6 +4,8 @@ import 'package:fut_chemistry/models/optimizer_result.dart';
 import 'package:fut_chemistry/core/extensions/map_indexed.dart';
 import 'package:fut_chemistry/core/mixins/dialog_mixins.dart';
 import 'package:fut_chemistry/modals/player_position.dart';
+import '../../ads/admob_banner_manager.dart';
+import '../../ads/admob_interstitial_manager.dart';
 import '../../ads/admob_manager.dart';
 import '../../analytics/event.dart';
 
@@ -24,8 +26,34 @@ class _OptimizerResultScreenState extends State<OptimizerResultScreen> with Comm
   int openItemIdx = 0;
 
   @override
+  void initState() {
+    super.initState();
+    AdmobInterstitialManager.loadVideoAd();
+
+  }
+
+  @override
+  void didChangeDependencies() {
+    AdmobBannerManager.loadBannerAd(context);
+  }
+
+  @override
+  void dispose() {
+    AdmobBannerManager.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
+        bottomNavigationBar: Container(
+          height: AdmobBannerManager.anchoredAdaptiveAd.value != null
+              ? AdmobBannerManager.anchoredAdaptiveAd.value!.size.height
+              .toDouble()
+              : 60,
+          color: Colors.transparent,
+          child: AdmobBannerManager.getWidget(context),
+        ),
         appBar: AppBar(
           title: const Text('Chemistry Optimizer Result'),
           flexibleSpace: const Image(
@@ -106,10 +134,10 @@ class _OptimizerResultScreenState extends State<OptimizerResultScreen> with Comm
                 height: 40,
                 width: 160,
                 child: ElevatedButton(
-                  child: const Text('View Squad [ADS]'),
+                  child: const Text('View Squad'),
                   onPressed: () async {
                       logAdImpression();
-                      await AdmobManager.showRewardedAd();
+                      await AdmobInterstitialManager.showAd();
                       logViewSquad(idx);
                       await showFloatingModalBottomSheet(
                         context: context,

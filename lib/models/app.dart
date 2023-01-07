@@ -3,8 +3,9 @@ class App {
   String description;
   String iconURL;
   String storeURL;
+  String appId;
 
-  App({required this.appName, required this.description, required this.iconURL, required this.storeURL});
+  App({required this.appName, required this.description, required this.iconURL, required this.storeURL, required this.appId});
 
   factory App.fromJson(Map<String, dynamic> json) {
     return App(
@@ -12,6 +13,7 @@ class App {
       description: json["description"],
       iconURL: json["icon"],
       storeURL: json["store_link"],
+      appId: json["app_id"],
     );
   }
 }

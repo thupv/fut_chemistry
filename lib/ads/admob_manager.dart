@@ -35,7 +35,6 @@ class AdmobManager {
   }
 
   static Future<void> showRewardedAd() async {
-    print(_rewardedAd);
     if (_rewardedAd == null) {
       return;
     }
@@ -57,4 +56,5 @@ class AdmobManager {
         .show(onUserEarnedReward: (AdWithoutView ad, RewardItem reward) {});
     _rewardedAd = null;
   }
+
 }

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:fut_chemistry/ads/admob_manager.dart';
 import 'package:fut_chemistry/analytics/event.dart';
+import 'package:badges/badges.dart';
+import 'package:rate_my_app/rate_my_app.dart';
 
 import 'package:fut_chemistry/core/di.dart';
 import 'package:fut_chemistry/modals/help_modal.dart';
@@ -10,6 +12,7 @@ import 'package:fut_chemistry/screens/result/optimizer_result.dart';
 import 'package:fut_chemistry/state/app_state.dart';
 import 'package:fut_chemistry/core/mixins/dialog_mixins.dart';
 import 'package:fut_chemistry/models/player.dart';
+import 'package:fut_chemistry/models/metadata.dart';
 import 'package:fut_chemistry/shared/small_card.dart';
 import 'package:fut_chemistry/core/extensions/multi_value_listenable_builder.dart';
 import 'package:fut_chemistry/modals/name_search_modal.dart';
@@ -18,6 +21,8 @@ import 'package:fut_chemistry/modals/league_modal.dart';
 import 'package:fut_chemistry/modals/club_modal.dart';
 import 'package:fut_chemistry/modals/card_rarity_modal.dart';
 import 'package:fut_chemistry/modals/player_position.dart';
+import 'package:upgrader/upgrader.dart';
+import '../../ads/admob_banner_manager.dart';
 import '../../core/helpers/device_type.dart';
 import 'app_drawer.dart';
 
@@ -31,17 +36,46 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
   final appState = getIt<AppState>();
   List<String> messageIsolates = [];
+  static final GlobalKey<ScaffoldState> _scaffoldKey =
+      GlobalKey<ScaffoldState>();
+  RateMyApp rateMyApp = RateMyApp(
+    preferencesPrefix: 'rateMyApp_',
+    minDays: 0,
+    minLaunches: 2,
+    remindDays: 7,
+    remindLaunches: 10,
+    googlePlayIdentifier: 'com.futchemistry.app',
+    appStoreIdentifier: '1659694392',
+  );
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    AdmobBannerManager.loadBannerAd(context);
+  }
 
   @override
   void initState() {
-    super.initState();
     AdmobManager.loadRewardAd();
     appState.init();
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      await rateMyApp.init();
+      if (mounted && rateMyApp.shouldOpenDialog) {
+        // if (true) {
+        rateMyApp.showRateDialog(context,
+            title: 'Hey bro! 🤙',
+            // The dialog title.
+            message:
+                'Do you know it just take 30s to rate this app, but it motivates us to build quality app like this for FUT Community🥰?');
+      }
+      super.initState();
+    });
   }
 
   @override
   void dispose() {
     appState.dispose();
+    AdmobBannerManager.dispose();
     super.dispose();
   }
 
@@ -57,118 +91,148 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
   @override
   Widget build(BuildContext context) {
     final deviceType = DeviceDetector.getDeviceType(context);
-    return Scaffold(
-      drawer: const AppDrawer(),
-      appBar: AppBar(
-        title: const Text('Chemistry Optimizer'),
-        actions: <Widget>[
-          // IconButton(
-          //   icon: const Icon(
-          //     Icons.help_outline,
-          //     color: Colors.white,
-          //   ),
-          //   onPressed: () {
-          //     showFloatingModalBottomSheet(
-          //       context: context,
-          //       backgroundColor: Colors.indigo,
-          //       builder: (context) => const HelpModal(),
-          //     ).then((position) {});
-          //   },
-          // )
-          PopupMenuButton(
-              // add icon, by default "3 dot" icon
-              // icon: Icon(Icons.book)
-              itemBuilder: (context) {
-            return const [
-              // PopupMenuItem<int>(
-              //   value: 0,
-              //   child: Text("Import squad from WebApp"),
-              // ),
+    return UpgradeAlert(
+      child: Scaffold(
+        key: _scaffoldKey,
+        drawer: const AppDrawer(),
+        appBar: AppBar(
+          title: const Text('Chemistry Optimizer'),
+          actions: <Widget>[
+            // IconButton(
+            //   icon: const Icon(
+            //     Icons.help_outline,
+            //     color: Colors.white,
+            //   ),
+            //   onPressed: () {
+            //     showFloatingModalBottomSheet(
+            //       context: context,
+            //       backgroundColor: Colors.indigo,
+            //       builder: (context) => const HelpModal(),
+            //     ).then((position) {});
+            //   },
+            // )
+            PopupMenuButton(
+                // add icon, by default "3 dot" icon
+                // icon: Icon(Icons.book)
+                itemBuilder: (context) {
+              return const [
+                // PopupMenuItem<int>(
+                //   value: 0,
+                //   child: Text("Import squad from WebApp"),
+                // ),
 
-              PopupMenuItem<int>(
-                value: 0,
-                child: Text("Help"),
-              ),
+                PopupMenuItem<int>(
+                  value: 0,
+                  child: Text("Help"),
+                ),
 
-              // PopupMenuItem<int>(
-              //   value: 2,
-              //   child: Text("Logout"),
-              // ),
-            ];
-          }, onSelected: (value) {
-            if (value == 0) {
-              showFloatingModalBottomSheet(
-                context: context,
-                backgroundColor: Colors.indigo,
-                builder: (context) => const HelpModal(),
-              ).then((position) {});
-            }
-          }),
-        ],
-        flexibleSpace: const Image(
-          image: AssetImage('assets/img/tile_bg.png'),
-          fit: BoxFit.cover,
-        ),
-        centerTitle: true,
-      ),
-      body: Container(
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage("assets/img/bg.jpg"),
+                // PopupMenuItem<int>(
+                //   value: 2,
+                //   child: Text("Logout"),
+                // ),
+              ];
+            }, onSelected: (value) {
+              if (value == 0) {
+                showFloatingModalBottomSheet(
+                  context: context,
+                  backgroundColor: Colors.indigo,
+                  builder: (context) => const HelpModal(),
+                ).then((position) {});
+              }
+            }),
+          ],
+          leading: Badge(
+            badgeContent: ValueListenableBuilder(
+                valueListenable: appState.metadataNotifier,
+                builder: (context, Metadata? metaData, snap) {
+                  if (metaData == null) {
+                    return const Text("");
+                  }
+                  return Text(metaData.apps.length.toString(),
+                      style: const TextStyle(color: Colors.white));
+                }),
+            position: BadgePosition.topEnd(top: 0, end: 3),
+            animationType: BadgeAnimationType.scale,
+            child: IconButton(
+              icon: const Icon(Icons.menu),
+              onPressed: () => _scaffoldKey.currentState?.openDrawer(),
+            ),
+          ),
+          flexibleSpace: const Image(
+            image: AssetImage('assets/img/tile_bg.png'),
             fit: BoxFit.cover,
           ),
+          centerTitle: true,
         ),
-        child: SafeArea(
-          child: Column(
-            children: [
-              Expanded(
-                child: Column(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 8.0),
-                      child: SizedBox(
-                        height: 45,
-                        child: deviceType == DeviceType.phone
-                            ? Padding(
-                                padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
-                                child: ListView(
-                                  scrollDirection: Axis.horizontal,
+        body: Container(
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/img/bg.jpg"),
+              fit: BoxFit.cover,
+            ),
+          ),
+          child: SafeArea(
+            child: Column(
+              children: [
+                Expanded(
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 8.0),
+                        child: SizedBox(
+                          height: 45,
+                          child: deviceType == DeviceType.phone
+                              ? Padding(
+                                  padding:
+                                      const EdgeInsets.fromLTRB(10, 0, 0, 0),
+                                  child: ListView(
+                                    scrollDirection: Axis.horizontal,
+                                    children: _buildFilterBar(),
+                                  ),
+                                )
+                              : Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: _buildFilterBar(),
                                 ),
-                              )
-                            : Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: _buildFilterBar(),
-                              ),
+                        ),
                       ),
-                    ),
-                    _buildPlayers(),
-                  ],
-                ),
-              ),
-              Container(
-                height: 180,
-                decoration: BoxDecoration(
-                  color: Colors.black12,
-                  borderRadius: const BorderRadius.only(
-                    topLeft: Radius.circular(4),
-                    topRight: Radius.circular(4),
+                      _buildPlayers(),
+                    ],
                   ),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: 5,
-                      blurRadius: 7,
-                      offset: const Offset(0, 3), // changes position of shadow
-                    ),
-                  ],
                 ),
-                child: Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 4.0),
-                    child: _buildListSelectedCard(context)),
-              )
-            ],
+                Container(
+                  height: 180,
+                  decoration: BoxDecoration(
+                    color: Colors.black12,
+                    borderRadius: const BorderRadius.only(
+                      topLeft: Radius.circular(4),
+                      topRight: Radius.circular(4),
+                    ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 5,
+                        blurRadius: 7,
+                        offset:
+                            const Offset(0, 3), // changes position of shadow
+                      ),
+                    ],
+                  ),
+                  child: Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 4.0),
+                      child: _buildListSelectedCard(context)),
+                )
+              ],
+            ),
           ),
+        ),
+        bottomNavigationBar: Container(
+          height: AdmobBannerManager.anchoredAdaptiveAd.value != null
+              ? AdmobBannerManager.anchoredAdaptiveAd.value!.size.height
+                  .toDouble()
+              : 60,
+          color: Colors.transparent,
+          child: AdmobBannerManager.getWidget(context),
         ),
       ),
     );
@@ -769,7 +833,9 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
             decoration: BoxDecoration(
               color: Colors.blueGrey.shade800,
               borderRadius: BorderRadius.circular(5.0),
-              border: values.elementAt(0) == null ? null : Border.all(color: Colors.red),
+              border: values.elementAt(0) == null
+                  ? null
+                  : Border.all(color: Colors.red),
             ),
             child: values.elementAt(0) == null
                 ? Padding(

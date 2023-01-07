@@ -9,6 +9,7 @@ import 'package:flutter/foundation.dart' show kIsWeb;
 import '../analytics/event.dart';
 import '../models/metadata.dart';
 import '../models/optimizer_result.dart';
+import '../models/app.dart';
 import 'package:fut_chemistry/constants/base_url.dart';
 import 'optimizer.dart';
 
@@ -24,8 +25,6 @@ class AppState {
 
   final selectedManagerNationNotifier = ValueNotifier<int?>(null);
   final selectedManagerLeagueNotifier = ValueNotifier<int?>(null);
-
-
 
   final optimizerResultNotifier = ValueNotifier<List<OptimizerResult>>([]);
   List<OptimizerResult> _tempOptimizerResult = [];
