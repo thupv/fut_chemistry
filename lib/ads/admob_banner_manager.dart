@@ -7,8 +7,8 @@ class AdmobBannerManager {
   static ValueNotifier<BannerAd?> anchoredAdaptiveAd = ValueNotifier(null);
   static ValueNotifier<bool> isLoaded = ValueNotifier(false);
   static const testBannerAdsId = 'ca-app-pub-3940256099942544/6300978111';
-  static const bannerAdsIosId = 'ca-app-pub-9472343620180321/1650681958';
-  static const bannerAdsAndroidId = 'ca-app-pub-9472343620180321/1650681958';
+  static const bannerAdsIosId = 'ca-app-pub-9472343620180321/7798934123';
+  static const bannerAdsAndroidId = 'ca-app-pub-9472343620180321/8572959749';
 
   static loadBannerAd(BuildContext context) async {
     await anchoredAdaptiveAd.value?.dispose();
@@ -22,10 +22,10 @@ class AdmobBannerManager {
     }
 
     anchoredAdaptiveAd.value = BannerAd(
-      adUnitId: testBannerAdsId,
-      // adUnitId: Platform.isAndroid
-      //     ? 'ca-app-pub-3940256099942544/6300978111'
-      //     : 'ca-app-pub-3940256099942544/2934735716',
+      // adUnitId: testBannerAdsId,
+      adUnitId: Platform.isAndroid
+          ? bannerAdsAndroidId
+          : bannerAdsIosId,
       size: size,
       request: AdRequest(),
       listener: BannerAdListener(

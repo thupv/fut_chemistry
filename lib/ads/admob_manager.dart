@@ -1,4 +1,5 @@
 import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'dart:io';
 
 class AdmobManager {
   static RewardedInterstitialAd? _rewardedAd;
@@ -14,7 +15,9 @@ class AdmobManager {
 
   static loadRewardAd() {
     RewardedInterstitialAd.load(
-        adUnitId: interstitialAdsIOSId,
+        adUnitId: Platform.isAndroid
+            ? interstitialAdsAndroidId
+            : interstitialAdsIOSId,
         request: const AdRequest(),
         rewardedInterstitialAdLoadCallback: RewardedInterstitialAdLoadCallback(
           onAdLoaded: (RewardedInterstitialAd ad) {

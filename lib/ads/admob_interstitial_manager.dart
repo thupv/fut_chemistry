@@ -1,17 +1,21 @@
 import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'dart:io';
 
 class AdmobInterstitialManager {
   static InterstitialAd? _videoAd;
   static int _numRewardedLoadAttempts = 0;
   static int maxFailedLoadAttempts = 3;
   static const testInterstitialAdsId = 'ca-app-pub-3940256099942544/1033173712';
-  static const interstitialAdsIOSId = 'ca-app-pub-9472343620180321/1650681958';
+  static const interstitialAdsIOSId = 'ca-app-pub-9472343620180321/2578397036';
   static const interstitialAdsAndroidId =
-      'ca-app-pub-9472343620180321/7745554692';
+      'ca-app-pub-9472343620180321/9634759978';
 
   static loadVideoAd() {
     InterstitialAd.load(
-        adUnitId: testInterstitialAdsId,
+        // adUnitId: testInterstitialAdsId,
+      adUnitId: Platform.isAndroid
+          ? interstitialAdsAndroidId
+          : interstitialAdsIOSId,
         request: const AdRequest(),
         adLoadCallback: InterstitialAdLoadCallback(
           onAdLoaded: (InterstitialAd ad) {

@@ -56,8 +56,9 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
 
   @override
   void initState() {
-    AdmobManager.loadRewardAd();
     appState.init();
+    // AdmobBannerManager.dispose();
+    // AdmobBannerManager.loadBannerAd(context);
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       await rateMyApp.init();
       if (mounted && rateMyApp.shouldOpenDialog) {
@@ -227,6 +228,7 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
           ),
         ),
         bottomNavigationBar: Container(
+          key: const Key("home_page"),
           height: AdmobBannerManager.anchoredAdaptiveAd.value != null
               ? AdmobBannerManager.anchoredAdaptiveAd.value!.size.height
                   .toDouble()

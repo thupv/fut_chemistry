@@ -29,12 +29,6 @@ class _OptimizerResultScreenState extends State<OptimizerResultScreen> with Comm
   void initState() {
     super.initState();
     AdmobInterstitialManager.loadVideoAd();
-
-  }
-
-  @override
-  void didChangeDependencies() {
-    AdmobBannerManager.loadBannerAd(context);
   }
 
   @override
@@ -46,14 +40,15 @@ class _OptimizerResultScreenState extends State<OptimizerResultScreen> with Comm
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        bottomNavigationBar: Container(
-          height: AdmobBannerManager.anchoredAdaptiveAd.value != null
-              ? AdmobBannerManager.anchoredAdaptiveAd.value!.size.height
-              .toDouble()
-              : 60,
-          color: Colors.transparent,
-          child: AdmobBannerManager.getWidget(context),
-        ),
+        // bottomNavigationBar: Container(
+        //   key: const Key("result_page"),
+        //   height: AdmobBannerManager.anchoredAdaptiveAd.value != null
+        //       ? AdmobBannerManager.anchoredAdaptiveAd.value!.size.height
+        //       .toDouble()
+        //       : 60,
+        //   color: Colors.transparent,
+        //   child: AdmobBannerManager.getWidget(context),
+        // ),
         appBar: AppBar(
           title: const Text('Chemistry Optimizer Result'),
           flexibleSpace: const Image(
