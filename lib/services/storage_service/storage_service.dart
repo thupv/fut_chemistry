@@ -81,7 +81,8 @@ class StorageService {
       var json = jsonDecode(response.body);
 
       for (final app in json['fut_collection']) {
-        apps.add(App.fromJson(app));
+        var appObj = App.fromJson(app);
+        apps.add(appObj);
       }
       return apps;
     } else {
