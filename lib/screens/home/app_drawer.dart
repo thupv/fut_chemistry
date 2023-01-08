@@ -17,7 +17,7 @@ class AppDrawer extends StatefulWidget {
 }
 
 class _AppDrawerState extends State<AppDrawer> {
-  final appState = getIt<AppState>();
+  final appState = getIt<FutAppState>();
 
   @override
   Widget build(BuildContext context) {

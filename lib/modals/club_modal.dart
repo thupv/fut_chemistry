@@ -15,7 +15,7 @@ class ClubModal extends StatefulWidget {
 }
 
 class _ClubModalState extends State<ClubModal> {
-  final appState = getIt<AppState>();
+  final appState = getIt<FutAppState>();
   int? filterLeagueId;
 
   List<Club> clubs = [];

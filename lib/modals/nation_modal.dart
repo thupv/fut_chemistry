@@ -14,7 +14,7 @@ class NationModal extends StatefulWidget {
 }
 
 class _NationModalState extends State<NationModal> {
-  final appState = getIt<AppState>();
+  final appState = getIt<FutAppState>();
 
   List<Nation> nations = [];
 

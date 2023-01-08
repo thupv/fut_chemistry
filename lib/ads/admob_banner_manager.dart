@@ -47,6 +47,7 @@ class AdmobBannerManager {
     return ValueListenableBuilder(
         valueListenable: isLoaded,
         builder: (context, bool isLoaded, child) {
+          print(isLoaded);
           if(isLoaded == false) {
             return Container();
           }

@@ -6,6 +6,6 @@ import 'package:fut_chemistry/services/storage_service/storage_service.dart';
 final getIt = GetIt.instance;
 
 void initGetIt() {
-  getIt.registerLazySingleton<AppState>(() => AppState());
+  getIt.registerLazySingleton<FutAppState>(() => FutAppState());
   getIt.registerLazySingleton<StorageService>(() => StorageService());
 }

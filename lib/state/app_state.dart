@@ -13,7 +13,7 @@ import '../models/app.dart';
 import 'package:fut_chemistry/constants/base_url.dart';
 import 'optimizer.dart';
 
-class AppState {
+class FutAppState {
   final selectedCardsNotifier = SelectedCardsNotifier();
   final selectedPlayerNotifier = ValueNotifier<Map<String, String>>({});
   final selectedNationNotifier = ValueNotifier<int?>(null);
@@ -39,7 +39,7 @@ class AppState {
 
   void init() async {
     if (kDebugMode) {
-      print("AppState: init");
+      print("FutAppState: init");
     }
     _receivePort = ReceivePort();
     _isolatePool = IsolatePool(40, _receivePort);
@@ -55,7 +55,7 @@ class AppState {
     //         metadataNotifier.value!.formations.length) {
     //       _stopwatch.stop();
     //       print(
-    //           "AppState: Optimizer finished in ${_stopwatch.elapsedMilliseconds} ms");
+    //           "FutAppState: Optimizer finished in ${_stopwatch.elapsedMilliseconds} ms");
     //       _tempOptimizerResult
     //           .sort((a, b) => b.maxTeamChemistry.compareTo(a.maxTeamChemistry));
     //       optimizerResultNotifier.value = _tempOptimizerResult;
@@ -79,7 +79,7 @@ class AppState {
           metadataNotifier.value!.formations.length) {
         _stopwatch.stop();
         print(
-            "AppState: Optimizer finished in ${_stopwatch.elapsedMilliseconds} ms");
+            "FutAppState: Optimizer finished in ${_stopwatch.elapsedMilliseconds} ms");
         _tempOptimizerResult
             .sort((a, b) => b.maxTeamChemistry.compareTo(a.maxTeamChemistry));
         optimizerResultNotifier.value = _tempOptimizerResult;
@@ -90,7 +90,7 @@ class AppState {
 
   void dispose() {
     if (kDebugMode) {
-      print("AppState: dispose");
+      print("FutAppState: dispose");
     }
   }
 

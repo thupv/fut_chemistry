@@ -21,7 +21,7 @@ class OptimizerResultScreen extends StatefulWidget {
 }
 
 class _OptimizerResultScreenState extends State<OptimizerResultScreen> with CommonDialogMixin{
-  final appState = getIt<AppState>();
+  final appState = getIt<FutAppState>();
 
   int openItemIdx = 0;
 

@@ -14,7 +14,7 @@ class LeagueModal extends StatefulWidget {
 }
 
 class _LeagueModalState extends State<LeagueModal> {
-  final appState = getIt<AppState>();
+  final appState = getIt<FutAppState>();
 
   List<League> leagues = [];
 

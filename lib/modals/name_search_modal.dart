@@ -15,7 +15,7 @@ class NameSearchModal extends StatefulWidget {
 
 class _NameSearchModalState extends State<NameSearchModal> {
   late ValueNotifier<List<Player>> _playersNotifier;
-  final appState = getIt<AppState>();
+  final appState = getIt<FutAppState>();
 
   @override
   void initState() {

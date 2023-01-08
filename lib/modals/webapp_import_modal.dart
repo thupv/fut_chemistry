@@ -15,7 +15,7 @@ class WebAppImportModal extends StatefulWidget {
 class _NameSearchModalState extends State<WebAppImportModal> {
   late String _webAppUrl = '';
   bool isImporting = false;
-  final appState = getIt<AppState>();
+  final appState = getIt<FutAppState>();
 
   @override
   void initState() {

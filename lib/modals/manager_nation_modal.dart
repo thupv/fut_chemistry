@@ -17,7 +17,7 @@ class ManagerNationModal extends StatefulWidget{
 }
 
 class _NationModalState extends State<ManagerNationModal> with CommonDialogMixin {
-  final appState = getIt<AppState>();
+  final appState = getIt<FutAppState>();
 
   List<Manager> managers = [];
 

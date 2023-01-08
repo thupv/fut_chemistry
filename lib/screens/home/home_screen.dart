@@ -3,7 +3,9 @@ import 'package:fut_chemistry/ads/admob_manager.dart';
 import 'package:fut_chemistry/analytics/event.dart';
 import 'package:badges/badges.dart';
 import 'package:rate_my_app/rate_my_app.dart';
+import 'dart:io';
 
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:fut_chemistry/core/di.dart';
 import 'package:fut_chemistry/modals/help_modal.dart';
 import 'package:fut_chemistry/modals/manager_nation_modal.dart';
@@ -34,7 +36,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
-  final appState = getIt<AppState>();
+  final appState = getIt<FutAppState>();
   List<String> messageIsolates = [];
   static final GlobalKey<ScaffoldState> _scaffoldKey =
       GlobalKey<ScaffoldState>();
@@ -48,17 +50,59 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
     appStoreIdentifier: '1659694392',
   );
 
+  BannerAd? _anchoredAdaptiveAd;
+  bool _isLoaded = false;
+
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    AdmobBannerManager.loadBannerAd(context);
+    _loadAd();
+  }
+
+  Future<void> _loadAd() async {
+    await _anchoredAdaptiveAd?.dispose();
+    setState(() {
+      _anchoredAdaptiveAd = null;
+      _isLoaded = false;
+    });
+
+    final AnchoredAdaptiveBannerAdSize? size =
+    await AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(
+        MediaQuery.of(context).size.width.truncate());
+
+    if (size == null) {
+      print('Unable to get height of anchored banner.');
+      return;
+    }
+
+    _anchoredAdaptiveAd = BannerAd(
+      adUnitId: Platform.isAndroid
+          ? AdmobBannerManager.bannerAdsAndroidId
+          : AdmobBannerManager.bannerAdsIosId,
+      size: size,
+      request: AdRequest(),
+      listener: BannerAdListener(
+        onAdLoaded: (Ad ad) {
+          print('$ad loaded: ${ad.responseInfo}');
+          setState(() {
+            // When the ad is loaded, get the ad size and use it to set
+            // the height of the ad container.
+            _anchoredAdaptiveAd = ad as BannerAd;
+            _isLoaded = true;
+          });
+        },
+        onAdFailedToLoad: (Ad ad, LoadAdError error) {
+          print('Anchored adaptive banner failedToLoad: $error');
+          ad.dispose();
+        },
+      ),
+    );
+    return _anchoredAdaptiveAd!.load();
   }
 
   @override
   void initState() {
     appState.init();
-    // AdmobBannerManager.dispose();
-    // AdmobBannerManager.loadBannerAd(context);
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       await rateMyApp.init();
       if (mounted && rateMyApp.shouldOpenDialog) {
@@ -76,7 +120,7 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
   @override
   void dispose() {
     appState.dispose();
-    AdmobBannerManager.dispose();
+    _anchoredAdaptiveAd?.dispose();
     super.dispose();
   }
 
@@ -87,6 +131,22 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
         MaterialPageRoute(
           builder: (context) => const OptimizerResultScreen(),
         ));
+  }
+
+  Widget _getAdWidget() {
+    return OrientationBuilder(
+      builder: (context, orientation) {
+        if (_anchoredAdaptiveAd != null && _isLoaded) {
+          return Container(
+            color: Colors.green,
+            width: _anchoredAdaptiveAd!.size.width.toDouble(),
+            height: _anchoredAdaptiveAd!.size.height.toDouble(),
+            child: AdWidget(ad: _anchoredAdaptiveAd!),
+          );
+        }
+        return Container();
+      },
+    );
   }
 
   @override
@@ -227,15 +287,7 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
             ),
           ),
         ),
-        bottomNavigationBar: Container(
-          key: const Key("home_page"),
-          height: AdmobBannerManager.anchoredAdaptiveAd.value != null
-              ? AdmobBannerManager.anchoredAdaptiveAd.value!.size.height
-                  .toDouble()
-              : 60,
-          color: Colors.transparent,
-          child: AdmobBannerManager.getWidget(context),
-        ),
+        bottomNavigationBar: _getAdWidget(),
       ),
     );
   }

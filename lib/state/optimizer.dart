@@ -269,13 +269,13 @@ class IsolateTask {
 }
 
 class IsolatePool {
-  late AppState appState;
+  late FutAppState appState;
   int numberOfIsolate = 40;
   List<IsolateTask> tasks = [];
   final ReceivePort _receivePort;
 
   IsolatePool(this.numberOfIsolate, this._receivePort) {
-    appState = getIt<AppState>();
+    appState = getIt<FutAppState>();
   }
 
   createOptimizeIsolate() {
