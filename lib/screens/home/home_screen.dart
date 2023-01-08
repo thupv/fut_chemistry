@@ -134,19 +134,15 @@ class _HomeScreenState extends State<HomeScreen> with CommonDialogMixin {
   }
 
   Widget _getAdWidget() {
-    return OrientationBuilder(
-      builder: (context, orientation) {
-        if (_anchoredAdaptiveAd != null && _isLoaded) {
-          return Container(
-            color: Colors.green,
-            width: _anchoredAdaptiveAd!.size.width.toDouble(),
-            height: _anchoredAdaptiveAd!.size.height.toDouble(),
-            child: AdWidget(ad: _anchoredAdaptiveAd!),
-          );
-        }
-        return Container();
-      },
-    );
+    if (_anchoredAdaptiveAd != null && _isLoaded) {
+      return Container(
+        color: Colors.green,
+        width: _anchoredAdaptiveAd!.size.width.toDouble(),
+        height: _anchoredAdaptiveAd!.size.height.toDouble(),
+        child: AdWidget(ad: _anchoredAdaptiveAd!),
+      );
+    }
+    return Container();
   }
 
   @override
